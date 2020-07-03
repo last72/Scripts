@@ -10,11 +10,11 @@ $destinationsite = "PnPDestinationSP" # Destination site name in address
 #1. Connect to Source SharePoint Site
 Connect-PnPOnline -Url https://$tanent.sharepoint.com/sites/$sourcesite -UseWebLogin
 
-#2. Backup Site structure (Create Site template)
-Get-PnPProvisioningTemplate -Out "$sourcesite.xml"
+#2. Backup Site list structure (Create Site template)
+Get-PnPProvisioningTemplate -Out "$sourcesite.xml" -Handlers Lists, Fields -Force
 
 #3. Create new site (Destination)
-New-PnPSite -Type CommunicationSite -Title $destinationsite -Url https://m365x280502.sharepoint.com/sites/$destinationsite
+New-PnPSite -Type CommunicationSite -Title $destinationsite -Url https://$tanent.sharepoint.com/sites/$destinationsite
 
 #4. Connect to Destination SharePoint Site
 Connect-PnPOnline -Url https://$tanent.sharepoint.com/sites/$destinationsite -UseWebLogin
