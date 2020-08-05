@@ -1,6 +1,8 @@
 #To Run, Type followings 
+#Install-Module SharePointPnPPowerShellOnline
 #Set-ExecutionPolicy RemoteSigned
 #& "C:\Users\Work\Downloads\CopySPSite.ps1" 
+#cd Downloads
 
 #Set the variables
 $SourceTanent = "m365x280502" # Tanent name. i.e. microsoft in https://microsoft.sharepoint.com
@@ -10,16 +12,17 @@ $DestinationSite = "PnPDestinationSP" # Destination site in address
 $DestinationTitle = "PnPDestinationSP" # Destination site name in address
 
 #1. Connect to Source SharePoint Site
-Connect-PnPOnline -Url https://$SourceTanent.sharepoint.com/sites/$SourceSite -UseWebLogin
+Connect-PnPOnline -Url https://$SourceTenant.sharepoint.com/sites/$SourceSite -UseWebLogin
 
 #2. Backup Site list structure (Create Site template)
 Get-PnPProvisioningTemplate -Out "$SourceSite.xml" -Handlers Lists, Fields -Force
 
 #3. Create new site (Destination)
-New-PnPSite -Type CommunicationSite -Title $DestinationTitle -Url https://$DestinationTanent.sharepoint.com/sites/$DestinationSite
+Connect-PnPOnline -Url https://$DestinationTenant.sharepoint.com/ -UseWebLogin
+New-PnPSite -Type TeamSite  -Title $DestinationTitle -Alias $DestinationSite
 
 #4. Connect to Destination SharePoint Site
-Connect-PnPOnline -Url https://$DestinationTanent.sharepoint.com/sites/$DestinationSite -UseWebLogin
+Connect-PnPOnline -Url https://$DestinationTenant.sharepoint.com/sites/$DestinationSite -UseWebLogin
 
 #5. Apply template to Destination site
 Apply-PnPProvisioningTemplate -Path "$SourceSite.xml"
