@@ -1,8 +1,10 @@
-#To Run, Type followings 
-#Install-Module SharePointPnPPowerShellOnline
-#Set-ExecutionPolicy RemoteSigned
-#& "C:\Users\Work\Downloads\CopySPSite.ps1" 
-#cd Downloads
+<#
+To Run, Type followings
+Install-Module SharePointPnPPowerShellOnline
+Set-ExecutionPolicy RemoteSigned
+& "C:\Users\Work\Downloads\CopySPSite.ps1" 
+cd Downloads
+#>
 
 #Set the variables
 $SourceTanent = "m365x280502" # Tanent name. i.e. microsoft in https://microsoft.sharepoint.com
