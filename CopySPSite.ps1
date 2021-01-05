@@ -7,7 +7,7 @@ cd Downloads
 #>
 
 #Set the variables
-$SourceTanent = "m365x280502" # Tanent name. i.e. microsoft in https://microsoft.sharepoint.com
+$SourceTenant = "m365x280502" # Tanent name. i.e. microsoft in https://microsoft.sharepoint.com
 $SourceSite = "PnPSourceSP" # Source site name in address
 $DestinationTanent = "m365x280502" # Tanent name. i.e. microsoft in https://microsoft.sharepoint.com
 $DestinationSite = "PnPDestinationSP" # Destination site in address
