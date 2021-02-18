@@ -21,7 +21,8 @@ Get-PnPProvisioningTemplate -Out "$SourceSite.xml" -Handlers Lists, Fields -Forc
 
 #3. Create new site (Destination)
 Connect-PnPOnline -Url https://$DestinationTenant.sharepoint.com/ -UseWebLogin
-New-PnPSite -Type TeamSite  -Title $DestinationTitle -Alias $DestinationSite
+# This New-PnPSite does not work right now. Create SharePoint Teams site manually from your web browser
+# New-PnPSite -Type TeamSite  -Title $DestinationTitle -Alias $DestinationSite
 
 #4. Connect to Destination SharePoint Site
 Connect-PnPOnline -Url https://$DestinationTenant.sharepoint.com/sites/$DestinationSite -UseWebLogin
