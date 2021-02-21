@@ -18,6 +18,14 @@ Send, ^a
 MouseMove, StartX, StartY
 return
 
+; Formular text Left
+F4::
+MouseGetPos, StartX, StartY
+MouseClick, , 50, 220
+Send, ^a
+MouseMove, StartX, StartY
+return
+
 ; Name Text
 F6::
 MouseGetPos, StartX, StartY
@@ -163,7 +171,7 @@ Send, ^]
 Send, ^]
 return
 
-; numbpad 4. This is a workaround as my numpad 4 key is not working
+; numbpad 4
 PgDn::
 Send, {Numpad4}
 return
