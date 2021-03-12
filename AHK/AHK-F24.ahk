@@ -7,31 +7,6 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 #MaxHotkeysPerInterval 2000
 #WinActivateForce ;https://autohotkey.com/docs/commands/_WinActivateForce.htm
 
-;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-; HELLO, poeple who want info about making a second keyboard, using luamacros!
-
-; Here's my LTT video about how I use the 2nd keyboard with Luamacros: https://www.youtube.com/watch?v=Arn8ExQ2Gjg
-
-; And Tom's video, which unfortunately does not have info on how to actually DO it: https://youtu.be/lIFE7h3m40U?t=16m9s
-
-; If you have never used AutoHotKey, you must take this tutorial before proceeding!
-; https://autohotkey.com/docs/Tutorial.htm
-
-; So you will need luamacros, of course.
-; Luamacros: http://www.hidmacros.eu/forum/viewtopic.php?f=10&t=241#p794
-; AutohotKey: https://autohotkey.com/
-
-; However, I no longer use luamacros, because I believe interecept.exe is even better! My current code is available in "ALL_MULTIPLE_KEYBOARD_ASSIGNMENTS.ahk"
-
-; Lots of other explanatory videos other AHK scripts can be found on my youtube channel! https://www.youtube.com/user/TaranVH/videos 
-;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-;-------------2ND KEYBOARD USING LUAMACROS-----------------
-
-#IfWinActive ahk_exe Adobe Premiere Pro.exe ;---EVERYTHING BELOW THIS LINE WILL ONLY WORK INSIDE PREMIERE PRO. But you can change this to anything you like. You can use Window Spy to determine the ahk_exe of any program, so that your macros will only work when and where you want them to.
-
-;There is no code here. T'was just an example.
 
 #IfWinActive ;---- This will allow for everything below this line to work in ANY application.
 
@@ -146,19 +121,27 @@ else if(key = "equals")
 audioMonoMaker(1)
 
 
+else if(key = "1")
+Copy(1)
+else if(key = "2")
+Copy(2)
+else if(key = "3")
+Copy(3)
+
 else if(key = "r")
-copy(1)
+Copy(3)
+
 else if(key = "f")
 PAProperty("Size")
 else if(key = "v")
 PAProperty("Text")
 
-else if(key = "t")
-paste(1)
-else if(key = "g")
-paste(2)
-else if(key = "b")
-paste(3)
+else if(key = "4")
+Paste(1)
+else if(key = "5")
+Paste(2)
+else if(key = "6")
+Paste(3)
 
 else if(key = "up") ;impact push transitions - fun fact, you can SAVE TRANSITION PRESETS if they are cross dissolve or from a 3rd party. In the effect controls triple line menu.
 preset("push up")
@@ -201,22 +184,6 @@ Return ;from luamacros F24
 ;THE BLOCK OF CODE ABOVE is the original, simple Luamacros-dependant script.
 
 
-;;;ALL THE CODE BELOW CAN BE THE ACTUAL FUNCTIONS THAT YOU WANT TO CALL;;;
-
-
-;;;;;;temporary tooltip maker;;;;;;
-Tippy(tipsHere, wait:=333)
-{
-ToolTip, %tipsHere% TP,,,8
-SetTimer, noTip, %wait% ;--in 1/3 seconds by default, remove the tooltip
-}
-noTip:
-	ToolTip,,,,8
-	;removes the tooltip
-return
-;;;;;;/temporary tooltip maker;;;;;;
-
-
 insertSFX(parameter){
 msgbox, you launched insertSFX with the parameter %parameter%
 msgbox, obviously you can now put any function you like in here.
@@ -242,23 +209,69 @@ msgbox, you launched recallTransition with the parameter %parameter%
 }
 
 
-copy(bar){
-msgbox, you launched COPY with the parameter %bar%
 
+; Multiple clipboard scenario
+; Very slow on large data (i.e. 20+ lines of code). Suitable for short data such as variable name
+; Ref: https://www.autohotkey.com/boards/viewtopic.php?t=66180
+#Persistent
+Copy(clipboardID) {
+	global ; All variables are global by default
+	local oldClipboard := ClipboardAll ; Save the (real) clipboard
+	
+	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
+	Send ^c
+	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
+	if ErrorLevel {
+		Clipboard := oldClipboard ; Restore old (real) clipboard
+		return
+	}
+	
+	ClipboardData%clipboardID% := Clipboard
+	
+	Clipboard := oldClipboard ; Restore old (real) clipboard
 }
 
-paste(foo){
-msgbox, you launched PASTE with the parameter %foo%
-
+Cut(clipboardID) {
+	global ; All variables are global by default
+	local oldClipboard := ClipboardAll ; Save the (real) clipboard
+	
+	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
+	Send ^x
+	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
+	if ErrorLevel {
+		Clipboard := oldClipboard ; Restore old (real) clipboard
+		return
+	}
+	ClipboardData%clipboardID% := Clipboard
+	
+	Clipboard := oldClipboard ; Restore old (real) clipboard
 }
 
-PAProperty(property)
+Paste(clipboardID) {
+	global
+	local oldClipboard := ClipboardAll ; Save the (real) clipboard
+
+	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
+	Clipboard := ClipboardData%clipboardID%
+	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
+	SendRaw, % Clipboard ; Was having an issue with ^v
+
+	Clipboard := oldClipboard ; Restore old (real) clipboard
+}
+
+
+
+; PowerApps functions
+
+; This will open property part of a control. First parameter is name of the property (i.e. "OnSelect")
+; The location has been hardcode. Windows scaling on High DPI display might impact this.
+PAProperty(PropertyName, PropertyX := 50, FormulaX:= 500, PropertyY := 220)
 {
     MouseGetPos, StartX, StartY
-    MouseClick, , 50, 220
+    MouseClick, , PropertyX, PropertyY
     Send, ^a
-    Send, %property%
-    MouseClick, , 500, 220
+    Send, %PropertyName%
+    MouseClick, , FormulaX, PropertyY
     Send, ^a
     MouseMove, StartX, StartY
     return
