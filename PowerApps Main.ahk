@@ -189,4 +189,23 @@ MouseGetPos, StartX, StartY
 MouseClick, , 1902, 219
 MouseMove, StartX, StartY
 
+PAProperty(property)
+{
+    MouseGetPos, StartX, StartY
+    MouseClick, , 50, 220
+    Send, ^a
+    Send, %property%
+    MouseClick, , 500, 220
+    Send, ^a
+    MouseMove, StartX, StartY
+    return
+}
 
+OpenVSCode()
+{
+    SetTitleMatchMode, 2
+    IfWinNotExist, Visual Studio Code
+        Run, "C:\Users\Woong\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+    else
+        WinActivate Visual Studio Code
+}
