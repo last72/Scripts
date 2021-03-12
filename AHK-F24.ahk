@@ -95,7 +95,7 @@ insertSFX("woosh TSFX")
 else if(key = "F11")
 insertSFX("bwoop")
 else if(key = "F12")
-insertSFX("pop")
+PAProperty("Height")
 else if(key = "F5")
 insertSFX("SEARCH")
 
@@ -113,24 +113,31 @@ else if(key = "end")
 preset("cross dissolve med")
 else if(key = "pagedown")
 preset("cross dissolve short")
+
+
+; //////////////////////////////////////
+
 else if(key = "q") ;WIPE transitions
-recallTransition(20)
+PAProperty("X")
 else if(key = "w")
-recallTransition(21)
+PAProperty("Width")
 else if(key = "e")
-recallTransition(22)
+PAProperty("Fill")
+
+
 else if(key = "a")
-recallTransition(23)
-; else if(key = "s")
-; recallTransition(??) ; iris
+PAProperty("Y")
+else if(key = "s")
+PAProperty("Height")
 else if(key = "d")
-recallTransition(24)
+PAProperty("Color")
+
 else if(key = "z")
-recallTransition(25)
+PAProperty("Visible")
 else if(key = "x")
-recallTransition(26)
+PAProperty("OnSelect")
 else if(key = "c")
-Send, Parent.Width
+PAProperty("Default")
 
 
 else if(key = "minus")
@@ -142,9 +149,10 @@ audioMonoMaker(1)
 else if(key = "r")
 copy(1)
 else if(key = "f")
-copy(2)
+PAProperty("Size")
 else if(key = "v")
-PAProperty(Visible)
+PAProperty("Text")
+
 else if(key = "t")
 paste(1)
 else if(key = "g")
