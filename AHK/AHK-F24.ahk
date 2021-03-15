@@ -61,23 +61,23 @@ preset("LTT")
 ; Function Rows
 
 else if(key = "F1")
-OpenTaskbarItem(4)
+OpenTaskbarItem(1)
 else if(key = "F2")
-insertSFX("ding")
+OpenTaskbarItem(2)
 else if(key = "F3")
-insertSFX("bleep")
+OpenTaskbarItem(3)
 else if(key = "F4")
-insertSFX("woosh")
+OpenTaskbarItem(4)
 
 
 else if(key = "F5")
-insertSFX("woosh")
+OpenTaskbarItem(5)
 else if(key = "F6")
-insertSFX("buzz")
+OpenTaskbarItem(6)
 else if(key = "F7")
-insertSFX("ding")
+OpenTaskbarItem(7)
 else if(key = "F8")
-insertSFX("bleep")
+OpenTaskbarItem(8)
 
 
 else if(key = "F9")
