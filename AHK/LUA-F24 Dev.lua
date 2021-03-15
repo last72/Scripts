@@ -107,6 +107,7 @@ local config = {
     [20]  = "capslock",
     [18]  = "alt",
 
+
 	[string.byte('Q')] = "q",
 	[string.byte('W')] = "w",
 	[string.byte('E')] = "e",
@@ -147,6 +148,16 @@ local config = {
 
 	--[255] = "printscreen" --these keys do not work
 }
+
+-- -- Quick start code
+-- lmc_set_handler('MACROS', function(button, direction)
+-- 	if (direction == 1) then return end  -- ignore down
+-- 		if     (button == string.byte('C')) then lmc_spawn("calc")
+-- 		elseif (button == string.byte('N')) then lmc_spawn("notepad", "C:\\test.txt")
+-- 		elseif (button == string.byte('H')) then lmc_send_keys('Hello world')
+-- 		else print('Not yet assigned: ' .. button) 
+-- 	end
+--   end)
 
 -- define callback for whole device
 lmc_set_handler('MACROS', function(button, direction)

@@ -10,7 +10,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 
 #IfWinActive ;---- This will allow for everything below this line to work in ANY application.
 
-~F24::
+!+F24::
 FileRead, key, C:\AHK\2nd-keyboard\LUAMACROS\keypressed.txt
 ; tippy(key) ;<--- this function will just launch a quick tooltip that shows you what key you pressed. OPTIONAL.
 If (key = "o")
@@ -57,12 +57,29 @@ preset("blur with edges")
 else if(key = "l")
 preset("LTT")
 
+
+; Function Rows
+
+else if(key = "F1")
+OpenTaskbarItem(4)
+else if(key = "F2")
+insertSFX("ding")
+else if(key = "F3")
+insertSFX("bleep")
+else if(key = "F4")
+insertSFX("woosh")
+
+
+else if(key = "F5")
+insertSFX("woosh")
 else if(key = "F6")
 insertSFX("buzz")
 else if(key = "F7")
 insertSFX("ding")
 else if(key = "F8")
 insertSFX("bleep")
+
+
 else if(key = "F9")
 insertSFX("woosh")
 else if(key = "F10")
@@ -275,4 +292,11 @@ PAProperty(PropertyName, PropertyX := 50, FormulaX:= 500, PropertyY := 220)
     Send, ^a
     MouseMove, StartX, StartY
     return
+}
+
+; Windows functions
+; Select/Open taskbar item
+OpenTaskbarItem(Index)
+{
+	Send, #%Index%
 }
