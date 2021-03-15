@@ -10,7 +10,7 @@ Menu, Tray, Icon, shell32.dll, 283 ; this changes the tray icon to a little keyb
 
 #IfWinActive ;---- This will allow for everything below this line to work in ANY application.
 
-!+F24::
+F24::
 FileRead, key, C:\AHK\2nd-keyboard\LUAMACROS\keypressed.txt
 ; tippy(key) ;<--- this function will just launch a quick tooltip that shows you what key you pressed. OPTIONAL.
 If (key = "o")
@@ -25,8 +25,7 @@ else if(key = "i")
 else if (key = "leftbracket")
 preset("pop in motion") 
 else if(key = "rightbracket")
-preset("pop out motion")
-
+Send, "UpdateContext({});"
 else if (key = "y")
 preset("pop in transform") 
 else if(key = "u")
@@ -98,14 +97,13 @@ preset("impact flash long") ;it turns out you can SAVE transition presets from t
 else if(key = "home") 
 preset("impact flash med")
 else if(key = "pageup")
-preset("impact flash short")
+TypeText("Lime")
 else if(key = "delete") ;DISSOLVE TRANSITIONS
-preset("cross dissolve long")
+TypeText("Pink")
 else if(key = "end")
 preset("cross dissolve med")
 else if(key = "pagedown")
-preset("cross dissolve short")
-
+Send, Pink
 
 ; //////////////////////////////////////
 
@@ -175,7 +173,7 @@ Send ^!e ;in premiere, set this (CTRL ALT E) to "remove effects"
 else if(key = "num0") ;just mirroring the normal numpad - IDK how else to do this.
 Send {Numpad0}
 else if(key = "num1")
-Send {Numpad1}
+TypeText("Lime")
 else if(key = "num2")
 Send {Numpad2}
 else if(key = "num3")
@@ -282,11 +280,15 @@ Paste(clipboardID) {
 
 ; This will open property part of a control. First parameter is name of the property (i.e. "OnSelect")
 ; The location has been hardcode. Windows scaling on High DPI display might impact this.
-PAProperty(PropertyName, PropertyX := 50, FormulaX:= 500, PropertyY := 220)
+PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
 {
     MouseGetPos, StartX, StartY
-    MouseClick, , PropertyX, PropertyY
-    Send, ^a
+	MouseClick, , PropertyX, PropertyY
+	Click
+	Send {BackSpace}
+	Send {Space}
+	Send {BackSpace}
+	Send {BackSpace}
     Send, %PropertyName%
     MouseClick, , FormulaX, PropertyY
     Send, ^a
@@ -299,4 +301,10 @@ PAProperty(PropertyName, PropertyX := 50, FormulaX:= 500, PropertyY := 220)
 OpenTaskbarItem(Index)
 {
 	Send, #%Index%
+}
+
+; Type Text
+TypeText(TextToSend)
+{
+	Send, #%TextToSend%
 }

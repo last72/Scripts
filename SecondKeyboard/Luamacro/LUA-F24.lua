@@ -40,7 +40,7 @@ sendToAHK = function (key)
 	file:write(key)
 	file:flush() --"flush" means "save." Lol.
 	file:close()
-	lmc_send_keys('%+{f24}')  -- This presses F24. Using the F24 key to trigger AutoHotKey is probably NOT the best method. Feel free to program something better!
+	lmc_send_keys('{f24}')  -- This presses F24. Using the F24 key to trigger AutoHotKey is probably NOT the best method. Feel free to program something better!
 end
 
 
