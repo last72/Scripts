@@ -16,7 +16,10 @@ FileRead, key, C:\AHK\2nd-keyboard\LUAMACROS\keypressed.txt
 If (key = "o")
 preset("flip horizontal") 
 else if(key = "p")
-preset("flip vertical")
+{
+	; Send, ^v
+	Send, .Width
+}
 else if(key = "i")
 	{
 	preset("multiply")
@@ -25,7 +28,7 @@ else if(key = "i")
 else if (key = "leftbracket")
 preset("pop in motion") 
 else if(key = "rightbracket")
-Send, "UpdateContext({});"
+Send, UpdateContext({});
 else if (key = "y")
 preset("pop in transform") 
 else if(key = "u")
@@ -97,13 +100,14 @@ preset("impact flash long") ;it turns out you can SAVE transition presets from t
 else if(key = "home") 
 preset("impact flash med")
 else if(key = "pageup")
-TypeText("Lime")
+Send, Color.Lime
+
 else if(key = "delete") ;DISSOLVE TRANSITIONS
 TypeText("Pink")
 else if(key = "end")
 preset("cross dissolve med")
 else if(key = "pagedown")
-Send, Pink
+Send, Color.Pink
 
 ; //////////////////////////////////////
 
@@ -171,15 +175,24 @@ else if(key = "enter")
 Send ^!e ;in premiere, set this (CTRL ALT E) to "remove effects"
 
 else if(key = "num0") ;just mirroring the normal numpad - IDK how else to do this.
-Send {Numpad0}
+{
+	Send, ^v
+	Send, .Width
+}
 else if(key = "num1")
-TypeText("Lime")
+{
+	; Send, ^v
+	Send, .Width
+}
 else if(key = "num2")
-Send {Numpad2}
+{
+	Send, ^v
+	Send, .Y
+}
 else if(key = "num3")
 Send {Numpad3}
 else if(key = "num4")
-Send {Numpad4}
+Paste(1)
 else if(key = "num5")
 Send {Numpad5}
 else if(key = "num6")
@@ -194,6 +207,7 @@ else if(key = "numDiv")
 Send {NumpadDiv}
 else if(key = "numMult")
 Send {NumpadMult}
+
 
 Return ;from luamacros F24
 ;THE BLOCK OF CODE ABOVE is the original, simple Luamacros-dependant script.

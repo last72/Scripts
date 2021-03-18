@@ -147,34 +147,34 @@ return
 
 ; Others
 
-; Put on Top
-PgUp::
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-return
+; ; Put on Top
+; PgUp::
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; Send, ^]
+; return
 
-; numbpad 4
-PgDn::
-Send, {Numpad4}
-return
+; ; numbpad 4
+; PgDn::
+; Send, {Numpad4}
+; return
 
 ; F13 - F24
 
