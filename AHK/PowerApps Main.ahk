@@ -171,34 +171,99 @@ return
 ; Send, ^]
 ; return
 
-; ; numbpad 4
-; PgDn::
-; Send, {Numpad4}
-; return
-
 ; F13 - F24
 
-; Align to the right
+; OnSelectProperty
 F13::
-Send, ^v
-Send, .Width-Self.Width
+PAProperty("OnSelect")
+return
+
+; Set Width to Parent
+F14::
+PAProperty("Width")
+Send, Parent.Width - Self.X
+return
+
+; Press Win + 8
+; VS COde
+F15::
+Send #8
+return
+
+; Press Win + 7
+; Teams
+^F15::
+Send #7
+return
+
+; Press Win + 3
+; Edge
+F16::
+Send #3
+return
+
+; Press Win + 6
+; OneNote
+F17::
+Send #6
+return
+
+; Lime
+F18::
+Send, Lime
+return
+
+; Fill: Lime
+^F18::
+PAProperty("Fill")
+Send, Lime
+return
+
+; Pink
+F19::
+Send, Pink
+return
+
+; Fill: Pink
+^F19::
+PAProperty("Fill")
+Send, Pink
+return
+
+; Fill Property
+F20::
+PAProperty("Fill")
+return
 
 ; Expend PowerApps menu
 NumpadSub::
 MouseGetPos, StartX, StartY
 MouseClick, , 1902, 219
 MouseMove, StartX, StartY
+return
 
-PAProperty(property)
+
+; PowerApps functions
+
+; This will open property part of a control. First parameter is name of the property (i.e. "OnSelect")
+; The location has been hardcode. Windows scaling on High DPI display might impact this.
+PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
 {
     MouseGetPos, StartX, StartY
-    MouseClick, , 50, 220
+	MouseClick, , PropertyX, PropertyY
     Send, ^a
-    Send, %property%
-    MouseClick, , 500, 220
+    Send, %PropertyName%
+    MouseClick, , FormulaX, PropertyY
     Send, ^a
     MouseMove, StartX, StartY
     return
+}
+
+; Windows functions
+; Select/Open taskbar item
+OpenTaskbarItem(Index)
+{
+	Send, #%Index%
 }
 
 OpenVSCode()
@@ -208,4 +273,54 @@ OpenVSCode()
         Run, "C:\Users\Woong\AppData\Local\Programs\Microsoft VS Code\Code.exe"
     else
         WinActivate Visual Studio Code
+}
+
+
+; Multiple clipboard scenario
+; Very slow on large data (i.e. 20+ lines of code). Suitable for short data such as variable name
+; Ref: https://www.autohotkey.com/boards/viewtopic.php?t=66180
+#Persistent
+Copy(clipboardID) {
+	global ; All variables are global by default
+	local oldClipboard := ClipboardAll ; Save the (real) clipboard
+	
+	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
+	Send ^c
+	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
+	if ErrorLevel {
+		Clipboard := oldClipboard ; Restore old (real) clipboard
+		return
+	}
+	
+	ClipboardData%clipboardID% := Clipboard
+	
+	Clipboard := oldClipboard ; Restore old (real) clipboard
+}
+
+Cut(clipboardID) {
+	global ; All variables are global by default
+	local oldClipboard := ClipboardAll ; Save the (real) clipboard
+	
+	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
+	Send ^x
+	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
+	if ErrorLevel {
+		Clipboard := oldClipboard ; Restore old (real) clipboard
+		return
+	}
+	ClipboardData%clipboardID% := Clipboard
+	
+	Clipboard := oldClipboard ; Restore old (real) clipboard
+}
+
+Paste(clipboardID) {
+	global
+	local oldClipboard := ClipboardAll ; Save the (real) clipboard
+
+	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
+	Clipboard := ClipboardData%clipboardID%
+	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
+	SendRaw, % Clipboard ; Was having an issue with ^v
+
+	Clipboard := oldClipboard ; Restore old (real) clipboard
 }

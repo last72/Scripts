@@ -3,12 +3,10 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-^F7::
-Send {WheelUp 5}
+F13::
+Send, 
+return
 
 ^F8::
 Send {WheelDown 5}
-
-
-
 return
