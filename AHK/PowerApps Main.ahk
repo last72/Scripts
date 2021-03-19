@@ -111,16 +111,27 @@ Send, ^a
 Send, ^v
 return
 
-; Control.Width
+; Self.Height
 5::
-Send, ^v
-Send, .Width
+Send Self.X
 return
 
 ; Self.Width
 6::
-Send, Self.Width
+Send Self.Width
 return
+
+
+; Self.Height
+7::
+Send Self.Y
+return
+
+; Self.Width
+8::
+Send Self.Height
+return
+
 
 ; Property: Y
 9::
@@ -178,6 +189,12 @@ F13::
 PAProperty("OnSelect")
 return
 
+; OnSelect Visible
+^F13::
+PAProperty("Visible")
+return
+
+
 ; Set Width to Parent
 F14::
 PAProperty("Width")
@@ -219,6 +236,11 @@ PAProperty("Fill")
 Send, Lime
 return
 
+; Red
+^!F18::
+Send, Red
+return
+
 ; Pink
 F19::
 Send, Pink
@@ -230,9 +252,53 @@ PAProperty("Fill")
 Send, Pink
 return
 
+; Fill: Transparent
+^!F19::
+PAProperty("Fill")
+Send, Transparent
+return
+
 ; Fill Property
 F20::
 PAProperty("Fill")
+return
+
+; Align on right
+F21::
+PAProperty("Y")
+Send, ^v
+Send, .Y
+PAProperty("X")
+Send, ^v
+Send, .X{Space}{+}{Space}
+Send, ^v
+Send, .Width
+return
+
+; Align to buttom
+^F21::
+PAProperty("Y")
+Send, ^v
+Send, .Y{Space}{+}{Space}
+Send, ^v
+Send, .Height
+PAProperty("X")
+Send, ^v
+Send, .X
+return
+
+; Copy control Name
+F22::
+MouseGetPos, StartX, StartY
+MouseClick, , 1620, 290
+Send, ^a
+Send, ^c
+MouseMove, StartX, StartY
+return
+
+; UpdateContext({});
+^F22::
+Send, UpdateContext({{}{}});
 return
 
 ; Expend PowerApps menu
