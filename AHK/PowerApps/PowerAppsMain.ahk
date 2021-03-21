@@ -303,9 +303,7 @@ return
 
 ; Expend PowerApps menu
 NumpadSub::
-MouseGetPos, StartX, StartY
-MouseClick, , 1902, 219
-MouseMove, StartX, StartY
+ExpendFormulaMenu()
 return
 
 
@@ -323,6 +321,14 @@ PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
     Send, ^a
     MouseMove, StartX, StartY
     return
+}
+
+; This will open formula bar
+ExpendFormulaMenu(MenuX := 1902, MenuY := 219)
+{
+	MouseGetPos, StartX, StartY
+	MouseClick, , MenuX, MenuY
+	MouseMove, StartX, StartY
 }
 
 ; Windows functions
