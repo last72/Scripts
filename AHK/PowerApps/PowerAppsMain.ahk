@@ -9,7 +9,6 @@ F1::
 Send, ^a
 return
 
-
 ; Formular text
 F3::
 MouseGetPos, StartX, StartY
@@ -182,6 +181,18 @@ return
 ; Send, ^]
 ; return
 
+; Number Pad
+
+;Expend PowerApps formula bar
+!1::
+MouseClickAndReturn(580, 360)
+return
+
+;Expend PowerApps formula bar
+!2::
+MouseClickAndReturn(580, 950)
+return
+
 ; F13 - F24
 
 ; OnSelectProperty
@@ -331,68 +342,17 @@ ExpendFormulaMenu(MenuX := 1902, MenuY := 219)
 	MouseMove, StartX, StartY
 }
 
+; Mouse Click
+MouseClickAndReturn(ClickX , ClickY)
+{
+	MouseGetPos, StartX, StartY
+	MouseClick, , ClickX, ClickY
+	MouseMove, StartX, StartY
+}
+
 ; Windows functions
 ; Select/Open taskbar item
 OpenTaskbarItem(Index)
 {
 	Send, #%Index%
-}
-
-OpenVSCode()
-{
-    SetTitleMatchMode, 2
-    IfWinNotExist, Visual Studio Code
-        Run, "C:\Users\Woong\AppData\Local\Programs\Microsoft VS Code\Code.exe"
-    else
-        WinActivate Visual Studio Code
-}
-
-
-; Multiple clipboard scenario
-; Very slow on large data (i.e. 20+ lines of code). Suitable for short data such as variable name
-; Ref: https://www.autohotkey.com/boards/viewtopic.php?t=66180
-#Persistent
-Copy(clipboardID) {
-	global ; All variables are global by default
-	local oldClipboard := ClipboardAll ; Save the (real) clipboard
-	
-	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
-	Send ^c
-	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
-	if ErrorLevel {
-		Clipboard := oldClipboard ; Restore old (real) clipboard
-		return
-	}
-	
-	ClipboardData%clipboardID% := Clipboard
-	
-	Clipboard := oldClipboard ; Restore old (real) clipboard
-}
-
-Cut(clipboardID) {
-	global ; All variables are global by default
-	local oldClipboard := ClipboardAll ; Save the (real) clipboard
-	
-	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
-	Send ^x
-	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
-	if ErrorLevel {
-		Clipboard := oldClipboard ; Restore old (real) clipboard
-		return
-	}
-	ClipboardData%clipboardID% := Clipboard
-	
-	Clipboard := oldClipboard ; Restore old (real) clipboard
-}
-
-Paste(clipboardID) {
-	global
-	local oldClipboard := ClipboardAll ; Save the (real) clipboard
-
-	Clipboard := "" ; Erase the clipboard first, or else ClipWait does nothing
-	Clipboard := ClipboardData%clipboardID%
-	ClipWait, 2, 1 ; Wait 1s until the clipboard contains any kind of data
-	SendRaw, % Clipboard ; Was having an issue with ^v
-
-	Clipboard := oldClipboard ; Restore old (real) clipboard
 }
