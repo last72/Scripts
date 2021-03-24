@@ -29,4 +29,20 @@ or use lua macro method: writes a file to a local drive that indicates which but
 
 Corsiar International1-5 keys seems to work fine. It is 40 extra macros
 
+
+I do not have a keyboard with F13-24 so i need to edit the xml file and import back
+
+I'm making excel file like this
+
+| Index | Corsiar Input | Corsair Output | Corsair Output Modifier | AHK |
+|-------|---------------|----------------|-------------------------|-----|
+| 1     | F1            | F13            | None                    | ??  |
+| 2     | F2            | F13            | Ctrl                    | ??  |
+| 3     | F3            | F13            | Alt                     | ??  |
+| 4     | F4            | F13            | Ctrl + Alt              | ??  |
+| 5     | F5            | F13            | Shift                   | ??  |
+| 6     | F6            | F13            | Ctrl + Shift            | ??  |
+| 7     | F7            | F13            | Alt + Shift             | ??  |
+| 8     | F8            | F13            | Ctrl + Alt + Shift      | ??  |
+
 Ref: https://github.com/TaranVH/2nd-keyboard/tree/master/Corsair

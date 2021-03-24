@@ -2055,96 +2055,15 @@
 																		<second>Click</second>
 																	</second>
 																</value1>
-																<value2>
-																	<first>
-																		<polymorphic_id>27</polymorphic_id>
-																		<ptr_wrapper>
-																			<id>2147483663</id>
-																			<data>
-																				<base>
-																					<name>Keystroke 1 (1)</name>
-																					<id>{414cf73f-2b35-4180-bc9d-9c250d0fb535}</id>
-																					<repeatOptions>
-																						<repeatCount>1</repeatCount>
-																						<repeatMode>NoRepeat</repeatMode>
-																						<delay>0</delay>
-																						<delayMode>Constant</delayMode>
-																						<randomDelayFrom>0</randomDelayFrom>
-																						<randomDelayTo>0</randomDelayTo>
-																					</repeatOptions>
-																					<executionHints>
-																						<terminateOnSecondExec>false</terminateOnSecondExec>
-																						<restartOnSecondExec>false</restartOnSecondExec>
-																						<execHint>OnBoth</execHint>
-																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
-																					</executionHints>
-																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
-																					<actionSoundPath></actionSoundPath>
-																					<attachedActions size="dynamic"/>
-																				</base>
-																				<keyName></keyName>
-																				<keyStroke size="dynamic">
-																					<value0>LeftCtrl</value0>
-																					<value1>LeftShift</value1>
-																					<value2>LeftAlt</value2>
-																					<value3>F5</value3>
-																				</keyStroke>
-																				<holdingKeyEnabled>false</holdingKeyEnabled>
-																				<holdingKeyType>OnPress</holdingKeyType>
-																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
-																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
-																			</data>
-																		</ptr_wrapper>
-																	</first>
-																	<second>
-																		<first></first>
-																		<second>Click</second>
-																	</second>
-																</value2>
-																<value3>
-																	<first>
-																		<polymorphic_id>27</polymorphic_id>
-																		<ptr_wrapper>
-																			<id>2147483664</id>
-																			<data>
-																				<base>
-																					<name>Keystroke 1</name>
-																					<id>{7fcbf0c5-5962-0ad2-1d28-9d4281e11c8d}</id>
-																					<repeatOptions>
-																						<repeatCount>1</repeatCount>
-																						<repeatMode>NoRepeat</repeatMode>
-																						<delay>0</delay>
-																						<delayMode>Constant</delayMode>
-																						<randomDelayFrom>0</randomDelayFrom>
-																						<randomDelayTo>0</randomDelayTo>
-																					</repeatOptions>
-																					<executionHints>
-																						<terminateOnSecondExec>false</terminateOnSecondExec>
-																						<restartOnSecondExec>false</restartOnSecondExec>
-																						<execHint>OnBoth</execHint>
-																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
-																					</executionHints>
-																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
-																					<actionSoundPath></actionSoundPath>
-																					<attachedActions size="dynamic"/>
-																				</base>
-																				<keyName></keyName>
-																				<keyStroke size="dynamic">
-																					<value0>LeftCtrl</value0>
-																					<value1>F1</value1>
-																				</keyStroke>
-																				<holdingKeyEnabled>false</holdingKeyEnabled>
-																				<holdingKeyType>OnPress</holdingKeyType>
-																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
-																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
-																			</data>
-																		</ptr_wrapper>
-																	</first>
-																	<second>
-																		<first>F1</first>
-																		<second>Click</second>
-																	</second>
-																</value3>
+																<value2> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483663</id> <data> <base> <name>PowerAppsMainMacro1</name> <id>{414cf73f-2b35-4180-bc9d-9c250d0fb535}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>F13</value0></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value2>
+																<value3> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483664</id> <data> <base> <name>PowerAppsMainMacro2</name> <id>{32d6b8d2-6c92-0214-3be7-6637c378521c}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>F13</value1></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value3>
+																<value4> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483665</id> <data> <base> <name>PowerAppsMainMacro3</name> <id>{8429e02c-2af0-718a-0b67-0e6a51236d1f}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftAlt</value0> <value1>F13</value1></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value4>
+																<value5> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483666</id> <data> <base> <name>PowerAppsMainMacro4</name> <id>{74eb7793-1083-4fb6-50d6-8bb657a61168}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>LeftAlt</value1> <value2>F13</value2></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value5>
+																<value6> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483667</id> <data> <base> <name>PowerAppsMainMacro5</name> <id>{ecc7938f-59da-89a3-6bbf-3644105830f5}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftShift</value0> <value1>F13</value1></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value6>
+																<value7> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483668</id> <data> <base> <name>PowerAppsMainMacro6</name> <id>{d46732d4-1d4b-049e-1881-8b9125b63a88}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>LeftShift</value1> <value2>F13</value2></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value7>
+																<value8> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483669</id> <data> <base> <name>PowerAppsMainMacro7</name> <id>{1e4c071e-a13e-93cd-4c88-a1c80a7c8dde}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftShift</value0> <value1>LeftAlt</value1> <value2>F13</value2></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value8>
+																<value9> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483670</id> <data> <base> <name>PowerAppsMainMacro8</name> <id>{295c8f14-a777-9611-1623-c37c2bdf6ff0}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>LeftShift</value1> <value2>LeftAlt</value2> <value3>F13</value3> </keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value9>
+																
 															</actions>
 														</data>
 													</ptr_wrapper>
@@ -5265,4 +5184,3 @@
 		<dpiModes size="dynamic"/>
 	</value0>
 </cereal>
-
