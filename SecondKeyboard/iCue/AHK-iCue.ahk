@@ -76,32 +76,32 @@ return
 
 ; Index: 15. Corsair input: 2
 !+F14::
-Send, MACRO EMPTY
+PAProperty("Width")
 return
 
 ; Index: 16. Corsair input: 3
 ^!+F14::
-Send, MACRO EMPTY
+PAProperty("Font")
 return
 
 ; Index: 17. Corsair input: 4
 F15::
-Send, MACRO EMPTY
+PAProperty("BorderColor")
 return
 
 ; Index: 18. Corsair input: 5
 ^F15::
-Send, MACRO EMPTY
+PAProperty("HoverBorderColor")
 return
 
 ; Index: 19. Corsair input: 6
 !F15::
-Send, MACRO EMPTY
+PAProperty("DisabledBorderColor")
 return
 
 ; Index: 20. Corsair input: 7
 ^!F15::
-Send, MACRO EMPTY
+PAProperty("PressedBorderColor")
 return
 
 ; Index: 21. Corsair input: 8
@@ -136,32 +136,32 @@ return
 
 ; Index: 27. Corsair input: w
 !F16::
-Send, MACRO EMPTY
+PAProperty("Height")
 return
 
 ; Index: 28. Corsair input: e
 ^!F16::
-Send, MACRO EMPTY
+PAProperty("FontWeight")
 return
 
 ; Index: 29. Corsair input: r
 +F16::
-Send, MACRO EMPTY
+PAProperty("BorderThickness")
 return
 
 ; Index: 30. Corsair input: t
 ^+F16::
-Send, MACRO EMPTY
+PAProperty("HoverColor")
 return
 
 ; Index: 31. Corsair input: y
 !+F16::
-Send, MACRO EMPTY
+PAProperty("DisabledColor")
 return
 
 ; Index: 32. Corsair input: u
 ^!+F16::
-Send, MACRO EMPTY
+PAProperty("PressedColor")
 return
 
 ; Index: 33. Corsair input: i
@@ -186,32 +186,32 @@ return
 
 ; Index: 37. Corsair input: s
 +F17::
-Send, MACRO EMPTY
+PAProperty("Size")
 return
 
 ; Index: 38. Corsair input: d
 ^+F17::
-Send, MACRO EMPTY
+PAProperty("Color")
 return
 
 ; Index: 39. Corsair input: f
 !+F17::
-Send, MACRO EMPTY
+PAProperty("Default")
 return
 
 ; Index: 40. Corsair input: g
 ^!+F17::
-Send, MACRO EMPTY
+PAProperty("HoverFill")
 return
 
 ; Index: 41. Corsair input: h
 F18::
-Send, MACRO EMPTY
+PAProperty("DisabledFill")
 return
 
 ; Index: 42. Corsair input: j
 ^F18::
-Send, MACRO EMPTY
+PAProperty("PressedFill")
 return
 
 ; Index: 43. Corsair input: k
@@ -231,27 +231,27 @@ return
 
 ; Index: 46. Corsair input: x
 ^+F18::
-Send, MACRO EMPTY
+PAProperty("Text")
 return
 
 ; Index: 47. Corsair input: c
 !+F18::
-Send, MACRO EMPTY
+PAProperty("Fill")
 return
 
 ; Index: 48. Corsair input: v
 ^!+F18::
-Send, MACRO EMPTY
+PAProperty("DisplayMode")
 return
 
 ; Index: 49. Corsair input: b
 F19::
-Send, MACRO EMPTY
+PAProperty("FocusedBorderColor")
 return
 
 ; Index: 50. Corsair input: n
 ^F19::
-Send, MACRO EMPTY
+PAProperty("FocusedBorderThickness")
 return
 
 ; Index: 51. Corsair input: m
