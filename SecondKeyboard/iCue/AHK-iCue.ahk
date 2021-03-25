@@ -71,7 +71,7 @@ return
 
 ; Index: 14. Corsair input: 1
 ^+F14::
-Send, MACRO EMPTY
+PAProperty("X")
 return
 
 ; Index: 15. Corsair input: 2
@@ -131,7 +131,7 @@ return
 
 ; Index: 26. Corsair input: q
 ^F16::
-Send, MACRO EMPTY
+PAProperty("Y")
 return
 
 ; Index: 27. Corsair input: w
@@ -181,7 +181,7 @@ return
 
 ; Index: 36. Corsair input: a
 ^!F17::
-Send, MACRO EMPTY
+PAProperty("Visible")
 return
 
 ; Index: 37. Corsair input: s
@@ -226,7 +226,7 @@ return
 
 ; Index: 45. Corsair input: z
 +F18::
-Send, MACRO EMPTY
+PAProperty("OnSelect")
 return
 
 ; Index: 46. Corsair input: x
