@@ -193,6 +193,8 @@ return
 MouseClickAndReturn(580, 950)
 return
 
+
+
 ; F13 - F24
 
 ; OnSelectProperty
@@ -210,30 +212,6 @@ return
 F14::
 PAProperty("Width")
 Send, Parent.Width - Self.X
-return
-
-; Press Win + 8
-; VS COde
-F15::
-Send #8
-return
-
-; Press Win + 7
-; Teams
-^F15::
-Send #7
-return
-
-; Press Win + 3
-; Edge
-F16::
-Send #3
-return
-
-; Press Win + 6
-; OneNote
-F17::
-Send #6
 return
 
 ; Lime

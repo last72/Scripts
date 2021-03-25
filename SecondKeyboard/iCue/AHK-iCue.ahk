@@ -3,44 +3,45 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+
 ; Index: 1. Corsair input: F1
 F13::
-Send, Macro001
+Send, #1
 return
 
 ; Index: 2. Corsair input: F2
 ^F13::
-Send, Macro001
+Send, #2
 return
 
 ; Index: 3. Corsair input: F3
 !F13::
-Send, Macro001
+Send, #3
 return
 
 ; Index: 4. Corsair input: F4
 ^!F13::
-Send, Macro001
+Send, #4
 return
 
 ; Index: 5. Corsair input: F5
 +F13::
-Send, Macro001
+Send, #5
 return
 
 ; Index: 6. Corsair input: F6
 ^+F13::
-Send, Macro001
+Send, #6
 return
 
 ; Index: 7. Corsair input: F7
 !+F13::
-Send, Macro001
+Send, #7
 return
 
 ; Index: 8. Corsair input: F8
 ^!+F13::
-Send, Macro001
+Send, #8
 return
 
 ; Index: 9. Corsair input: F9
@@ -314,23 +315,38 @@ Send, Macro001
 return
 
 ; Index: 63. Corsair input: left shift
+; Reset
 !+F20::
-Send, Macro001
+Send, Reset()`;
+Send, {Left}
+Send, {Left}
 return
 
 ; Index: 64. Corsair input: left control
+; Copy Control Name
 ^!+F20::
-Send, Macro001
+MouseGetPos, StartX, StartY
+MouseClick, , 1620, 290
+Send, ^a
+Send, ^c
+MouseMove, StartX, StartY
 return
 
 ; Index: 65. Corsair input: windows key
+; UpdateContext
 F21::
-Send, Macro001
+Send, UpdateContext({{}{}});
+Send, {Left}
+Send, {Left}
+Send, {Left}
 return
 
 ; Index: 66. Corsair input: left alt
+; ClearCollect
 ^F21::
-Send, Macro001
+Send, ClearCollect()`;
+Send, {Left}
+Send, {Left}
 return
 
 ; Index: 67. Corsair input: spacebar
@@ -345,7 +361,7 @@ return
 
 ; Index: 69. Corsair input: fn
 +F21::
-Send, Macro001
+Send, Blank
 return
 
 ; Index: 70. Corsair input: menu key
@@ -430,12 +446,26 @@ return
 
 ; Index: 86. Corsair input: down
 ^+F23::
-Send, Macro001
+PAProperty("Y")
+Send, ^v
+Send, .Y{Space}{+}{Space}
+Send, ^v
+Send, .Height
+PAProperty("X")
+Send, ^v
+Send, .X
 return
 
 ; Index: 87. Corsair input: right
 !+F23::
-Send, Macro001
+PAProperty("Y")
+Send, ^v
+Send, .Y
+PAProperty("X")
+Send, ^v
+Send, .X{Space}{+}{Space}
+Send, ^v
+Send, .Width
 return
 
 ; Index: 88. Corsair input: numlock
@@ -564,3 +594,18 @@ Send, Macro001
 return
 
 
+; PowerApps functions
+
+; This will open property part of a control. First parameter is name of the property (i.e. "OnSelect")
+; The location has been hardcode. Windows scaling on High DPI display might impact this.
+PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
+{
+    MouseGetPos, StartX, StartY
+	MouseClick, , PropertyX, PropertyY
+    Send, ^a
+    Send, %PropertyName%
+    MouseClick, , FormulaX, PropertyY
+    Send, ^a
+    MouseMove, StartX, StartY
+    return
+}
