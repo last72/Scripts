@@ -380,8 +380,9 @@ Send, MACRO EMPTY
 return
 
 ; Index: 73. Corsair input: enter
+; Copy Formula
 F22::
-Send, MACRO EMPTY
+PACopyFormulaText()
 return
 
 ; Index: 74. Corsair input: backspace
@@ -440,11 +441,18 @@ Send, MACRO EMPTY
 return
 
 ; Index: 85. Corsair input: left
+; Set X and Width Same
 +F23::
-Send, MACRO EMPTY
+PAProperty("X")
+Send, ^v
+Send, .X
+PAProperty("Width")
+Send, ^v
+Send, .Width
 return
 
 ; Index: 86. Corsair input: down
+; Attach to buttom
 ^+F23::
 PAProperty("Y")
 Send, ^v
@@ -457,6 +465,7 @@ Send, .X
 return
 
 ; Index: 87. Corsair input: right
+; Attach to Right
 !+F23::
 PAProperty("Y")
 Send, ^v
@@ -553,7 +562,7 @@ return
 
 ; Index: 104. Corsair input: Numpad enter
 ^!+SC073::
-Send, MACRO EMPTY
+PACopyFormulaText()
 return
 
 ; Index: 105. Corsair input: Light key
@@ -562,8 +571,9 @@ Send, MACRO EMPTY
 return
 
 ; Index: 106. Corsair input: Winkey Lock key
+; Lock Windwos
 ^SC070::
-Send, MACRO EMPTY
+DllCall("LockWorkStation")
 return
 
 ; Index: 107. Corsair input: 0
@@ -611,6 +621,15 @@ PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
     Send, ^a
     MouseMove, StartX, StartY
     return
+}
+
+PACopyFormulaText(FormulaX:= 500, FormulaY := 220)
+{
+	MouseGetPos, StartX, StartY
+	MouseClick, , FormulaX, FormulaY
+	Send, ^a
+	Send, ^c
+	MouseMove, StartX, StartY
 }
 
 
