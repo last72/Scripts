@@ -55,13 +55,55 @@ Send, MACRO EMPTY
 return
 
 ; Index: 11. Corsair input: F11
+; 'Send backward' 20 times
 !F14::
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
+Send, ^[
 Send, MACRO EMPTY
+
 return
 
 ; Index: 12. Corsair input: F12
+; 'Bring forward' 20 times
 ^!F14::
-Send, MACRO EMPTY
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
+Send, ^]
 return
 
 ; Index: 13. Corsair input: `
