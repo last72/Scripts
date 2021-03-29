@@ -326,7 +326,8 @@ return
 ; Copy Control Name
 ^!+F20::
 MouseGetPos, StartX, StartY
-MouseClick, , 1620, 290
+WinGetPos, WindowX, WindowY, WindowW, WindowH, A
+MouseClick, , WindowW - 300, 290
 Send, ^a
 Send, ^c
 MouseMove, StartX, StartY

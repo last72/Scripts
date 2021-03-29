@@ -28,7 +28,8 @@ return
 ; Name Text
 F6::
 MouseGetPos, StartX, StartY
-MouseClick, , 1620, 290
+WinGetPos, WindowX, WindowY, WindowW, WindowH, A
+MouseClick, , WindowW - 300, 290
 Send, ^a
 MouseMove, StartX, StartY
 return
@@ -189,8 +190,11 @@ MouseClickAndReturn(580, 360)
 return
 
 ;Expend PowerApps formula bar
+; 950 for 1080p display
+; 1310 for 1440p display
 !2::
-MouseClickAndReturn(580, 950)
+	WinGetPos, WindowX, WindowY, WindowW, WindowH, A
+	MouseClickAndReturn(580, WindowH - 90)
 return
 
 
@@ -221,10 +225,13 @@ PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
 }
 
 ; This will open formula bar
-ExpendFormulaMenu(MenuX := 1902, MenuY := 219)
+; 1902 for 1080p display
+; 2542 for 1440p display
+ExpendFormulaMenu(MenuX := 2542, MenuY := 219)
 {
 	MouseGetPos, StartX, StartY
-	MouseClick, , MenuX, MenuY
+	WinGetPos, WindowX, WindowY, WindowW, WindowH, A
+	MouseClick, , WindowW - 18, MenuY
 	MouseMove, StartX, StartY
 }
 
