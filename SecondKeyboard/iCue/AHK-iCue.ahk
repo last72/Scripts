@@ -502,7 +502,7 @@ return
 
 ; Index: 92. Corsair input: Numpad 0
 ^!F24::
-Send, MACRO EMPTY
+Send,ThisItem.
 return
 
 ; Index: 93. Corsair input: Numpad 1
@@ -567,7 +567,9 @@ return
 
 ; Index: 105. Corsair input: Light key
 SC070::
-Send, MACRO EMPTY
+Run, ms-penworkspace://Capture
+Sleep, 1000
+WinMaximize,A
 return
 
 ; Index: 106. Corsair input: Winkey Lock key
