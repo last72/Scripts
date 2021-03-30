@@ -353,7 +353,7 @@ return
 
 ; Index: 62. Corsair input: caps lock
 ^+F20::
-Send, MACRO EMPTY
+Send, ^w
 return
 
 ; Index: 63. Corsair input: left shift
@@ -409,12 +409,12 @@ return
 
 ; Index: 70. Corsair input: menu key
 ^+F21::
-Send, MACRO EMPTY
+ScrollUpManyTimes()
 return
 
 ; Index: 71. Corsair input: righ control
 !+F21::
-Send, MACRO EMPTY
+ScrollDownManyTimes()
 return
 
 ; Index: 72. Corsair input: right shift
@@ -725,4 +725,25 @@ Paste(clipboardID) {
 	SendRaw, % Clipboard ; Was having an issue with ^v
 
 	Clipboard := oldClipboard ; Restore old (real) clipboard
+}
+
+ScrollUpManyTimes()
+{
+	MouseClickAndReturn(333, 370)
+	; MouseClick, , 333, 370
+}
+
+ScrollDownManyTimes()
+{
+	WinGetPos, WindowX, WindowY, WindowW, WindowH, A
+	MouseClickAndReturn(333, WindowH - 20)
+	; MouseClick, , 333, WindowH - 20
+}
+
+; Mouse Click
+MouseClickAndReturn(ClickX , ClickY)
+{
+	MouseGetPos, StartX, StartY
+	MouseClick, , ClickX, ClickY
+	MouseMove, StartX, StartY
 }
