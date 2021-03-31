@@ -107,8 +107,9 @@ Send, ^]
 return
 
 ; Index: 13. Corsair input: `
+; Kill window 
 +F14::
-Send, MACRO EMPTY
+WinClose, A
 return
 
 ; Index: 14. Corsair input: 1
@@ -347,11 +348,13 @@ Send, MACRO EMPTY
 return
 
 ; Index: 61. Corsair input: tab
+; New tab
 +F20::
-Send, MACRO EMPTY
+Send, ^t
 return
 
 ; Index: 62. Corsair input: caps lock
+; Close tab
 ^+F20::
 Send, ^w
 return
