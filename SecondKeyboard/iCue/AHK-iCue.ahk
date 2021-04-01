@@ -463,22 +463,22 @@ return
 
 ; Index: 80. Corsair input: home
 ^!+F22::
-Copy(2)
+Send,Parent.X
 return
 
 ; Index: 81. Corsair input: end
 F23::
-Paste(2)
+Send,Parent.Width
 return
 
 ; Index: 82. Corsair input: page up
 ^F23::
-Copy(3)
+Send,Parent.Y
 return
 
 ; Index: 83. Corsair input: page down
 !F23::
-Paste(3)
+Send,Parent.Height
 return
 
 ; Index: 84. Corsair input: up
