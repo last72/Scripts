@@ -1,4 +1,5 @@
-#include < PS2Keyboard.h>
+
+#include <PS2Keyboard.h>
 
 const int DataPin = 8;
 const int IRQpin =  3;
@@ -21,12 +22,24 @@ void loop() {
     // check for some of the special keys
     if (c == PS2_ENTER) {
       Serial.println();
+    } else if (c == PS2_F1) {
+      Serial.print("[F1]");
+    } else if (c == PS2_F2) {
+      Serial.print("[F2]");
+    } else if (c == PS2_F3) {
+      Serial.print("[F3]");
+    } else if (c == PS2_F4) {
+      Serial.print("[F4]");
     } else if (c == PS2_TAB) {
       Serial.print("[Tab]");
     } else if (c == PS2_ESC) {
       Serial.print("[ESC]");
     } else if (c == PS2_PAGEDOWN) {
       Serial.print("[PgDn]");
+    } else if (c == PS2_INSERT) {
+      Serial.print("[Insert]");
+    } else if (c == PS2_HOME) {
+      Serial.print("[Home]");
     } else if (c == PS2_PAGEUP) {
       Serial.print("[PgUp]");
     } else if (c == PS2_LEFTARROW) {
@@ -46,4 +59,3 @@ void loop() {
     }
   }
 }
-
