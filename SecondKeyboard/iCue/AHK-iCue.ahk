@@ -46,32 +46,19 @@ return
 
 ; Index: 9. Corsair input: F9
 F14::
-Send, MACRO EMPTY
+PAProperty("Visible")
+Send,false
 return
 
 ; Index: 10. Corsair input: F10
 ^F14::
-Send, MACRO EMPTY
+PAProperty("Visible")
+Send,true
 return
 
 ; Index: 11. Corsair input: F11
-; 'Send backward' 20 times
+; 'Send backward' 5 times
 !F14::
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
 Send, ^[
 Send, ^[
 Send, ^[
@@ -82,23 +69,8 @@ Send, MACRO EMPTY
 return
 
 ; Index: 12. Corsair input: F12
-; 'Bring forward' 20 times
+; 'Bring forward' 5 times
 ^!F14::
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
 Send, ^]
 Send, ^]
 Send, ^]
@@ -437,18 +409,26 @@ Send, MACRO EMPTY
 return
 
 ; Index: 75. Corsair input: printscreen
+; Create a new Button
 !F22::
-Send, MACRO EMPTY
+MouseClickAndReturn(150, 145)
+Sleep, 200
+MouseClickAndReturn(280, 180)
 return
 
 ; Index: 76. Corsair input: scrolllock
 ^!F22::
-Send, MACRO EMPTY
+MouseClickAndReturn(150, 145)
+Sleep, 200
+MouseClickAndReturn(200, 180)
 return
 
 ; Index: 77. Corsair input: pausebreak
 +F22::
-Send, MACRO EMPTY
+MouseClickAndReturn(150, 145)
+Sleep, 200
+MouseClickAndReturn(550, 180)
+MouseClickAndReturn(550, 220)
 return
 
 ; Index: 78. Corsair input: insert
