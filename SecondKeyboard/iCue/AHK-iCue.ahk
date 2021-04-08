@@ -374,12 +374,12 @@ return
 
 ; Index: 68. Corsair input: right alt
 ^!F21::
-Send, MACRO EMPTY
+PAProperty("OnSelect")
 return
 
 ; Index: 69. Corsair input: fn
 +F21::
-Send, Blank
+PAProperty("OnChange")
 return
 
 ; Index: 70. Corsair input: menu key
@@ -568,7 +568,7 @@ return
 
 ; Index: 100. Corsair input: Numpad 8
 ^!SC073::
-Send,Line
+Send,Lime
 return
 
 ; Index: 101. Corsair input: Numpad 9
