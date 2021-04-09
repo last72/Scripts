@@ -592,8 +592,13 @@ PACopyFormulaText()
 return
 
 ; Index: 105. Corsair input: Light key
+; Full screen snip
 SC070::
-Run, ms-penworkspace://Capture
+Send #w
+Sleep, 100
+Send {Tab}{Tab}
+Sleep, 300
+Send {Space}
 Sleep, 1000
 WinMaximize,A
 return
