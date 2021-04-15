@@ -648,13 +648,16 @@ PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
 {
     MouseGetPos, StartX, StartY
 	MouseClick, , PropertyX, PropertyY
+	; Somewhere around here has issue that does not release ctrl/shift key
     Send, ^a
+	Sleep 100
     Send, %PropertyName%
     MouseClick, , FormulaX, PropertyY
     Send, ^a
+	Sleep 100
     MouseMove, StartX, StartY
     return
-}
+} 
 
 PACopyFormulaText(FormulaX:= 500, FormulaY := 220)
 {
