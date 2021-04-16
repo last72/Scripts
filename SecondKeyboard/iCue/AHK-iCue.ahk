@@ -584,7 +584,7 @@ return
 
 ; Index: 102. Corsair input: Numpad .
 ^+SC073::
-Send, MACRO EMPTY
+Send,Self.
 return
 
 ; Index: 103. Corsair input: Numpad +
