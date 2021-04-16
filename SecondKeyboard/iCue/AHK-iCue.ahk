@@ -311,7 +311,7 @@ return
 
 ; Index: 59. Corsair input: /
 !F20::
-Send, MACRO EMPTY
+PAProperty("OnVisible")
 return
 
 ; Index: 60. Corsair input: escape
@@ -595,9 +595,9 @@ return
 ; Full screen snip
 SC070::
 Send #w
-Sleep, 100
+Sleep, 500
 Send {Tab}{Tab}
-Sleep, 300
+Sleep, 500
 Send {Space}
 Sleep, 1000
 WinMaximize,A
