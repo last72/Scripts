@@ -470,9 +470,11 @@ return
 ; Set X and Width Same
 +F23::
 PAProperty("X")
+Sleep, 100
 Send, ^v
 Send, .X
 PAProperty("Width")
+Sleep, 100
 Send, ^v
 Send, .Width
 return
@@ -481,11 +483,13 @@ return
 ; Attach to buttom
 ^+F23::
 PAProperty("Y")
+Sleep, 100
 Send, ^v
 Send, .Y{Space}{+}{Space}
 Send, ^v
 Send, .Height
 PAProperty("X")
+Sleep, 100
 Send, ^v
 Send, .X
 return
@@ -494,9 +498,11 @@ return
 ; Attach to Right
 !+F23::
 PAProperty("Y")
+Sleep, 100
 Send, ^v
 Send, .Y
 PAProperty("X")
+Sleep, 100
 Send, ^v
 Send, .X{Space}{+}{Space}
 Send, ^v
