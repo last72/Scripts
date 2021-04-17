@@ -1,40 +1,52 @@
-// Required libraries
 #include <Keyboard.h>
-#include <PS2Keyboard.h>
 
-// Initialise variables.
-const int DataPin = 8; // Green
-const int IRQpin =  3; // White
-// Red goes to Ground.
-// Yellow goes to 5V.
+#include <PS2KeyAdvanced.h>
 
-PS2Keyboard PS2Keyboard;
+/* Keyboard constants  Change to suit your Arduino
+   define pins used for data and clock from keyboard */
+#define DATAPIN 8
+#define IRQPIN  3
 
-void setup() {
-  delay(1000);
-  PS2Keyboard.begin(DataPin, IRQpin);
+uint16_t c;
+
+PS2KeyAdvanced PS2KeyAdvanced;
+
+
+void setup( )
+{
+  // Configure the keyboard library
+  PS2KeyAdvanced.begin( DATAPIN, IRQPIN );
+  Serial.begin( 115200 );
+  Serial.println( "PS2 Advanced Key Simple Test:" );
   
   // initialize control over the keyboard:
   Keyboard.begin();
-} // End of setup()
+}
 
-void loop() {
-  if (PS2Keyboard.available()) {
-    
-    // read the next key
-    switch( PS2Keyboard.read() ) {
-      case "PS2_F1":
-        Keyboard.press('O');
-        Keyboard.releaseAll();
-        Keyboard.press('K');
-        Keyboard.releaseAll();
-        break;
-      case '1':
-        Keyboard.press('D');
-        Keyboard.releaseAll();
-        Keyboard.press('J');
-        Keyboard.releaseAll();
-        break;
-    } // End of switch
-  } // End of if
-} // End of loop()
+
+void loop( )
+{
+if( PS2KeyAdvanced.available( ) )
+  {
+  // read the next key
+  c = PS2KeyAdvanced.read( );
+  Serial.println( c );
+  
+
+  switch (c) {
+    case 90:
+      Serial.println("YOUPRESSED z");
+      Keyboard.press('O');
+      Keyboard.releaseAll();
+      Keyboard.press('K');
+      Keyboard.releaseAll();
+      break;
+    case 88:
+      Keyboard.press('d');
+      Keyboard.releaseAll();
+      Keyboard.press('K');
+      Keyboard.releaseAll();
+      break;
+  }
+  }
+}
