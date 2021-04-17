@@ -1,61 +1,40 @@
-
+// Required libraries
+#include <Keyboard.h>
 #include <PS2Keyboard.h>
 
-const int DataPin = 8;
-const int IRQpin =  3;
+// Initialise variables.
+const int DataPin = 8; // Green
+const int IRQpin =  3; // White
+// Red goes to Ground.
+// Yellow goes to 5V.
 
-PS2Keyboard keyboard;
+PS2Keyboard PS2Keyboard;
 
 void setup() {
   delay(1000);
-  keyboard.begin(DataPin, IRQpin);
-  Serial.begin(9600);
-  Serial.println("Keyboard Test:");
-}
+  PS2Keyboard.begin(DataPin, IRQpin);
+  
+  // initialize control over the keyboard:
+  Keyboard.begin();
+} // End of setup()
 
 void loop() {
-  if (keyboard.available()) {
+  if (PS2Keyboard.available()) {
     
     // read the next key
-    char c = keyboard.read();
-    
-    // check for some of the special keys
-    if (c == PS2_ENTER) {
-      Serial.println();
-    } else if (c == PS2_F1) {
-      Serial.print("[F1]");
-    } else if (c == PS2_F2) {
-      Serial.print("[F2]");
-    } else if (c == PS2_F3) {
-      Serial.print("[F3]");
-    } else if (c == PS2_F4) {
-      Serial.print("[F4]");
-    } else if (c == PS2_TAB) {
-      Serial.print("[Tab]");
-    } else if (c == PS2_ESC) {
-      Serial.print("[ESC]");
-    } else if (c == PS2_PAGEDOWN) {
-      Serial.print("[PgDn]");
-    } else if (c == PS2_INSERT) {
-      Serial.print("[Insert]");
-    } else if (c == PS2_HOME) {
-      Serial.print("[Home]");
-    } else if (c == PS2_PAGEUP) {
-      Serial.print("[PgUp]");
-    } else if (c == PS2_LEFTARROW) {
-      Serial.print("[Left]");
-    } else if (c == PS2_RIGHTARROW) {
-      Serial.print("[Right]");
-    } else if (c == PS2_UPARROW) {
-      Serial.print("[Up]");
-    } else if (c == PS2_DOWNARROW) {
-      Serial.print("[Down]");
-    } else if (c == PS2_DELETE) {
-      Serial.print("[Del]");
-    } else {
-      
-      // otherwise, just print all normal characters
-      Serial.print(c);
-    }
-  }
-}
+    switch( PS2Keyboard.read() ) {
+      case "PS2_F1":
+        Keyboard.press('O');
+        Keyboard.releaseAll();
+        Keyboard.press('K');
+        Keyboard.releaseAll();
+        break;
+      case '1':
+        Keyboard.press('D');
+        Keyboard.releaseAll();
+        Keyboard.press('J');
+        Keyboard.releaseAll();
+        break;
+    } // End of switch
+  } // End of if
+} // End of loop()
