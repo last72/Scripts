@@ -1,5 +1,7 @@
+
 // Required libraries
 #include <Keyboard.h>
+#include <Mouse.h>
 #include <PS2KeyAdvanced.h>
 
 // Initialise variables.
@@ -23,8 +25,13 @@ void setup( )
   Serial.println( "PS2 Advanced Key Simple Test:" );
   
   // initialize control over the keyboard:
-  Keyboard.begin();
   Keyboard.end();
+  Keyboard.begin();
+
+  // initialize control over the mouse:
+  Mouse.end();
+  Mouse.begin();
+
 } // End of setup()
 
 // loop()
@@ -69,18 +76,31 @@ if( PS2KeyAdvanced.available( ) )
         Keyboard.end();
         reboot();
         break;
-      case 353:
+      case 353: // F1
         Keyboard.print("F1");
         break;
-      case 354:
+      case 354: // F2
         Keyboard.print("F2");
         break;
-      case 355:
+      case 355: // F3
         Keyboard.write(176);
         break;
-      case 356:
+      case 356: // F4
         Keyboard.print("4560");
-        break;    } // End of switch
+        break;
+      case 357: // F5
+        Mouse.move(10, 0, 0);
+        break;   
+      case 358: // F6
+        Mouse.move(0, 10, 0);
+        break;   
+      case 359: // F7
+        Mouse.move(-1000, -1000, 0);
+        break;    
+      case 360: // F8
+        Keyboard.print("4560");
+        break;
+     } // End of switch
   } // End of if()
 } // End of loop()
 
