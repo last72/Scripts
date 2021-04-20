@@ -23,6 +23,8 @@ Current Setup:
 - Other input: Wacom CTH-480
 - Monitor: 1920 * 1080 resolution. Windows scaling 100%
 
+![Desk](image/DeskSetup.jpg "Title")
+
 ## Functions
 
 ### PAProperty
