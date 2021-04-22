@@ -281,7 +281,7 @@ return
 
 ; Index: 53. Corsair input: ]
 +F19::
-Send, MACRO EMPTY
+run calc.exe
 return
 
 ; Index: 54. Corsair input: \
