@@ -286,7 +286,7 @@ return
 
 ; Index: 54. Corsair input: \
 ^+F19::
-Send, MACRO EMPTY
+Run msedge.exe "https://www.innolabcafe.com.au/my-account/" " --new-window --profile-directory=Default"
 return
 
 ; Index: 55. Corsair input: ;
