@@ -291,14 +291,12 @@ return
 
 ; Index: 55. Corsair input: ;
 !+F19::
-WinGetPos, WindowX, WindowY, WindowW, WindowH, A
-MouseClickAndReturn(72, WindowH - 20)
+Send, MACRO EMPTY
 return
 
-; Index: 56. Corsair input: '
+; Index: 56. Corsair input: 
 ^!+F19::
-WinGetPos, WindowX, WindowY, WindowW, WindowH, A
-MouseClickAndReturn(WindowW - 50, WindowH - 20)
+Send, MACRO EMPTY
 return
 
 ; Index: 57. Corsair input: ,
@@ -414,21 +412,21 @@ return
 ; Create a new Button
 !F22::
 MouseClickAndReturn(150, 145)
-Sleep, 350
+Sleep, 200
 MouseClickAndReturn(280, 180)
 return
 
 ; Index: 76. Corsair input: scrolllock
 ^!F22::
 MouseClickAndReturn(150, 145)
-Sleep, 350
+Sleep, 200
 MouseClickAndReturn(200, 180)
 return
 
 ; Index: 77. Corsair input: pausebreak
 +F22::
 MouseClickAndReturn(150, 145)
-Sleep, 350
+Sleep, 200
 MouseClickAndReturn(550, 180)
 MouseClickAndReturn(550, 220)
 return
