@@ -303,7 +303,11 @@ return
 
 ; Index: 57. Corsair input: ,
 F20::
-Send, MACRO EMPTY
+MouseGetPos, StartX, StartY
+MouseClick, , StartX, StartY
+Sleep, 150
+MouseClick, , StartX, StartY + 130
+MouseMove, StartX, StartY
 return
 
 ; Index: 58. Corsair input: .
