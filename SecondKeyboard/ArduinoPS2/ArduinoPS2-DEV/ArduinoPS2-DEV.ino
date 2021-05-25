@@ -1,6 +1,7 @@
+#include <Keyboard.h>
+
 
 // Required libraries
-#include <Keyboard.h>
 #include <Mouse.h>
 #include <PS2KeyAdvanced.h>
 
@@ -45,6 +46,32 @@ if( PS2KeyAdvanced.available( ) )
     Serial.println( c );
 
     switch (c) {
+      case 33: // Numpad 1
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press('c');
+        Keyboard.releaseAll();
+        break;
+      case 34: // Numpad 2
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press('v');
+        Keyboard.releaseAll();
+        break;
+      case 36: // Numpad 4
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('a');
+        Keyboard.releaseAll();
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('c');
+        Keyboard.releaseAll();
+        break;
+      case 37: // Numpad 5
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('a');
+        Keyboard.releaseAll();
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('v');
+        Keyboard.releaseAll();
+        break;
       case 90: // z
         Serial.println("YOUPRESSED z");
         Keyboard.press('O');
