@@ -13,6 +13,7 @@
 
 // Initialise variable for storing integer value
 uint16_t c;
+int i;
 
 // Initialise for PS2KeyAdvanced 
 PS2KeyAdvanced PS2KeyAdvanced;
@@ -56,6 +57,11 @@ if( PS2KeyAdvanced.available( ) )
         Keyboard.press('v');
         Keyboard.releaseAll();
         break;
+      case 35: // Numpad 3
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press('v');
+        Keyboard.releaseAll();
+        break;
       case 36: // Numpad 4
         Keyboard.press(KEY_LEFT_CTRL);
         Keyboard.write('a');
@@ -71,6 +77,19 @@ if( PS2KeyAdvanced.available( ) )
         Keyboard.press(KEY_LEFT_CTRL);
         Keyboard.write('v');
         Keyboard.releaseAll();
+        break;
+      case 38: // Numpad 6
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('a');
+        Keyboard.releaseAll();
+        break;
+      case 39: // Numpad 7
+        MoveMouseToTopLeft();
+        ClickProperty();
+        break;
+      case 40: // Numpad 8
+        MoveMouseToTopLeft();
+        ClickFormularBar();
         break;
       case 90: // z
         Serial.println("YOUPRESSED z");
@@ -116,13 +135,15 @@ if( PS2KeyAdvanced.available( ) )
         Keyboard.print("4560");
         break;
       case 357: // F5
-        Mouse.move(10, 0, 0);
+        MoveMouseToTopLeft();
+        ClickProperty();
         break;   
       case 358: // F6
-        Mouse.move(0, 10, 0);
+        MoveMouseToTopLeft();
+        ClickFormularBar();
         break;   
       case 359: // F7
-        Mouse.move(-1000, -1000, 0);
+        MoveMouseToTopLeft();
         break;    
       case 360: // F8
         Keyboard.print("4560");
@@ -130,6 +151,35 @@ if( PS2KeyAdvanced.available( ) )
      } // End of switch
   } // End of if()
 } // End of loop()
+
+void MoveMouseToTopLeft () {
+  for (i = 0; i < 20; i++) {// Loop to do "something" n times
+    Mouse.move(0, -127, 0);
+}
+for (i = 0; i < 30; i++) {// Loop to do "something" n times
+    Mouse.move(-127, 0, 0);
+}
+}
+
+void ClickProperty (){ // 100, 220
+  Mouse.move(100, 100, 0);
+  Mouse.move(0, 120, 0);
+  Mouse.click();
+  Keyboard.press(KEY_LEFT_CTRL);
+  Keyboard.write('a');
+  Keyboard.releaseAll();
+}
+
+void ClickFormularBar () { //100,100 500,220
+  Mouse.move(100, 100, 0);
+  Mouse.click();
+  Mouse.move(100, 120, 0);
+  Mouse.move(100, 0, 0);
+  Mouse.move(100, 0, 0);
+  Mouse.move(100, 0, 0);
+  Mouse.click();
+
+}
 
 
 void reboot() {
