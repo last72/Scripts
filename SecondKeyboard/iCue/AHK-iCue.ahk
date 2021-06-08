@@ -141,7 +141,11 @@ return
 
 ; Index: 25. Corsair input: =
 F16::
-Send, MACRO EMPTY
+MouseGetPos, StartX, StartY
+MouseClick, , StartX, StartY
+Sleep, 150
+MouseClick, , StartX, StartY + 70
+MouseMove, StartX, StartY
 return
 
 ; Index: 26. Corsair input: q
