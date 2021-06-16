@@ -408,9 +408,9 @@ Send, MACRO EMPTY
 return
 
 ; Index: 73. Corsair input: enter
-; Copy Formula
+; MYOB Timesheet
 F22::
-PACopyFormulaText()
+Run C:\Users\Woong\AppData\Local\Programs\MYOB\AccountRight\Huxley.Application.exe
 return
 
 ; Index: 74. Corsair input: backspace
