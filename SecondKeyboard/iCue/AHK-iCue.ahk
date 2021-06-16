@@ -289,8 +289,8 @@ run calc.exe
 return
 
 ; Index: 54. Corsair input: \
-^+F19::
-Run msedge.exe "https://www.innolabcafe.com.au/my-account/" " --new-window --profile-directory=Default"
+^+F19:: ; Coffee
+Run C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe "https://www.innolabcafe.com.au/my-account/" " --new-window --profile-directory=Default"
 return
 
 ; Index: 55. Corsair input: ;
