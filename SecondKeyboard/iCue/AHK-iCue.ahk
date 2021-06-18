@@ -131,15 +131,27 @@ return
 
 ; Index: 23. Corsair input: 0
 !+F15::
-Send, MACRO EMPTY
+MouseGetPos, StartX, StartY
+MouseClick, , StartX, StartY
 return
 
 ; Index: 24. Corsair input: -
+; Move screen up
 ^!+F15::
-Send, MACRO EMPTY
+Click, Down
+Sleep, 50
+Click, Up
+MouseGetPos, StartX, StartY
+Sleep, 150
+MouseMove, StartX + 30, StartY + 30
+Click, Down
+Sleep, 50
+Click, Up
+MouseMove, StartX, StartY
 return
 
 ; Index: 25. Corsair input: =
+; Remove Connector
 F16::
 MouseGetPos, StartX, StartY
 MouseClick, , StartX, StartY
