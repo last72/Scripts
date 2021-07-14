@@ -286,8 +286,11 @@ PAProperty("FocusedBorderThickness")
 return
 
 ; Index: 51. Corsair input: m
+;  Select
 !F19::
-Send, MACRO EMPTY
+Send, Select();
+Send, {Left}
+Send, {Left}
 return
 
 ; Index: 52. Corsair input: [
