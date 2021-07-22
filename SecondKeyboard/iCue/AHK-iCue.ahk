@@ -130,24 +130,15 @@ Send, MACRO EMPTY
 return
 
 ; Index: 23. Corsair input: 0
+; AdvancedTool
 !+F15::
-MouseGetPos, StartX, StartY
-MouseClick, , StartX, StartY
+MouseClickAndReturn(25, 500)
 return
 
 ; Index: 24. Corsair input: -
-; Move screen up
+; Tree view
 ^!+F15::
-Click, Down
-Sleep, 50
-Click, Up
-MouseGetPos, StartX, StartY
-Sleep, 150
-MouseMove, StartX + 30, StartY + 30
-Click, Down
-Sleep, 50
-Click, Up
-MouseMove, StartX, StartY
+MouseClickAndReturn(25, 310)
 return
 
 ; Index: 25. Corsair input: =

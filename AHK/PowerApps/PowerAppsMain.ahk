@@ -194,7 +194,13 @@ return
 ; 1310 for 1440p display
 !2::
 	WinGetPos, WindowX, WindowY, WindowW, WindowH, A
-	MouseClickAndReturn(580, WindowH - 90)
+	MouseClickAndReturn(580, WindowH - 160)
+return
+
+; PA Reset selection
+!3::
+	WinGetPos, WindowX, WindowY, WindowW, WindowH, A
+	MouseClickAndReturn(WindowW/2, WindowH - 80)
 return
 
 
