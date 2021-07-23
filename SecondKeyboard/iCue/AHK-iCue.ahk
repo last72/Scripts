@@ -121,12 +121,12 @@ return
 
 ; Index: 21. Corsair input: 8
 +F15::
-Send, MACRO EMPTY
+Send, UpdateContext({{}locPreloader: true{}}); // Show Preloader
 return
 
 ; Index: 22. Corsair input: 9
 ^+F15::
-Send, MACRO EMPTY
+Send, UpdateContext({{}locPreloader: false{}}); // Hide Preloader
 return
 
 ; Index: 23. Corsair input: 0
