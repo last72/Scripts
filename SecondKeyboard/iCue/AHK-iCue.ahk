@@ -312,12 +312,10 @@ MouseClickAndReturn(WindowW - 50, WindowH - 20)
 return
 
 ; Index: 57. Corsair input: ,
+; Double Quotes
 F20::
-MouseGetPos, StartX, StartY
-MouseClick, , StartX, StartY
-Sleep, 150
-MouseClick, , StartX, StartY + 130
-MouseMove, StartX, StartY
+Send, ""
+Send, {Left}
 return
 
 ; Index: 58. Corsair input: .
