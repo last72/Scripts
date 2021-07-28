@@ -282,7 +282,7 @@ return
 ; Index: 51. Corsair input: m
 ;  Select
 !F19::
-Send, Select()
+Send, Select();
 Send, {Left}
 Send, {Left}
 return
@@ -577,12 +577,16 @@ return
 
 ; Index: 97. Corsair input: Numpad 5
 SC073::
-Send, MACRO EMPTY
+; To bottom
+PAProperty("Y")
+Send, Parent.Height - Self.Height
 return
 
 ; Index: 98. Corsair input: Numpad 6
+; To right
 ^SC073::
-Send, MACRO EMPTY
+PAProperty("X")
+Send, Parent.Width - Self.Width
 return
 
 ; Index: 99. Corsair input: Numpad 7
