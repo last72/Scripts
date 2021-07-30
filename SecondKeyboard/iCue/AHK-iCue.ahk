@@ -611,7 +611,11 @@ return
 
 ; Index: 103. Corsair input: Numpad +
 !+SC073::
-Send, MACRO EMPTY
+Send, {Space}
+Send, {+}
+Send, {Space}
+Send, {Numpad2}
+Send, {Numpad0}
 return
 
 ; Index: 104. Corsair input: Numpad enter
