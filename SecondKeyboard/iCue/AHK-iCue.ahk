@@ -57,25 +57,15 @@ Send,true
 return
 
 ; Index: 11. Corsair input: F11
-; 'Send backward' 5 times
+; 'Send backward
 !F14::
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, ^[
-Send, MACRO EMPTY
-
+Send, ^+[
 return
 
 ; Index: 12. Corsair input: F12
-; 'Bring forward' 5 times
+; 'Bring forward
 ^!F14::
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
-Send, ^]
+Send, ^+]
 return
 
 ; Index: 13. Corsair input: `
@@ -546,8 +536,9 @@ Send,Pink
 return
 
 ; Index: 91. Corsair input: Numpad -
+; Fit to screen
 !F24::
-Send, MACRO EMPTY
+Send, ^0
 return
 
 ; Index: 92. Corsair input: Numpad 0
