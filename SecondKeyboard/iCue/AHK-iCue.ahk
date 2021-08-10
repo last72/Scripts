@@ -6,41 +6,49 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Index: 1. Corsair input: F1
 F13::
+Sleep, 50
 Send, #1
 return
 
 ; Index: 2. Corsair input: F2
 ^F13::
+Sleep, 50
 Send, #2
 return
 
 ; Index: 3. Corsair input: F3
 !F13::
+Sleep, 50
 Send, #3
 return
 
 ; Index: 4. Corsair input: F4
 ^!F13::
+Sleep, 50
 Send, #4
 return
 
 ; Index: 5. Corsair input: F5
 +F13::
+Sleep, 50
 Send, #5
 return
 
 ; Index: 6. Corsair input: F6
 ^+F13::
+Sleep, 50
 Send, #6
 return
 
 ; Index: 7. Corsair input: F7
 !+F13::
+Sleep, 50
 Send, #7
 return
 
 ; Index: 8. Corsair input: F8
 ^!+F13::
+Sleep, 50
 Send, #8
 return
 
@@ -324,7 +332,7 @@ return
 
 ; Index: 60. Corsair input: escape
 ^!F20::
-Send, MACRO EMPTY
+Send, ^s
 return
 
 ; Index: 61. Corsair input: tab

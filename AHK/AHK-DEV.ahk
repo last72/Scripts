@@ -3,10 +3,9 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-WinGetPos, X, Y, W, H, A
-
 ; DEV
 F2::
-
-MouseMove, W - 100, 100
+MouseGetPos, StartX, StartY
+MouseMove, StartX - 100, StartY
+Send, #8
 return
