@@ -186,12 +186,16 @@ return
 
 ; Index: 33. Corsair input: i
 F17::
-Send, MACRO EMPTY
+; Y = 0
+PAProperty("Y")
+Send, {Numpad0}
 return
 
 ; Index: 34. Corsair input: o
 ^F17::
-Send, MACRO EMPTY
+; X = 0
+PAProperty("X")
+Send, {Numpad0}
 return
 
 ; Index: 35. Corsair input: p
@@ -238,13 +242,17 @@ PAProperty("PressedFill")
 return
 
 ; Index: 43. Corsair input: k
+; Stratch to bottom
 !F18::
-Send, MACRO EMPTY
+PAProperty("Height")
+Send, Parent.Height - Self.Y
 return
 
 ; Index: 44. Corsair input: l
+; Stratch to right
 ^!F18::
-Send, MACRO EMPTY
+PAProperty("Width")
+Send, Parent.Width - Self.X
 return
 
 ; Index: 45. Corsair input: z
@@ -637,6 +645,7 @@ return
 ; Index: 106. Corsair input: Winkey Lock key
 ; Lock Windwos
 ^SC070::
+Sleep, 200
 DllCall("LockWorkStation")
 return
 
