@@ -385,8 +385,8 @@ return
 
 ; Index: 64. Corsair input: left control
 ::ino|8456::
-Sleep, 100
-Send,InoMacroModifier keys and others
+Sleep, 500
+PACopyFormulaText()
 return
 
 ; Index: 65. Corsair input: windows key
@@ -630,3 +630,11 @@ Send,InoMacroNumPad
 return
 
 
+PACopyFormulaText(FormulaX:= 500, FormulaY := 220)
+{
+	MouseGetPos, StartX, StartY
+	MouseClick, , FormulaX, FormulaY
+	Send, ^a
+	Send, ^c
+	MouseMove, StartX, StartY
+}

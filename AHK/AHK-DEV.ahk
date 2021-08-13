@@ -6,14 +6,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 ; Index: 1. Arduino input: F1
-1::
-MsgBox, "1 pressed"
+F7 & F10::
+MsgBox, "Two pressed"
 return
 
-2::
-MsgBox, "2 pressed"
+
+F10 & F7::
+MsgBox, "Two pressed Revers"
 return
 
-3::
-MsgBox, "3 pressed"
-return
