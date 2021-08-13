@@ -3,9 +3,17 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-; DEV
-F2::
-MouseGetPos, StartX, StartY
-MouseMove, StartX - 100, StartY
-Send, #8
+
+
+; Index: 1. Arduino input: F1
+1::
+MsgBox, "1 pressed"
+return
+
+2::
+MsgBox, "2 pressed"
+return
+
+3::
+MsgBox, "3 pressed"
 return

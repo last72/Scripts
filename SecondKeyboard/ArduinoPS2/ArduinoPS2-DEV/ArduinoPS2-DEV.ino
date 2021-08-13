@@ -44,143 +44,72 @@ if( PS2KeyAdvanced.available( ) )
   {
     // read the next key
     c = PS2KeyAdvanced.read( );
-    Serial.println( c );
+    Serial.println(c);
 
-    switch (c) {
-      case 33: // Numpad 1
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.press('c');
-        Keyboard.releaseAll();
-        break;
-      case 34: // Numpad 2
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.press('v');
-        Keyboard.releaseAll();
-        break;
-      case 35: // Numpad 3
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.press('v');
-        Keyboard.releaseAll();
-        break;
-      case 36: // Numpad 4
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.write('a');
-        Keyboard.releaseAll();
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.write('c');
-        Keyboard.releaseAll();
-        break;
-      case 37: // Numpad 5
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.write('a');
-        Keyboard.releaseAll();
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.write('v');
-        Keyboard.releaseAll();
-        break;
-      case 38: // Numpad 6
-        Keyboard.press(KEY_LEFT_CTRL);
-        Keyboard.write('a');
-        Keyboard.releaseAll();
-        break;
-      case 39: // Numpad 7
-        MoveMouseToTopLeft();
-        ClickProperty();
-        break;
-      case 40: // Numpad 8
-        MoveMouseToTopLeft();
-        ClickFormularBar();
-        break;
-      case 90: // z
-        Serial.println("YOUPRESSED z");
-        Keyboard.press('O');
-        Keyboard.releaseAll();
-        Keyboard.press('K');
-        Keyboard.releaseAll();
-        break;
-      case 88: // x
-        Keyboard.press('d');
-        Keyboard.releaseAll();
-        Keyboard.press('K');
-        Keyboard.releaseAll();
-        break;
-      case 50:
-        Keyboard.press('3');
-        Keyboard.releaseAll();
-        Keyboard.press('0');
-        Keyboard.releaseAll();
-        break;
-      case 93:
-        Keyboard.begin();
-        break;
-      case 94:
-        Serial.println("Try reset");
-        Keyboard.press('R');
-        Keyboard.releaseAll();
-        Keyboard.releaseAll();
-        Keyboard.begin();
-        Keyboard.end();
-        reboot();
-        break;
-      case 353: // F1
-        Keyboard.print("F1");
-        break;
-      case 354: // F2
-        Keyboard.print("F2");
-        break;
-      case 355: // F3
-        Keyboard.write(176);
-        break;
-      case 356: // F4
-        Keyboard.print("4560");
-        break;
-      case 357: // F5
-        MoveMouseToTopLeft();
-        ClickProperty();
-        break;   
-      case 358: // F6
-        MoveMouseToTopLeft();
-        ClickFormularBar();
-        break;   
-      case 359: // F7
-        MoveMouseToTopLeft();
-        break;    
-      case 360: // F8
-        Keyboard.print("4560");
-        break;
-     } // End of switch
+    if(
+      c == 353 || c == 354 || c == 355 || c == 356 || c == 357 || c == 358 || c == 359 || c == 360 || c == 361 || c == 362 || c == 363 || c == 364 || c == 64 || c == 49 || c == 50 || c == 51 || c == 52 || c == 53 || c == 54 || c == 55 || c == 56 || c == 57 || c == 48 || c == 60 || c == 95 || c == 81 || c == 87 || c == 69 || c == 82 || c == 84 || c == 89 || c == 85 || c == 73 || c == 79 || c == 80 || c == 65 || c == 83 || c == 68 || c == 70 || c == 71 || c == 72 || c == 74 || c == 75 || c == 76 || c == 90 || c == 88 || c == 67 || c == 86 || c == 66 || c == 78 || c == 77 || c == 93 || c == 94 || c == 92 || c == 91 || c == 58 || c == 59 || c == 61 || c == 62 || c == 283 || c == 285 || c == 4355 || c == 16646 || c == 8456 || c == 780 || c == 2314 || c == 287 || c == 1291 || c == 781 || c == 270 || c == 8457 || c == 16647 || c == 286 || c == 284 || c == 260 || c == 258 || c == 6 || c == 281 || c == 282 || c == 273 || c == 274 || c == 275 || c == 276 || c == 279 || c == 277 || c == 280 || c == 278 || c == 257 || c == 47 || c == 46 || c == 45 || c == 32 || c == 33 || c == 34 || c == 35 || c == 36 || c == 37 || c == 38 || c == 39 || c == 40 || c == 41 || c == 42 || c == 44 || c == 43
+    ){
+      Keyboard.print("ino|");
+        PrintNumpad(c);
+    }
+
+//     } // End of switch
   } // End of if()
 } // End of loop()
 
-void MoveMouseToTopLeft () {
-  for (i = 0; i < 20; i++) {// Loop to do "something" n times
-    Mouse.move(0, -127, 0);
-}
-for (i = 0; i < 30; i++) {// Loop to do "something" n times
-    Mouse.move(-127, 0, 0);
-}
-}
+int PrintNumpad(int x){
 
-void ClickProperty (){ // 100, 220
-  Mouse.move(100, 100, 0);
-  Mouse.move(0, 120, 0);
-  Mouse.click();
-  Keyboard.press(KEY_LEFT_CTRL);
-  Keyboard.write('a');
-  Keyboard.releaseAll();
-}
+String stringOne = String(x); 
+int strlength = stringOne.length();
 
-void ClickFormularBar () { //100,100 500,220
-  Mouse.move(100, 100, 0);
-  Mouse.click();
-  Mouse.move(100, 120, 0);
-  Mouse.move(100, 0, 0);
-  Mouse.move(100, 0, 0);
-  Mouse.move(100, 0, 0);
-  Mouse.click();
+  for(int i =0; i < stringOne.length(); i++ ) {
+    char c = stringOne[i];
+    switch( c ){
+      case '1':
+        Keyboard.press(225);
+        Keyboard.release(225);
+        break;
+      case '2':
+        Keyboard.press(226);
+        Keyboard.release(226);
+        break;
+      case '3':
+        Keyboard.press(227);
+        Keyboard.release(227);
+        break;
+      case '4':
+        Keyboard.press(228);
+        Keyboard.release(228);
+        break;
+      case '5':
+        Keyboard.press(229);
+        Keyboard.release(229);
+        break;
+      case '6':
+        Keyboard.press(230);
+        Keyboard.release(230);
+        break;
+      case '7':
+        Keyboard.press(231);
+       Keyboard.release(231);
+        break;
+      case '8':
+        Keyboard.press(232);
+        Keyboard.release(232);
+        break;
+      case '9':
+        Keyboard.press(233);
+        Keyboard.release(233);
+        break;
+      case '0':
+        Keyboard.press(234);
+        Keyboard.release(234);
+        break;
+    }
+  } 
 
-}
-
+  Keyboard.println("");
+} // End of PrintNumpad
 
 void reboot() {
 }
