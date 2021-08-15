@@ -7,3 +7,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 PgDn::
 Send, {Numpad4}
 return
+
+; Page Up
+PgUp::
+Send, {NumLock}
+return
