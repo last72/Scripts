@@ -47,6 +47,34 @@ if( PS2KeyAdvanced.available( ) )
     // read the next key
     d = PS2KeyAdvanced.read();
 
+    Serial.println( d);
+
+  if(d == 49){
+
+    Keyboard.press(KEY_F13);
+    Keyboard.press(KEY_F14);
+    Keyboard.releaseAll();
+
+  }
+
+      if(d == 50){
+
+    Keyboard.press(KEY_F13);
+    Keyboard.press('a');
+    Keyboard.releaseAll();
+
+  }
+
+  
+      if(d == 51){
+
+    Keyboard.press(KEY_F13);
+    Keyboard.press('1');
+    Keyboard.releaseAll();
+
+  
+      }
+
   if(d == 353 or d == 354){
     
     Serial.println( d);
