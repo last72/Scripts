@@ -3,6 +3,12 @@
 Arduino Uno reads PS2 keyboard signal
 
 
+Send (F13-F24) + (F1-F24, 1234567890abcdefghijklmnopqrstuvwxyz-=[]\;',./)
+
+Total of 12 * 69 = 828 (23 + 10 + 26 + 10)
+
+about 8 104 key keyboards
+
 Ref: https://www.instructables.com/Connect-PS2-Keyboard-to-Arduino/
 
 Arduino library

@@ -3,15 +3,26 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Index: 1. Arduino input: F1
+F8 & a::
+MsgBox, "F8 & a pressed"
+return
+
+; Index: 1. Arduino input: F1
+F8 & 1::
+MsgBox, "F8 & 1 pressed"
+return
 
 
 ; Index: 1. Arduino input: F1
-F7 & F10::
+F13 & F14::
 MsgBox, "Two pressed"
 return
 
-
-F10 & F7::
-MsgBox, "Two pressed Revers"
+F14 & F13::
+MsgBox, "TwoRevedsee pressed"
 return
 
+F13::
+MsgBox, "one pressed Revers"
+return
