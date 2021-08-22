@@ -16,6 +16,9 @@ F13 & 1::
 MsgBox, "F13 - 1"
 Return
 
+F13 & 2::
+MsgBox, "F13 - 2"
+Return
 
 
 
