@@ -101,3 +101,13 @@ if( PS2KeyAdvanced.available( ) )
 
 void reboot() {
 }
+
+
+// Need to build a function that takes a char
+
+// Pseudo code
+// Taskes Char
+// Presses F13
+// Presses the char
+// Delay for 10 ms
+// Release All Keys
