@@ -49,19 +49,15 @@ if( PS2KeyAdvanced.available( ) )
 
     Serial.println( d);
 
-  if(d == 49){
+  if(d == 49){ // NumRow 1
 
-    Keyboard.press(KEY_F13);
-    Keyboard.press(KEY_F14);
-    Keyboard.releaseAll();
+    SendKeyWithF13(d);
 
   }
 
-      if(d == 50){
+      if(d == 50){ // NumRow 2
 
-    Keyboard.press(KEY_F13);
-    Keyboard.press('a');
-    Keyboard.releaseAll();
+    SendKeyWithF13(d);
 
   }
 
@@ -111,3 +107,10 @@ void reboot() {
 // Presses the char
 // Delay for 10 ms
 // Release All Keys
+
+int SendKeyWithF13(int x){
+  Keyboard.press(x);
+  Keyboard.press(KEY_F13);
+  delay(9);
+  Keyboard.releaseAll();
+}
