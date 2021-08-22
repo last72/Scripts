@@ -75,7 +75,7 @@ if( PS2KeyAdvanced.available( ) )
   
       }
 
-  if(d == 353 or d == 354){
+  if(d == 353 or d == 354){ // F1, F2
     
     Serial.println( d);
     Serial.println( c);
