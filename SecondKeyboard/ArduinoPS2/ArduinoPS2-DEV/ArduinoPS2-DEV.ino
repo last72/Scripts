@@ -109,8 +109,8 @@ void reboot() {
 // Release All Keys
 
 int SendKeyWithF13(int x){
+    Keyboard.press(KEY_F13);
   Keyboard.press(x);
-  Keyboard.press(KEY_F13);
   delay(9);
   Keyboard.releaseAll();
 }
