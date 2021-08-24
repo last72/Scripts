@@ -4,8 +4,8 @@
 		<cereal_class_version>301</cereal_class_version>
 		<profile>
 			<cereal_class_version>308</cereal_class_version>
-			<name>PowerAppsMain 128</name>
-			<id>{a1513d2e-b9c7-4949-88a9-97a387345666}</id>
+			<name>PowerAppsMain 136</name>
+			<id>{73c6cf4c-64ca-4b31-9dd9-ddd84cbf8c15}</id>
 			<iconUrl></iconUrl>
 			<iconColor>#00000000</iconColor>
 			<linkedProgramPath></linkedProgramPath>
@@ -1021,16 +1021,7 @@
 																	<key>0</key>
 																	<value size="dynamic">
 																		<value0>
-																			<polymorphic_id>1073741824</polymorphic_id>
-																			<ptr_wrapper>
-																				<valid>1</valid>
-																				<data>
-																					<base>
-																						<base/>
-																						<layers size="dynamic"/>
-																					</base>
-																				</data>
-																			</ptr_wrapper>
+																			<polymorphic_id>0</polymorphic_id>
 																		</value0>
 																	</value>
 																</value0>
@@ -1060,16 +1051,7 @@
 																	<key>0</key>
 																	<value size="dynamic">
 																		<value0>
-																			<polymorphic_id>1073741824</polymorphic_id>
-																			<ptr_wrapper>
-																				<valid>1</valid>
-																				<data>
-																					<base>
-																						<base/>
-																						<layers size="dynamic"/>
-																					</base>
-																				</data>
-																			</ptr_wrapper>
+																			<polymorphic_id>0</polymorphic_id>
 																		</value0>
 																	</value>
 																</value0>
@@ -1953,7 +1935,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F2</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value1>
@@ -1997,7 +1979,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F3</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value2>
@@ -2042,7 +2024,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F4</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value3>
@@ -2086,7 +2068,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F5</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value4>
@@ -2131,7 +2113,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F6</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value5>
@@ -2176,7 +2158,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F7</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value6>
@@ -2222,7 +2204,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F8</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value7>
@@ -6937,7 +6919,7 @@
 																		</ptr_wrapper>
 																	</first>
 																	<second>
-																		<first>F1</first>
+																		<first></first>
 																		<second>Click</second>
 																	</second>
 																</value113>
@@ -7566,15 +7548,362 @@
 																		<second>Click</second>
 																	</second>
 																</value127>
-																<value130> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483791</id> <data> <base> <name>PowerAppsMainMacro129</name> <id>{639fd693-2df5-3448-8ce7-ada643917c61}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>International5</value0></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value130>
-<value131> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483792</id> <data> <base> <name>PowerAppsMainMacro130</name> <id>{535aad89-0143-2226-075d-d477747e414e}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>International5</value1></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value131>
-<value132> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483793</id> <data> <base> <name>PowerAppsMainMacro131</name> <id>{5ec83573-76c3-214c-0521-8c6fb96e4000}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftAlt</value0> <value1>International5</value1></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value132>
-<value133> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483794</id> <data> <base> <name>PowerAppsMainMacro132</name> <id>{4ce4b2db-3f19-77e1-445d-1c8c5bce6706}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>LeftAlt</value1> <value2>International5</value2></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value133>
-<value134> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483795</id> <data> <base> <name>PowerAppsMainMacro133</name> <id>{3074ee79-5362-2603-04f3-23d85152191d}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftShift</value0> <value1>International5</value1></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value134>
-<value135> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483796</id> <data> <base> <name>PowerAppsMainMacro134</name> <id>{ec5d869e-2d65-47d9-806d-515315785ef9}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>LeftShift</value1> <value2>International5</value2></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value135>
-<value136> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483797</id> <data> <base> <name>PowerAppsMainMacro135</name> <id>{8930ad24-6f28-77f9-2774-fed6ff902217}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftShift</value0> <value1>LeftAlt</value1> <value2>International5</value2></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value136>
-<value137> <first> <polymorphic_id>27</polymorphic_id> <ptr_wrapper> <id>2147483798</id> <data> <base> <name>PowerAppsMainMacro136</name> <id>{fdc5c041-6ee3-8ab9-5b08-a0020af00906}</id><repeatOptions> <repeatCount>1</repeatCount> <repeatMode>NoRepeat</repeatMode> <delay>0</delay> <delayMode>Constant</delayMode> <randomDelayFrom>0</randomDelayFrom> <randomDelayTo>0</randomDelayTo> </repeatOptions><executionHints> <terminateOnSecondExec>false</terminateOnSecondExec> <restartOnSecondExec>false</restartOnSecondExec> <execHint>OnBoth</execHint> <retainOriginalKeyOutput>false</retainOriginalKeyOutput> </executionHints><actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting><actionSoundPath></actionSoundPath><attachedActions size="dynamic" /></base><keyName></keyName><keyStroke size="dynamic"><value0>LeftCtrl</value0> <value1>LeftShift</value1> <value2>LeftAlt</value2> <value3>International5</value3></keyStroke><holdingKeyEnabled>false</holdingKeyEnabled><holdingKeyType>OnPress</holdingKeyType><holdingKeyOnPressInterval>100</holdingKeyOnPressInterval><sniperSwitchMode>WhilePressed</sniperSwitchMode></data></ptr_wrapper></first><second> <first>F1</first> <second>Click</second> </second></value137>
-
+																<value128>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483785</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro129</name>
+																					<id>{639fd693-2df5-3448-8ce7-ada643917c61}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>International5</value0>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F1</first>
+																		<second>Click</second>
+																	</second>
+																</value128>
+																<value129>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483786</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro130</name>
+																					<id>{535aad89-0143-2226-075d-d477747e414e}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>LeftCtrl</value0>
+																					<value1>International5</value1>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F2</first>
+																		<second>Click</second>
+																	</second>
+																</value129>
+																<value130>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483787</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro131</name>
+																					<id>{5ec83573-76c3-214c-0521-8c6fb96e4000}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>LeftAlt</value0>
+																					<value1>International5</value1>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F3</first>
+																		<second>Click</second>
+																	</second>
+																</value130>
+																<value131>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483788</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro132</name>
+																					<id>{4ce4b2db-3f19-77e1-445d-1c8c5bce6706}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>LeftCtrl</value0>
+																					<value1>LeftAlt</value1>
+																					<value2>International5</value2>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F4</first>
+																		<second>Click</second>
+																	</second>
+																</value131>
+																<value132>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483789</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro133</name>
+																					<id>{3074ee79-5362-2603-04f3-23d85152191d}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>LeftShift</value0>
+																					<value1>International5</value1>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F5</first>
+																		<second>Click</second>
+																	</second>
+																</value132>
+																<value133>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483790</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro134</name>
+																					<id>{ec5d869e-2d65-47d9-806d-515315785ef9}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>LeftCtrl</value0>
+																					<value1>LeftShift</value1>
+																					<value2>International5</value2>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F6</first>
+																		<second>Click</second>
+																	</second>
+																</value133>
+																<value134>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483791</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro135</name>
+																					<id>{8930ad24-6f28-77f9-2774-fed6ff902217}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>LeftShift</value0>
+																					<value1>LeftAlt</value1>
+																					<value2>International5</value2>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F7</first>
+																		<second>Click</second>
+																	</second>
+																</value134>
+																<value135>
+																	<first>
+																		<polymorphic_id>24</polymorphic_id>
+																		<ptr_wrapper>
+																			<id>2147483792</id>
+																			<data>
+																				<base>
+																					<name>PowerAppsMainMacro136</name>
+																					<id>{fdc5c041-6ee3-8ab9-5b08-a0020af00906}</id>
+																					<repeatOptions>
+																						<repeatCount>1</repeatCount>
+																						<repeatMode>NoRepeat</repeatMode>
+																						<delay>0</delay>
+																						<delayMode>Constant</delayMode>
+																						<randomDelayFrom>0</randomDelayFrom>
+																						<randomDelayTo>0</randomDelayTo>
+																					</repeatOptions>
+																					<executionHints>
+																						<terminateOnSecondExec>false</terminateOnSecondExec>
+																						<restartOnSecondExec>false</restartOnSecondExec>
+																						<execHint>OnBoth</execHint>
+																						<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																					</executionHints>
+																					<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																					<actionSoundPath></actionSoundPath>
+																					<attachedActions size="dynamic"/>
+																				</base>
+																				<keyName></keyName>
+																				<keyStroke size="dynamic">
+																					<value0>LeftCtrl</value0>
+																					<value1>LeftShift</value1>
+																					<value2>LeftAlt</value2>
+																					<value3>International5</value3>
+																				</keyStroke>
+																				<holdingKeyEnabled>false</holdingKeyEnabled>
+																				<holdingKeyType>OnPress</holdingKeyType>
+																				<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																				<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																			</data>
+																		</ptr_wrapper>
+																	</first>
+																	<second>
+																		<first>F8</first>
+																		<second>Click</second>
+																	</second>
+																</value135>
 															</actions>
 														</data>
 													</ptr_wrapper>
@@ -7601,12 +7930,12 @@
 														<polymorphic_id>2147483674</polymorphic_id>
 														<polymorphic_name>GestureAction</polymorphic_name>
 														<ptr_wrapper>
-															<id>2147483785</id>
+															<id>2147483793</id>
 															<data>
 																<cereal_class_version>301</cereal_class_version>
 																<base>
 																	<name></name>
-																	<id>{c661b464-c465-4476-a510-4bf25fb8ba1e}</id>
+																	<id>{d5b1c243-5a1f-4379-8f04-f2c9b7395b9f}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7637,11 +7966,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483786</id>
+															<id>2147483794</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{ea34f640-364e-484a-bdad-b198d2b207a8}</id>
+																	<id>{f9edf5a4-f372-4821-97ea-adc6ac7211a0}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7672,11 +8001,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483787</id>
+															<id>2147483795</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{78aa1eb8-c4c6-4eec-b290-93cecdd8d137}</id>
+																	<id>{9ad6f0dc-c496-437c-9fc9-c5c36bb089ce}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7707,11 +8036,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483788</id>
+															<id>2147483796</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{c9849910-889a-4343-bc72-edec3935490f}</id>
+																	<id>{d87a21fa-8658-4de3-82e2-d3213dee4bb0}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7742,11 +8071,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483789</id>
+															<id>2147483797</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{75e13c2a-c2b5-41b1-b7e2-3959ebf4557c}</id>
+																	<id>{31a4e9fa-d00a-4145-b46b-8838a0fcffe3}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7777,11 +8106,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483790</id>
+															<id>2147483798</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{2363f8a6-7a52-412f-a5c1-c2dc3153f69b}</id>
+																	<id>{08a8eeb2-3415-4615-a77b-0e4c753794aa}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7812,11 +8141,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483791</id>
+															<id>2147483799</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{21fc1797-c211-4713-b487-8275808f102c}</id>
+																	<id>{abbe13d8-5e5e-473e-be92-e1a69a9ff3df}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7847,11 +8176,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483792</id>
+															<id>2147483800</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{83be8332-d6b8-4f2d-bb1c-b894f0f1c62a}</id>
+																	<id>{5a491058-8b84-4737-9dba-b023577e06dd}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7882,11 +8211,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483793</id>
+															<id>2147483801</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{7eadd9bb-ad36-498a-89a6-dd01f02824ac}</id>
+																	<id>{16e35184-ae79-43fd-a828-3f810dee4880}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7917,11 +8246,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483794</id>
+															<id>2147483802</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{979c86e1-7d50-43a8-ab86-88b94ea99dec}</id>
+																	<id>{613c2d6d-c477-4f45-ac79-77963a13a57a}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7952,11 +8281,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483795</id>
+															<id>2147483803</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{3b1e2ce8-0f0a-4e2b-8b4e-11818fb01401}</id>
+																	<id>{8874a5de-3945-40b1-a132-672d5e9851f8}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -7987,11 +8316,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483796</id>
+															<id>2147483804</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{d4dcaef7-d645-4495-a9fe-fba31302c3d3}</id>
+																	<id>{e0280aa9-a924-47e9-ae62-100297bd4afd}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8022,11 +8351,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483797</id>
+															<id>2147483805</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{68a24db6-8f9a-406e-a15c-ded15135a477}</id>
+																	<id>{25641036-0905-44e3-b834-fdefba268734}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8057,11 +8386,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483798</id>
+															<id>2147483806</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{13ca92f4-7215-4e4b-8b8d-f8a3915f1608}</id>
+																	<id>{42fa85d2-ca14-4e7b-8d9c-b9313073f774}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8092,11 +8421,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483799</id>
+															<id>2147483807</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{1368754e-6f2e-4320-84e1-763a9c1df8c3}</id>
+																	<id>{bcdedd3c-2142-49ab-bd7b-61e1e696adfd}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8127,11 +8456,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483800</id>
+															<id>2147483808</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{c82c13ae-0580-46be-ada5-a4207d5ef10a}</id>
+																	<id>{9e4715bb-60ea-43a1-96de-cb3e48e37447}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8162,11 +8491,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483801</id>
+															<id>2147483809</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{635a5adb-0a0a-472e-9e43-182f58877a89}</id>
+																	<id>{5219b03a-e21b-4145-a465-62c975be1b76}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8197,11 +8526,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483802</id>
+															<id>2147483810</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{1aacc807-d202-4bee-b9b1-25d5cc73f1ae}</id>
+																	<id>{340b8cc1-3822-4d30-84e7-2ae820e94cd4}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8232,11 +8561,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483803</id>
+															<id>2147483811</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{55052df9-d0a5-4f6c-afac-d3e2ade8300f}</id>
+																	<id>{9715bbb0-d44b-4293-b545-290f8d33f94b}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8267,11 +8596,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483804</id>
+															<id>2147483812</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{92d21498-ba9a-498a-b8e6-ce4ae565b090}</id>
+																	<id>{ef362045-95dd-4d5c-834e-96c6a0e086a8}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8302,11 +8631,11 @@
 													<second>
 														<polymorphic_id>26</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483805</id>
+															<id>2147483813</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{f342f836-b305-40fb-bb2f-ec7b03b8575a}</id>
+																	<id>{0d75401e-26c2-4277-9045-c1b88705413a}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -8516,7 +8845,7 @@
 															<presets size="dynamic">
 																<value0>
 																	<ptr_wrapper>
-																		<id>2147483806</id>
+																		<id>2147483814</id>
 																		<data>
 																			<cereal_class_version>201</cereal_class_version>
 																			<id>{df65cb3e-f06b-49e4-9376-adba2c0caf6e}</id>
@@ -8540,7 +8869,7 @@
 																</value0>
 																<value1>
 																	<ptr_wrapper>
-																		<id>2147483807</id>
+																		<id>2147483815</id>
 																		<data>
 																			<id>{c1d3947b-493e-42c6-9503-dd63d6c40012}</id>
 																			<name>Movie Theater</name>
@@ -8563,7 +8892,7 @@
 																</value1>
 																<value2>
 																	<ptr_wrapper>
-																		<id>2147483808</id>
+																		<id>2147483816</id>
 																		<data>
 																			<id>{138c0b33-bc2c-42ff-96c8-190328221a5a}</id>
 																			<name>FPS Competition</name>
@@ -8586,7 +8915,7 @@
 																</value2>
 																<value3>
 																	<ptr_wrapper>
-																		<id>2147483809</id>
+																		<id>2147483817</id>
 																		<data>
 																			<id>{861c1fd2-fafa-485c-ae46-64fe006e583f}</id>
 																			<name>Clear Chat</name>
@@ -8609,7 +8938,7 @@
 																</value3>
 																<value4>
 																	<ptr_wrapper>
-																		<id>2147483810</id>
+																		<id>2147483818</id>
 																		<data>
 																			<id>{ace12c08-a7e1-4a87-8110-555e383ce327}</id>
 																			<name>Bass Boost</name>
@@ -8658,7 +8987,7 @@
 																<presets size="dynamic">
 																	<value0>
 																		<ptr_wrapper>
-																			<id>2147483811</id>
+																			<id>2147483819</id>
 																			<data>
 																				<id>{df65cb3e-f06b-49e4-9376-adba2c0caf6e}</id>
 																				<name>Pure Direct</name>
@@ -8681,7 +9010,7 @@
 																	</value0>
 																	<value1>
 																		<ptr_wrapper>
-																			<id>2147483812</id>
+																			<id>2147483820</id>
 																			<data>
 																				<id>{c1d3947b-493e-42c6-9503-dd63d6c40012}</id>
 																				<name>Movie Theater</name>
@@ -8704,7 +9033,7 @@
 																	</value1>
 																	<value2>
 																		<ptr_wrapper>
-																			<id>2147483813</id>
+																			<id>2147483821</id>
 																			<data>
 																				<id>{138c0b33-bc2c-42ff-96c8-190328221a5a}</id>
 																				<name>FPS Competition</name>
@@ -8727,7 +9056,7 @@
 																	</value2>
 																	<value3>
 																		<ptr_wrapper>
-																			<id>2147483814</id>
+																			<id>2147483822</id>
 																			<data>
 																				<id>{861c1fd2-fafa-485c-ae46-64fe006e583f}</id>
 																				<name>Clear Chat</name>
@@ -8750,7 +9079,7 @@
 																	</value3>
 																	<value4>
 																		<ptr_wrapper>
-																			<id>2147483815</id>
+																			<id>2147483823</id>
 																			<data>
 																				<id>{7717fb7c-f2af-4dbe-99f9-0676c94eb56a}</id>
 																				<name>Bass Boost</name>
@@ -8828,16 +9157,7 @@
 																	<key>0</key>
 																	<value size="dynamic">
 																		<value0>
-																			<polymorphic_id>1073741824</polymorphic_id>
-																			<ptr_wrapper>
-																				<valid>1</valid>
-																				<data>
-																					<base>
-																						<base/>
-																						<layers size="dynamic"/>
-																					</base>
-																				</data>
-																			</ptr_wrapper>
+																			<polymorphic_id>0</polymorphic_id>
 																		</value0>
 																	</value>
 																</value0>
@@ -8867,16 +9187,7 @@
 																	<key>0</key>
 																	<value size="dynamic">
 																		<value0>
-																			<polymorphic_id>1073741824</polymorphic_id>
-																			<ptr_wrapper>
-																				<valid>1</valid>
-																				<data>
-																					<base>
-																						<base/>
-																						<layers size="dynamic"/>
-																					</base>
-																				</data>
-																			</ptr_wrapper>
+																			<polymorphic_id>0</polymorphic_id>
 																		</value0>
 																	</value>
 																</value0>
@@ -9623,16 +9934,7 @@
 																	<key>0</key>
 																	<value size="dynamic">
 																		<value0>
-																			<polymorphic_id>1073741824</polymorphic_id>
-																			<ptr_wrapper>
-																				<valid>1</valid>
-																				<data>
-																					<base>
-																						<base/>
-																						<layers size="dynamic"/>
-																					</base>
-																				</data>
-																			</ptr_wrapper>
+																			<polymorphic_id>0</polymorphic_id>
 																		</value0>
 																	</value>
 																</value0>
@@ -9732,7 +10034,7 @@
 															<presets size="dynamic">
 																<value0>
 																	<ptr_wrapper>
-																		<id>2147483816</id>
+																		<id>2147483824</id>
 																		<data>
 																			<id>{df65cb3e-f06b-49e4-9376-adba2c0caf6e}</id>
 																			<name>Pure Direct</name>
@@ -9755,7 +10057,7 @@
 																</value0>
 																<value1>
 																	<ptr_wrapper>
-																		<id>2147483817</id>
+																		<id>2147483825</id>
 																		<data>
 																			<id>{c1d3947b-493e-42c6-9503-dd63d6c40012}</id>
 																			<name>Movie Theater</name>
@@ -9778,7 +10080,7 @@
 																</value1>
 																<value2>
 																	<ptr_wrapper>
-																		<id>2147483818</id>
+																		<id>2147483826</id>
 																		<data>
 																			<id>{138c0b33-bc2c-42ff-96c8-190328221a5a}</id>
 																			<name>FPS Competition</name>
@@ -9801,7 +10103,7 @@
 																</value2>
 																<value3>
 																	<ptr_wrapper>
-																		<id>2147483819</id>
+																		<id>2147483827</id>
 																		<data>
 																			<id>{861c1fd2-fafa-485c-ae46-64fe006e583f}</id>
 																			<name>Clear Chat</name>
@@ -9824,7 +10126,7 @@
 																</value3>
 																<value4>
 																	<ptr_wrapper>
-																		<id>2147483820</id>
+																		<id>2147483828</id>
 																		<data>
 																			<id>{ace12c08-a7e1-4a87-8110-555e383ce327}</id>
 																			<name>Bass Boost</name>
@@ -10070,7 +10372,7 @@
 										<layer>
 											<polymorphic_id>1073741824</polymorphic_id>
 											<ptr_wrapper>
-												<id>2147483821</id>
+												<id>2147483829</id>
 												<data>
 													<cereal_class_version>300</cereal_class_version>
 													<base>
