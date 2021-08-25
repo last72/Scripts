@@ -13,7 +13,7 @@ Return
 
 
 F13 & 1::
-MsgBox, "F13 - 1"
+Send, ^{PrintScreen}
 Return
 
 F13 & 2::

@@ -49,48 +49,13 @@ if( PS2KeyAdvanced.available( ) )
 
     Serial.println( d);
 
-  if(d == 49){ // NumRow 1
+  if(d == 353 or d == 354 or d == 355 or d == 356 or d == 357 or d == 358 or d == 359 or d == 360 or d == 361 or d == 362 or d == 363 or d == 364 or d == 64 or d == 49 or d == 50 or d == 51 or d == 52 or d == 53 or d == 54 or d == 55 or d == 56 or d == 57 or d == 48 or d == 60 or d == 95 or d == 81 or d == 87 or d == 69 or d == 82 or d == 84 or d == 89 or d == 85 or d == 73 or d == 79 or d == 80 or d == 65 or d == 83 or d == 68 or d == 70 or d == 71 or d == 72 or d == 74 or d == 75 or d == 76 or d == 90 or d == 88 or d == 67 or d == 86 or d == 66 or d == 78 or d == 77 or d == 93 or d == 94 or d == 92 or d == 91 or d == 58 or d == 59 or d == 61 or d == 62 or d == 283 or d == 285 or d == 4355 or d == 16646 or d == 8456 or d == 780 or d == 2314 or d == 287 or d == 1291 or d == 781 or d == 270 or d == 8457 or d == 16647 or d == 286 or d == 284 or d == 260 or d == 258 or d == 6 or d == 281 or d == 282 or d == 273 or d == 274 or d == 275 or d == 276 or d == 279 or d == 277 or d == 280 or d == 278 or d == 257 or d == 47 or d == 46 or d == 45 or d == 32 or d == 33 or d == 34 or d == 35 or d == 36 or d == 37 or d == 38 or d == 39 or d == 40 or d == 41 or d == 42 or d == 44 or d == 43
+){
 
     SendKeyWithF13(d);
 
   }
 
-      if(d == 50){ // NumRow 2
-
-    SendKeyWithF13(d);
-
-  }
-
-  
-      if(d == 51){
-
-    Keyboard.press(KEY_F13);
-    Keyboard.press('1');
-    Keyboard.releaseAll();
-
-  
-      }
-
-  if(d == 353 or d == 354){ // F1, F2
-    
-    Serial.println( d);
-    Serial.println( c);
-    Serial.println();Serial.println();Serial.println();
-
-    if(d == 353){
-      c += 10;
-    }
-
-    if(d == 354){
-      c -= 10;
-    }
-
-
-      Keyboard.press(c);
-      Keyboard.releaseAll();
-  }
-
-    
 
   } // End of if()
 } // End of loop()
