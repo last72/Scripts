@@ -45,3 +45,9 @@ Sleep, 50
 Send, IsBlank()
 Send, {Left}
 Return
+
+F13 & z::
+Sleep, 50
+Send, Blank()
+Send, {Left}
+Return
