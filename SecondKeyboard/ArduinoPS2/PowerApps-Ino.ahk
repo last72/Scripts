@@ -7,9 +7,7 @@ F13 & F14::
 MsgBox, "F13 - F14"
 Return
 
-F13 & a::
-MsgBox, "F13 - a"
-Return
+
 
 
 F13 & 1::
@@ -21,5 +19,29 @@ MsgBox, "F13 - 2"
 Return
 
 
+F13 & q::
+Sleep, 50
+Send, Filter()
+Send, {Left}
+Return
 
 
+F13 & a::
+Sleep, 50
+Send, LookUp()
+Send, {Left}
+Return
+
+
+F13 & w::
+Sleep, 50
+Send, IsEmpty()
+Send, {Left}
+Return
+
+
+F13 & s::
+Sleep, 50
+Send, IsBlank()
+Send, {Left}
+Return

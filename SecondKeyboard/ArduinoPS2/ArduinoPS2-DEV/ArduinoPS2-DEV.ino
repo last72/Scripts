@@ -76,6 +76,6 @@ void reboot() {
 int SendKeyWithF13(int x){
     Keyboard.press(KEY_F13);
   Keyboard.press(x);
-  delay(9);
+//  delay(9);
   Keyboard.releaseAll();
 }
