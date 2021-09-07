@@ -48,7 +48,7 @@ return
 
 ; Index: 8. Corsair input: F8
 ^!+SC07B::
-Sleep, 50
+Sleep, 100
 Send, #8
 return
 

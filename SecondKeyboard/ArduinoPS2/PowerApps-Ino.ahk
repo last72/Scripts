@@ -9,15 +9,20 @@ Return
 
 
 
-
 F13 & 1::
+Sleep, 50
 Send, ^{PrintScreen}
 Return
 
 F13 & 2::
-MsgBox, "F13 - 2"
+Send ^{`` down}
+Send ^{`` up}
 Return
 
+F13 & 3:: 
+Sleep, 50
+Send, ^+c
+Return
 
 F13 & q::
 Sleep, 50

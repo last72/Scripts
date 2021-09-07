@@ -17,4 +17,6 @@ return
 
 ^F12::
 Run "C:\Users\Woong\Documents\GitHub\Scripts\AHK\PowerApps\PowerAppsMain.ahk"
+Run "C:\Users\Woong\Documents\GitHub\Scripts\SecondKeyboard\iCue\iCUE-136Macro.ahk"
+Run "C:\Users\Woong\Documents\GitHub\Scripts\SecondKeyboard\ArduinoPS2\PowerApps-Ino.ahk"
 return
