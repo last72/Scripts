@@ -434,7 +434,7 @@ return
 
 ; Index: 74. Corsair input: backspace
 ^F22::
-MouseClickAndReturn(40, 150)
+MouseClickAndReturn(130, 150)
 return
 
 ; Index: 75. Corsair input: printscreen
