@@ -3,6 +3,11 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Cheatsheet
+; #: Win
+; !: Alt
+; ^: Ctrl
+; +: Shift
 
 ; Index: 1. Corsair input: F1
 SC07B::
@@ -435,23 +440,24 @@ return
 ; Index: 75. Corsair input: printscreen
 ; Create a new Button
 !F22::
-MouseClickAndReturn(150, 145)
+Send, !i
 Sleep, 350
 MouseClickAndReturn(280, 180)
 return
 
 ; Index: 76. Corsair input: scrolllock
 ^!F22::
-MouseClickAndReturn(150, 145)
+Send, !i
 Sleep, 350
 MouseClickAndReturn(200, 180)
 return
 
 ; Index: 77. Corsair input: pausebreak
 +F22::
-MouseClickAndReturn(150, 145)
+Send, !i
 Sleep, 350
 MouseClickAndReturn(550, 180)
+Sleep, 100
 MouseClickAndReturn(550, 220)
 return
 
