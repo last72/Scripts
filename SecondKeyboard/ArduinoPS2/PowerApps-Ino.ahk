@@ -34,7 +34,7 @@ MsgBox, "F13 - F4"
 Return
 
 F13 & F5::
-GoToWebsite("outlook.com")
+GoToWebsite("outlook.office.com")
 Return
 
 F13 & F6::

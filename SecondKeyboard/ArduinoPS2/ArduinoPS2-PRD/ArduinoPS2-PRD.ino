@@ -12,7 +12,8 @@
 // Voltage pin (PS/2 pin 4) // Yellow goes to 5V.
 
 // Initialise variable for storing integer value
-uint16_t c;
+uint16_t c = 1;
+uint16_t d;
 int i;
 
 // Initialise for PS2KeyAdvanced 
@@ -39,77 +40,195 @@ void setup( )
 // loop()
 void loop( )
 {
+     
 // Check if the keyboard is on
 if( PS2KeyAdvanced.available( ) )
   {
     // read the next key
-    c = PS2KeyAdvanced.read( );
-    Serial.println(c);
+    d = PS2KeyAdvanced.read();
 
-    if(
-      c == 353 || c == 354 || c == 355 || c == 356 || c == 357 || c == 358 || c == 359 || c == 360 || c == 361 || c == 362 || c == 363 || c == 364 || c == 64 || c == 49 || c == 50 || c == 51 || c == 52 || c == 53 || c == 54 || c == 55 || c == 56 || c == 57 || c == 48 || c == 60 || c == 95 || c == 81 || c == 87 || c == 69 || c == 82 || c == 84 || c == 89 || c == 85 || c == 73 || c == 79 || c == 80 || c == 65 || c == 83 || c == 68 || c == 70 || c == 71 || c == 72 || c == 74 || c == 75 || c == 76 || c == 90 || c == 88 || c == 67 || c == 86 || c == 66 || c == 78 || c == 77 || c == 93 || c == 94 || c == 92 || c == 91 || c == 58 || c == 59 || c == 61 || c == 62 || c == 283 || c == 285 || c == 4355 || c == 16646 || c == 8456 || c == 780 || c == 2314 || c == 287 || c == 1291 || c == 781 || c == 270 || c == 8457 || c == 16647 || c == 286 || c == 284 || c == 260 || c == 258 || c == 6 || c == 281 || c == 282 || c == 273 || c == 274 || c == 275 || c == 276 || c == 279 || c == 277 || c == 280 || c == 278 || c == 257 || c == 47 || c == 46 || c == 45 || c == 32 || c == 33 || c == 34 || c == 35 || c == 36 || c == 37 || c == 38 || c == 39 || c == 40 || c == 41 || c == 42 || c == 44 || c == 43
+    Serial.println( d);
+
+    if( // All the rest
+        d == 49 or d == 50 or d == 51 or d == 52 or d == 53 or d == 54 or d == 55 or d == 56 or d == 57 or d == 48 or d == 81 or d == 87 or d == 69 or d == 82 or d == 84 or d == 89 or d == 85 or d == 73 or d == 79 or d == 80 or d == 65 or d == 83 or d == 68 or d == 70 or d == 71 or d == 72 or d == 74 or d == 75 or d == 76 or d == 90 or d == 88 or d == 67 or d == 86 or d == 66 or d == 78 or d == 77 or
+        d == 283 or d == 285 or d == 4355 or d == 16646 or d == 8456 or d == 780 or d == 2314 or d == 287 or d == 1291 or d == 781 or d == 270 or d == 8457 or d == 16647 or d == 286 or d == 284 or d == 260 or d == 258 or d == 6 or
+        
+        d == 257
     ){
-      Keyboard.print("ino|");
-        PrintNumpad(c);
+
+        SendKeyWithF13(d);
+
     }
 
-//     } // End of switch
+
+
+if( // Rest of NumRow.
+       d == 60 or d == 95 or d == 64
+    ){
+
+        switch (d) {
+        case 60:
+            SendKeyWithF13(d -15);
+            break;
+        case 95:
+            SendKeyWithF13(d - 34);
+            break;
+        case 64:
+            SendKeyWithF13(d + 32);
+            break;
+        }
+    }
+
+
+if( // Rest of qwerty keys. Total 8
+        d == 93 or d == 94 or d == 92 or d == 91 or d == 58 or d == 59 or d == 61 or d == 62
+    ){
+
+        switch (d) {
+        case 93:
+            SendKeyWithF13(d -2);
+            break;
+        case 94:
+            SendKeyWithF13(d - 1);
+            break;
+        case 92:
+            SendKeyWithF13(d);
+            break;
+        case 91:
+            SendKeyWithF13(d - 32);
+            break;
+        case 58:
+            SendKeyWithF13(d - 19);
+            break;
+        case 59:
+            SendKeyWithF13(d - 15);
+            break;
+        case 61:
+            SendKeyWithF13(d - 15);
+            break;
+        case 62:
+            SendKeyWithF13(d - 15);
+            break;
+        }
+    }
+
+
+
+
+if( // 6 operator arrow key column
+        d == 281 or d == 282 or d == 273 or d == 274 or d == 275 or d == 276    
+    ){
+
+        switch (d) {
+        case 281:
+            SendKeyWithF13(d -72);
+            break;
+        case 282:
+            SendKeyWithF13(d - 70);
+            break;
+        case 273:
+            SendKeyWithF13(d - 63);
+            break;
+        case 274:
+            SendKeyWithF13(d - 61);
+            break;
+        case 275:
+            SendKeyWithF13(d - 64);
+            break;
+        case 276:
+            SendKeyWithF13(d - 62);
+            break;
+        }
+    }
+
+
+
+
+    if( // Arrow up left
+        d == 279 or d == 277
+    ){
+        SendKeyWithF13(d - 61);
+    }
+
+        if( // Arrow down right
+        d == 280 or d == 278
+    ){
+        SendKeyWithF13(d - 63);
+    }
+
+
+
+
+     if( // Numpad 1 to 9
+        d == 33 or d == 34 or d == 35 or d == 36 or d == 37 or d == 38 or d == 39 or d == 40 or d == 41
+    ){
+
+        SendKeyWithF13(d + 192);
+
+    }
+
+     if( // Numpad rest 7 keys
+        d == 32 or d == 47 or d == 46 or d == 45 or d == 42 or d == 44 or d == 43
+    ){
+
+        switch (d) {
+        case 47:
+            SendKeyWithF13(d + 173);
+            break;
+        case 46:
+            SendKeyWithF13(d + 175);
+            break;
+        case 45:
+            SendKeyWithF13(d + 177);
+            break;
+        case 32:
+            SendKeyWithF13(d + 202);
+            break;
+        case 42:
+            SendKeyWithF13(d + 193);
+            break;
+        case 44:
+            SendKeyWithF13(d + 179);
+            break;
+        case 43:
+            SendKeyWithF13(d + 181);
+            break;
+            
+        }
+
+        
+
+    }
+
+    
+
+    if( // F1 to F12
+        d == 353 or d == 354 or d == 355 or d == 356 or d == 357 or d == 358 or d == 359 or d == 360 or d == 361 or d == 362 or d == 363 or d == 364
+    ){
+
+        SendKeyWithF13(d - 159);
+
+  }
+
   } // End of if()
 } // End of loop()
 
-int PrintNumpad(int x){
-
-String stringOne = String(x); 
-int strlength = stringOne.length();
-
-  for(int i =0; i < stringOne.length(); i++ ) {
-    char c = stringOne[i];
-    switch( c ){
-      case '1':
-        Keyboard.press(225);
-        Keyboard.release(225);
-        break;
-      case '2':
-        Keyboard.press(226);
-        Keyboard.release(226);
-        break;
-      case '3':
-        Keyboard.press(227);
-        Keyboard.release(227);
-        break;
-      case '4':
-        Keyboard.press(228);
-        Keyboard.release(228);
-        break;
-      case '5':
-        Keyboard.press(229);
-        Keyboard.release(229);
-        break;
-      case '6':
-        Keyboard.press(230);
-        Keyboard.release(230);
-        break;
-      case '7':
-        Keyboard.press(231);
-       Keyboard.release(231);
-        break;
-      case '8':
-        Keyboard.press(232);
-        Keyboard.release(232);
-        break;
-      case '9':
-        Keyboard.press(233);
-        Keyboard.release(233);
-        break;
-      case '0':
-        Keyboard.press(234);
-        Keyboard.release(234);
-        break;
-    }
-  } 
-
-  Keyboard.println("");
-} // End of PrintNumpad
-
 void reboot() {
+}
+
+
+// Need to build a function that takes a char
+
+// Pseudo code
+// Taskes Char
+// Presses F13
+// Presses the char
+// Delay for 10 ms
+// Release All Keys
+
+int SendKeyWithF13(int x){
+    Keyboard.press(KEY_F13);
+  Keyboard.press(x);
+//  delay(9);
+  Keyboard.releaseAll();
 }
