@@ -398,7 +398,8 @@ return
 
 ; Index: 67. Corsair input: spacebar
 !F21::
-Send, MACRO EMPTY
+Sleep, 50
+Send, //{Space}
 return
 
 ; Index: 68. Corsair input: right alt

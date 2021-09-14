@@ -25,12 +25,16 @@ F13 & F2::
 MsgBox, "F13 - F2"
 Return
 
+; VSCode Make one line
 F13 & F3::
-MsgBox, "F13 - F3"
+Sleep, 50
+Send !+d
 Return
 
+; VSCode: Format all
 F13 & F4::
-MsgBox, "F13 - F4"
+Sleep, 50
+Send !+f
 Return
 
 F13 & F5::
@@ -42,7 +46,7 @@ GoToWebsite("make.powerapps.com")
 Return
 
 F13 & F7::
-MsgBox, "F13 - F7"
+GoToWebsite("teams.microsoft.com")
 Return
 
 F13 & F8::
@@ -50,15 +54,15 @@ MsgBox, "F13 - F8"
 Return
 
 F13 & F9::
-MsgBox, "F13 - F9"
+GoToWebsite("https://www.innolabcafe.com.au/shop/flat-white/")
 Return
 
 F13 & F10::
-MsgBox, "F13 - F10"
+GoToWebsite("https://www.innolabcafe.com.au/shop/long-black/")
 Return
 
 F13 & F11::
-MsgBox, "F13 - F11"
+GoToWebsite("https://www.innolabcafe.com.au/shop/chai-latte/")
 Return
 
 F13 & F12::
