@@ -500,6 +500,7 @@ return
 ; Index: 85. Corsair input: left
 ; Set X and Width Same
 +F23::
+Sleep, 100
 PAProperty("X")
 Sleep, 100
 Send, ^v
@@ -513,6 +514,7 @@ return
 ; Index: 86. Corsair input: down
 ; Attach to buttom
 ^+F23::
+Sleep, 100
 PAProperty("Y")
 Sleep, 100
 Send, ^v
@@ -528,6 +530,7 @@ return
 ; Index: 87. Corsair input: right
 ; Attach to Right
 !+F23::
+Sleep, 100
 PAProperty("Y")
 Sleep, 100
 Send, ^v

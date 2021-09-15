@@ -71,8 +71,11 @@ Return
 ; End F1 to F12
 
 
-
-
+; Start Other Keys
+F13 & BackSpace::
+Send, ^z
+Return
+; End Other Keys
 
 ; Start Arrow Column 6 kays
 F13 & Insert::
@@ -80,7 +83,7 @@ MsgBox, "F13 - Insert"
 Return
 
 F13 & Delete::
-MsgBox, "F13 - Delete"
+Send (
 Return
 
 F13 & Home::
@@ -88,7 +91,7 @@ MsgBox, "F13 - Home"
 Return
 
 F13 & End::
-MsgBox, "F13 - End"
+Send "
 Return
 
 F13 & PgUp::
@@ -96,7 +99,7 @@ MsgBox, "F13 - PgUp"
 Return
 
 F13 & PgDn::
-MsgBox, "F13 - PgDn"
+Send )
 Return
 
 ; End Arrow Column 6 kays 
