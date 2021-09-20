@@ -13,3 +13,8 @@ Ref: https://www.instructables.com/Connect-PS2-Keyboard-to-Arduino/
 
 Arduino library
 Ref: https://www.pjrc.com/teensy/td_libs_PS2Keyboard.html
+
+
+
+Modifiers docs
+https://www.arduino.cc/en/Reference/KeyboardModifiers

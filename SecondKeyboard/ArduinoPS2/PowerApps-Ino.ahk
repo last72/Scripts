@@ -75,6 +75,28 @@ Return
 F13 & BackSpace::
 Send, ^z
 Return
+
+
+
+F13 & RAlt::
+Send, ^v
+Send, .X
+Return
+
+F13 & RWin::
+Send, ^v
+Send, .Y
+Return
+
+F13 & AppsKey::
+Send, ^v
+Send, .Width
+Return
+
+F13 & RControl::
+Send, ^v
+Send, .Height
+Return
 ; End Other Keys
 
 ; Start Arrow Column 6 kays
@@ -113,7 +135,7 @@ MsgBox, "F13 - Up"
 Return
 
 F13 & Left::
-MsgBox, "F13 - Left"
+Send, ^+{Tab}
 Return
 
 F13 & Down::
@@ -121,7 +143,7 @@ MsgBox, "F13 - Down"
 Return
 
 F13 & Right::
-MsgBox, "F13 - Right"
+Send, ^{Tab}
 Return
 
 ; End Arrow 
