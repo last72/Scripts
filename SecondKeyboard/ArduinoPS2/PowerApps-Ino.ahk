@@ -18,11 +18,11 @@ Return
 
 ; Start F1 to F12
 F13 & F1::
-MsgBox, "F13 - F1"
+PAProperty("X")
 Return
 
 F13 & F2::
-MsgBox, "F13 - F2"
+PAProperty("Y")
 Return
 
 ; VSCode Make one line
@@ -308,7 +308,7 @@ FormulaWithBracket("UpdateContext")
 Return
 
 F13 & y::
-FormulaWithBracket("Set")
+FormulaWithBracket("Set", True)
 Return
 
 F13 & h::
@@ -393,28 +393,33 @@ F13 & -::
 FormulaWithBracket("First")
 Return
 
-F13 & [::
-FormulaWithBracket("Last")
+
+
+F13 & [:: ; Left
+PAProperty("X")
+Send, {Numpad0}
 Return
 
-F13 & '::
-FormulaWithBracket("Sort")
+F13 & =:: ; Up
+PAProperty("Y")
+Send, {Numpad0}
 Return
 
 
-F13 & =::
-MsgBox, "F13 & ="
-
+F13 & ]:: ; Right
+PAProperty("X")
+Send, Parent.Width - Self.Width
 Return
 
-F13 & ]::
-MsgBox, "F13 & ]"
-
+F13 & ':: ; Down
+PAProperty("Y")
+Send, Parent.Height - Self.Height
 Return
 
 F13 & \::
-MsgBox, "F13 & \"
-
+Send, With({{}Control:
+Send, ^v
+Send,{}} As WithRecord, WithRecord.Control.X - Self.Width {NumpadAdd} If( WithRecord.Control.Visible, - {Numpad2}{Numpad0}, WithRecord.Control.Width ) )
 Return
 
 F13 & `::
@@ -426,11 +431,15 @@ Return
 
 
 ; use case: FormulaWithBracket("RenameColumns")
-FormulaWithBracket(Formula)
+FormulaWithBracket(Formula, Semicolon:=False)
 {
     Sleep, 50
 	Send %Formula%
     Send ()
+    if (Semicolon) {
+        Send {;}
+        Send {Left}
+    }
     Send {Left}
 }
 
@@ -442,4 +451,27 @@ GoToWebsite(Address)
     Sleep, 100
     Send %Address%
     Send {Enter}
+}
+
+PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
+{
+    MouseGetPos, StartX, StartY
+	MouseClick, , PropertyX, PropertyY
+    Sleep 50
+    Send, ^a
+    Send, %PropertyName%
+    Sleep 50
+    MouseClick, , FormulaX, PropertyY
+    Send, ^a
+	Sleep 100
+    MouseMove, StartX, StartY
+    return
+} 
+
+; Mouse Click
+MouseClickAndReturn(ClickX , ClickY)
+{
+	MouseGetPos, StartX, StartY
+	MouseClick, , ClickX, ClickY
+	MouseMove, StartX, StartY
 }
