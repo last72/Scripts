@@ -50,7 +50,7 @@ GoToWebsite("teams.microsoft.com")
 Return
 
 F13 & F8::
-MsgBox, "F13 - F8"
+GoToWebsite("australia.flow.microsoft.com")
 Return
 
 F13 & F9::
@@ -135,6 +135,7 @@ MsgBox, "F13 - Up"
 Return
 
 F13 & Left::
+Sleep, 50
 Send, ^+{Tab}
 Return
 
@@ -143,6 +144,7 @@ MsgBox, "F13 - Down"
 Return
 
 F13 & Right::
+Sleep, 50
 Send, ^{Tab}
 Return
 
