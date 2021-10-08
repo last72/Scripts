@@ -193,8 +193,16 @@ F13 & Numpad9::
 MsgBox, "F13 - Numpad9"
 Return
 
+; Renaming controls. Kill Five chars from the last
 F13 & Numpad0::
-MsgBox, "F13 - Numpad0"
+Send, {F2}
+Send, {Right}
+Send, {Left}
+Send, {Left}
+Send, {Left}
+Send, {Left}
+Send, {Left}
+Send, ^{Delete}
 Return
 
 F13 & NumpadDiv::
@@ -236,6 +244,16 @@ Return
 F13 & 3:: 
 Sleep, 50
 Send, ^+c
+Return
+
+; F13 & e::
+; Sleep, 50
+; Send, EA
+; Return
+
+F13 & d::
+Sleep, 50
+Send, inoAHK
 Return
 
 F13 & q::
