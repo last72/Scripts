@@ -206,15 +206,15 @@ Send, ^{Delete}
 Return
 
 F13 & NumpadDiv::
-MsgBox, "F13 - NumpadDiv"
+Run, WINWORD.EXE
 Return
 
 F13 & NumpadMult::
-MsgBox, "F13 - NumpadMult"
+Run, EXCEL.EXE
 Return
 
 F13 & NumpadSub::
-MsgBox, "F13 - NumpadSub"
+Run, POWERPNT.EXE
 Return
 
 F13 & NumpadDot::
