@@ -40,3 +40,26 @@ return
 3::
 Send {Delete}
 return
+
+
+
+x::
+Send !{Tab}
+Sleep 200
+Send 1
+Sleep 200
+Send !{Tab}
+return
+
+c::
+Send !{Tab}
+Sleep 200
+Send 2
+Sleep 200
+Send !{Tab}
+return
+
+; z
+z::
+Send !{Tab}
+return
