@@ -158,7 +158,7 @@ Return
 ; Start Numpad
 
 F13 & Numpad1::
-MsgBox, "F13 - Numpad1"
+Send ^{Enter}
 Return
 
 F13 & Numpad2::
