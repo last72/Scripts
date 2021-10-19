@@ -162,7 +162,7 @@ Send ^{Enter}
 Return
 
 F13 & Numpad2::
-MsgBox, "F13 - Numpad2"
+Send ^!{Enter}
 Return
 
 F13 & Numpad3::
@@ -182,15 +182,21 @@ MsgBox, "F13 - Numpad6"
 Return
 
 F13 & Numpad7::
-MsgBox, "F13 - Numpad7"
+Loop, 25
+{
+    Send {WheelUp}
+}
 Return
 
 F13 & Numpad8::
-MsgBox, "F13 - Numpad8"
+Loop, 25
+{
+    Send {WheelDown}
+}
 Return
 
 F13 & Numpad9::
-MsgBox, "F13 - Numpad9"
+Run, C:\Users\Woong\AppData\Local\GitHubDesktop\GitHubDesktop.EXE
 Return
 
 ; Renaming controls. Kill Five chars from the last
