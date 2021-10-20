@@ -11,6 +11,13 @@
 // Ground pin (PS/2 pin 3) // Red goes to Ground.
 // Voltage pin (PS/2 pin 4) // Yellow goes to 5V.
 
+// #define SECOND_DATAPIN 10 // Data pin (PS/2 pin 1) // 
+// #define SECOND_IRQPIN  1 // Clock pin (PS/2 pin 5) // 
+// Yellow: Clock Ino3
+// Red: Data Ino8
+// Gray: GND
+// Brown: 5V
+
 // Initialise variable for storing integer value
 uint16_t c = 1;
 uint16_t d;
