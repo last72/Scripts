@@ -371,10 +371,13 @@ return
 ; Index: 64. Corsair input: left control
 ; Copy Control Name
 ^!+F20::
+Sleep, 50
 MouseGetPos, StartX, StartY
 WinGetPos, WindowX, WindowY, WindowW, WindowH, A
 MouseClick, , WindowW - 300, 290
+Sleep, 50
 Send, ^a
+Sleep, 50
 Send, ^c
 MouseMove, StartX, StartY
 return

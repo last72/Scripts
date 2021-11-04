@@ -18,7 +18,10 @@ Return
 
 ; Start F1 to F12
 F13 & F1::
-PAProperty("X")
+Sleep, 50
+Send, ^{PrintScreen}
+Sleep, 600
+Send !{F4}
 Return
 
 F13 & F2::
@@ -232,11 +235,11 @@ MsgBox, "F13 - NumpadAdd"
 Return
 
 F13 & NumpadEnter::
-MsgBox, "F13 - NumpadEnter"
+Send, ^+k
 Return
 ; End Numpad
 
-
+; greenshot
 F13 & 1::
 Sleep, 50
 Send, ^{PrintScreen}
@@ -401,8 +404,9 @@ F13 & 0::
 FormulaWithBracket("ClearCollect")
 Return
 
-F13 & p::
-FormulaWithBracket("Collect")
+F13 & p:: ; Middle Align X
+PAProperty("X")
+Send, (Parent.Width - Self.Width) / {Numpad2}
 Return
 
 F13 & SC027::
@@ -415,8 +419,9 @@ Return
 
 
 
-F13 & -::
-FormulaWithBracket("First")
+F13 & -:: ; Middle Align Y
+PAProperty("Y")
+Send, (Parent.Height - Self.Height) / {Numpad2}
 Return
 
 
