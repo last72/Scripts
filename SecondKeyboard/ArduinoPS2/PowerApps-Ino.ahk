@@ -458,7 +458,8 @@ MsgBox, "F13 & key left to numrow 1"
 
 Return
 
-
+^+F11::
+ExitApp
 
 
 ; use case: FormulaWithBracket("RenameColumns")

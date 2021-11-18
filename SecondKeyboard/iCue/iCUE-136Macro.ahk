@@ -693,6 +693,10 @@ Send, MACRO EMPTY
 return
 
 
+^+F10::
+ExitApp
+
+
 ; PowerApps functions
 
 ; This will open property part of a control. First parameter is name of the property (i.e. "OnSelect")
