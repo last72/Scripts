@@ -199,7 +199,7 @@ Loop, 25
 Return
 
 F13 & Numpad9::
-Run, C:\Users\Woong\AppData\Local\GitHubDesktop\GitHubDesktop.EXE
+Run, C:\Users\WoongChoi\AppData\Local\GitHubDesktop\GitHubDesktop.EXE
 Return
 
 ; Renaming controls. Kill Five chars from the last
@@ -375,7 +375,11 @@ FormulaWithBracket("Back")
 Return
 
 F13 & k::
-FormulaWithBracket("Distinct")
+PAProperty("Y")
+Send, ^v
+Send, .Y {+}
+Send, ^v
+Send, .Height
 Return
 
 F13 & ,::

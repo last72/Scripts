@@ -433,7 +433,7 @@ return
 ; Index: 73. Corsair input: enter
 ; MYOB Timesheet
 ^!SC079::
-Run C:\Users\Woong\AppData\Local\Programs\MYOB\AccountRight\Huxley.Application.exe
+Run C:\Users\WoongChoi\AppData\Local\Programs\MYOB\AccountRight\Huxley.Application.exe
 return
 
 ; Index: 74. Corsair input: backspace
