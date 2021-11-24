@@ -427,7 +427,10 @@ return
 
 ; Index: 72. Corsair input: right shift
 ^!+F21::
-Send, MACRO EMPTY
+MouseMove, 200, 373
+Sleep 100
+Click
+PAProperty("OnStart")
 return
 
 ; Index: 73. Corsair input: enter
@@ -794,4 +797,10 @@ MouseClickAndReturn(ClickX , ClickY)
 	MouseGetPos, StartX, StartY
 	MouseClick, , ClickX, ClickY
 	MouseMove, StartX, StartY
+}
+
+; Mouse Click
+MouseMoveAndStay(MoveX , MoveY)
+{
+	MouseMove, MoveX, MoveY
 }
