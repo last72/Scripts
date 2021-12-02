@@ -427,6 +427,7 @@ return
 
 ; Index: 72. Corsair input: right shift
 ^!+F21::
+ScrollUpManyTimes()
 MouseMove, 200, 373
 Sleep 100
 Click
@@ -470,11 +471,13 @@ return
 
 ; Index: 78. Corsair input: insert
 ^+F22::
+Sleep, 50
 Copy(1)
 return
 
 ; Index: 79. Corsair input: delete
 !+F22::
+Sleep, 50
 Paste(1)
 return
 
@@ -500,7 +503,7 @@ return
 
 ; Index: 84. Corsair input: up
 ^!F23::
-Send, MACRO EMPTY
+PAProperty("Tooltip")
 return
 
 ; Index: 85. Corsair input: left

@@ -20,7 +20,7 @@ Return
 F13 & F1::
 Sleep, 50
 Send, ^{PrintScreen}
-Sleep, 600
+Sleep, 1200
 Send !{F4}
 Return
 
@@ -337,11 +337,15 @@ FormulaWithBracket("UpdateContext")
 Return
 
 F13 & y::
-FormulaWithBracket("Set", True)
+PAProperty("X")
+Send, {Numpad0}
+PAProperty("Width")
+Send, Parent.Width
 Return
 
 F13 & h::
-FormulaWithBracket("Value")
+PAProperty("Height")
+Send, Parent.Height - Self.Y
 Return
 
 F13 & n::
@@ -350,11 +354,15 @@ Return
 
 
 F13 & 7::
-FormulaWithBracket("If")
+PAProperty("Y")
+Send, {Numpad0}
+PAProperty("Height")
+Send, Parent.Height
 Return
 
 F13 & u::
-FormulaWithBracket("GUID")
+PAProperty("Width")
+Send, Parent.Width - Self.X
 Return
 
 F13 & j::
@@ -370,11 +378,13 @@ F13 & 8::
 FormulaWithBracket("Navigate")
 Return
 
-F13 & i::
-FormulaWithBracket("Back")
+F13 & i:: ; Attach from left
+PAProperty("X")
+Send, ^v
+Send, .X {-} Self.Width
 Return
 
-F13 & k::
+F13 & k:: ; Attach from bottom
 PAProperty("Y")
 Send, ^v
 Send, .Y {+}
@@ -387,20 +397,28 @@ FormulaWithBracket("JSON")
 Return
 
 
-F13 & 9::
-FormulaWithBracket("Count")
+F13 & 9:: ; Attach from top
+PAProperty("Y")
+Send, ^v
+Send, .Y {-} Self.Height
 Return
 
-F13 & o::
-FormulaWithBracket("CountRows")
+F13 & o:: ; Attach from right
+PAProperty("X")
+Send, ^v
+Send, .X {+}
+Send, ^v
+Send, .Width
 Return
 
 F13 & l::
 FormulaWithBracket("ForAll")
 Return
 
-F13 & .::
-FormulaWithBracket("Sum")
+F13 & .:: ; Match X position
+PAProperty("X")
+Send, ^v
+Send, .X
 Return
 
 
@@ -413,8 +431,10 @@ PAProperty("X")
 Send, (Parent.Width - Self.Width) / {Numpad2}
 Return
 
-F13 & SC027::
-FormulaWithBracket("Clear")
+F13 & SC027:: ; Match with Y position
+PAProperty("Y")
+Send, ^v
+Send, .Y
 Return
 
 F13 & /::
