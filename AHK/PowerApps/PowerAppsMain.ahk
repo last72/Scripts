@@ -216,6 +216,13 @@ return
 
 ^+F9::
 ExitApp
+return
+
+!w:: ; Click Save on SharePoint add new column. Zoom 125%
+WinGetPos, WindowX, WindowY, WindowW, WindowH, A
+;MouseMove, WindowW - 350, WindowH - 40
+MouseClickAndReturn(WindowW - 350, WindowH - 40)
+return
 
 
 ; PowerApps functions
