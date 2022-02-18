@@ -58,7 +58,8 @@ if( PS2KeyAdvanced.available( ) )
 
     if( // All the rest
         d == 49 or d == 50 or d == 51 or d == 52 or d == 53 or d == 54 or d == 55 or d == 56 or d == 57 or d == 48 or d == 81 or d == 87 or d == 69 or d == 82 or d == 84 or d == 89 or d == 85 or d == 73 or d == 79 or d == 80 or d == 65 or d == 83 or d == 68 or d == 70 or d == 71 or d == 72 or d == 74 or d == 75 or d == 76 or d == 90 or d == 88 or d == 67 or d == 86 or d == 66 or d == 78 or d == 77 or
-        d == 283 or d == 285 or d == 4355 or d == 16646 or d == 8456 or d == 780 or d == 2314 or d == 287 or d == 16647 or d == 260 or d == 258 or d == 6 or
+        d == 283 or d == 285 or d == 4355 or // d == 16646 or
+        d == 8456 or d == 780 or d == 2314 or d == 287 or d == 16647 or d == 260 or d == 258 or d == 6 or
         
         d == 257
     ){
@@ -258,8 +259,14 @@ if( // 6 operator arrow key column
     ){
 
         SendKeyWithF13(d - 159);
-
   }
+
+  if( // F10 with Shift
+      (16746 <= d ) && (d <= 16748)
+    ){
+        SendKeyWithF14(d - 16543);
+    }
+  
 
   } // End of if()
 } // End of loop()
@@ -279,6 +286,13 @@ void reboot() {
 
 int SendKeyWithF13(int x){
     Keyboard.press(KEY_F13);
+  Keyboard.press(x);
+//  delay(9);
+  Keyboard.releaseAll();
+}
+
+int SendKeyWithF14(int x){
+    Keyboard.press(KEY_F14);
   Keyboard.press(x);
 //  delay(9);
   Keyboard.releaseAll();

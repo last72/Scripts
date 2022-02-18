@@ -64,13 +64,24 @@ F13 & F10::
 GoToWebsite("https://www.innolabcafe.com.au/shop/long-black/")
 Return
 
+F14 & F10::
+GoToWebsite("https://www.innolabcafe.com.au/shop/iced-long-black/")
+Return
+
+
 F13 & F11::
 GoToWebsite("https://www.innolabcafe.com.au/shop/chai-latte/")
 Return
 
-F13 & F12::
-MsgBox, "F13 - F12"
+F14 & F11::
+GoToWebsite("https://www.innolabcafe.com.au/shop/hot-chocolate/")
 Return
+
+F13 & F12:: ; Coffee
+Run C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe "https://www.innolabcafe.com.au/my-account/" " --new-window --profile-directory=Default"
+Return
+
+
 ; End F1 to F12
 
 
