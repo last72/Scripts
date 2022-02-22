@@ -78,7 +78,7 @@ GoToWebsite("https://www.innolabcafe.com.au/shop/hot-chocolate/")
 Return
 
 F13 & F12:: ; Coffee
-Run C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe "https://www.innolabcafe.com.au/my-account/" " --new-window --profile-directory=Default"
+Run "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" "https://www.innolabcafe.com.au/my-account/" " --new-window --profile-directory=Default"
 Return
 
 
