@@ -241,8 +241,10 @@ F13 & NumpadDot::
 MsgBox, "F13 - NumpadDot"
 Return
 
+; Lock windows
 F13 & NumpadAdd::
-MsgBox, "F13 - NumpadAdd"
+Sleep, 200
+DllCall("LockWorkStation")
 Return
 
 F13 & NumpadEnter::
