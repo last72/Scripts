@@ -192,7 +192,7 @@ MsgBox, "F13 - Numpad5"
 Return
 
 F13 & Numpad6::
-MsgBox, "F13 - Numpad6"
+Run "C:\Users\WoongChoi\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MYOB AccountRight"
 Return
 
 F13 & Numpad7::
