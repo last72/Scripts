@@ -3,6 +3,12 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Cheatsheet
+; #: Win
+; !: Alt
+; ^: Ctrl
+; +: Shift
+
 ; Function Row
 ; Select All
 F1::
@@ -11,65 +17,41 @@ return
 
 ; Formular text
 F3::
-MouseGetPos, StartX, StartY
-MouseClick, , 500, 220
+SelectPropertyValue()
 Send, ^a
-MouseMove, StartX, StartY
 return
 
-; Formular text Left
+; PropertyName
 F4::
-MouseGetPos, StartX, StartY
-MouseClick, , 50, 220
+SelectPropertyDropdown()
 Send, ^a
-MouseMove, StartX, StartY
 return
 
 ; Name Text
 F6::
-MouseGetPos, StartX, StartY
 WinGetPos, WindowX, WindowY, WindowW, WindowH, A
-MouseClick, , WindowW - 300, 290
+MouseClickAndReturn(WindowW - 300, 290)
 Send, ^a
-MouseMove, StartX, StartY
 return
 
 ; Property: X
 F7::
-MouseGetPos, StartX, StartY
-MouseClick, , 50, 220
-Send, ^a
-Send, X
-MouseClick, , 500, 220
-Send, ^a
-MouseMove, StartX, StartY
+ChangePropertyValue("X")
 return
 
 ; Property: Width
 F8::
-MouseGetPos, StartX, StartY
-MouseClick, , 50, 220
-Send, ^a
-Send, Width
-MouseClick, , 500, 220
-Send, ^a
-MouseMove, StartX, StartY
+ChangePropertyValue("Width")
 return
 
 ; ^v.Y + ^v.Height
 F9::
-Send, ^v
-Send, .Y{Space}{+}{Space}
-Send, ^v
-Send, .Height
+Send, ^v.Y {+} ^v.Height
 return
 
 ; ^v.X + ^v.Width
 F10::
-Send, ^v
-Send, .X{Space}{+}{Space}
-Send, ^v
-Send, .Width
+Send, ^v.X {+} ^v.Width
 return
 
 ; Parent.Height
@@ -135,52 +117,17 @@ return
 
 ; Property: Y
 9::
-MouseGetPos, StartX, StartY
-MouseClick, , 50, 220
-Send, ^a
-Send, Y
-MouseClick, , 500, 220
-Send, ^a
-MouseMove, StartX, StartY
+ChangePropertyValue("Y")
 return
 
 ; Property: Height
 0::
-MouseGetPos, StartX, StartY
-MouseClick, , 50, 220
-Send, ^a
-Send, Height
-MouseClick, , 500, 220
-Send, ^a
-MouseMove, StartX, StartY
+ChangePropertyValue("Height")
 return
 
 
 ; Others
 
-; ; Put on Top
-; PgUp::
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; Send, ^]
-; return
 
 ; Number Pad
 
@@ -244,12 +191,13 @@ PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
 ; This will open formula bar
 ; 1902 for 1080p display
 ; 2542 for 1440p display
-ExpendFormulaMenu(MenuX := 2542, MenuY := 219)
+ExpendFormulaMenu(MenuY := 219)
 {
-	MouseGetPos, StartX, StartY
-	WinGetPos, WindowX, WindowY, WindowW, WindowH, A
-	MouseClick, , WindowW - 18, MenuY
-	MouseMove, StartX, StartY
+	SelectPropertyDropdown()
+	Sleep, 200
+	Send, +{Tab}
+	Sleep, 200
+	Send, {Enter}
 }
 
 ; Mouse Click
@@ -258,6 +206,27 @@ MouseClickAndReturn(ClickX , ClickY)
 	MouseGetPos, StartX, StartY
 	MouseClick, , ClickX, ClickY
 	MouseMove, StartX, StartY
+}
+
+SelectPropertyValue()
+{
+	MouseClickAndReturn(500, 140)
+	MouseClickAndReturn(500, 220)
+}
+
+SelectPropertyDropdown()
+{
+	MouseClickAndReturn(50, 220)
+}
+
+ChangePropertyValue(Property)
+{
+	SelectPropertyDropdown()
+	Send, ^a
+	Send, %Property%
+	Sleep, 50
+	SelectPropertyValue()
+	Send, ^a
 }
 
 ; Windows functions

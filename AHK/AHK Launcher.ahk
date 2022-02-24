@@ -12,9 +12,10 @@ return
 Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\AHK\PowerApps\PowerAppsMain.ahk"
 return
 
-^F10::
-Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\iCue\iCUE-136Macro.ahk"
-return
+; No iCUE anymore. I removed the keyboard
+;^F10::
+;Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\iCue\iCUE-136Macro.ahk"
+;return
 
 ^F11::
 Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\ArduinoPS2\PowerApps-Ino.ahk"
@@ -22,7 +23,7 @@ return
 
 ^F12::
 Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\AHK\PowerApps\PowerAppsMain.ahk"
-Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\iCue\iCUE-136Macro.ahk"
+;Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\iCue\iCUE-136Macro.ahk"
 Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\ArduinoPS2\PowerApps-Ino.ahk"
 return
 
