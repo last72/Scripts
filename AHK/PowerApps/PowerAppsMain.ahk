@@ -13,6 +13,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Select All
 F1::
 Send, ^a
+FunctionExample()
 return
 
 ; Formular text
@@ -36,12 +37,12 @@ return
 
 ; Property: X
 F7::
-ChangePropertyValue("X")
+PAProperty("X")
 return
 
 ; Property: Width
 F8::
-ChangePropertyValue("Width")
+PAProperty("Width")
 return
 
 ; ^v.Y + ^v.Height
@@ -117,12 +118,12 @@ return
 
 ; Property: Y
 9::
-ChangePropertyValue("Y")
+PAProperty("Y")
 return
 
 ; Property: Height
 0::
-ChangePropertyValue("Height")
+PAProperty("Height")
 return
 
 
@@ -176,16 +177,14 @@ return
 
 ; This will open property part of a control. First parameter is name of the property (i.e. "OnSelect")
 ; The location has been hardcode. Windows scaling on High DPI display might impact this.
-PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
+PAProperty(Property)
 {
-    MouseGetPos, StartX, StartY
-	MouseClick, , PropertyX, PropertyY
-    Send, ^a
-    Send, %PropertyName%
-    MouseClick, , FormulaX, PropertyY
-    Send, ^a
-    MouseMove, StartX, StartY
-    return
+	SelectPropertyDropdown()
+	Send, ^a
+	Send, %Property%
+	Sleep, 50
+	SelectPropertyValue()
+	Send, ^a
 }
 
 ; This will open formula bar
@@ -219,19 +218,14 @@ SelectPropertyDropdown()
 	MouseClickAndReturn(50, 220)
 }
 
-ChangePropertyValue(Property)
-{
-	SelectPropertyDropdown()
-	Send, ^a
-	Send, %Property%
-	Sleep, 50
-	SelectPropertyValue()
-	Send, ^a
-}
-
 ; Windows functions
 ; Select/Open taskbar item
 OpenTaskbarItem(Index)
 {
 	Send, #%Index%
+}
+
+FunctionExample()
+{
+	MsgBox "Functionfromotherscript"
 }

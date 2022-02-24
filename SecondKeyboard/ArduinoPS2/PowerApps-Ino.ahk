@@ -3,6 +3,8 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+#Include, C:\Users\WoongChoi\Documents\Github\Scripts\AHK\PowerApps\PowerAppsMain.ahk
+
 
 ; Cheatsheet
 ; #: Win
@@ -67,7 +69,6 @@ Return
 F14 & F10::
 GoToWebsite("https://www.innolabcafe.com.au/shop/iced-long-black/")
 Return
-
 
 F13 & F11::
 GoToWebsite("https://www.innolabcafe.com.au/shop/chai-latte/")
@@ -522,25 +523,26 @@ GoToWebsite(Address)
     Send {Enter}
 }
 
-PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
-{
-    MouseGetPos, StartX, StartY
-	MouseClick, , PropertyX, PropertyY
-    Sleep 50
-    Send, ^a
-    Send, %PropertyName%
-    Sleep 50
-    MouseClick, , FormulaX, PropertyY
-    Send, ^a
-	Sleep 100
-    MouseMove, StartX, StartY
-    return
-} 
+; PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
+; {
+;     ChangePropertyValue(PropertyName)
+;     ; MouseGetPos, StartX, StartY
+; 	; MouseClick, , PropertyX, PropertyY
+;     ; Sleep 50
+;     ; Send, ^a
+;     ; Send, %PropertyName%
+;     ; Sleep 50
+;     ; MouseClick, , FormulaX, PropertyY
+;     ; Send, ^a
+; 	; Sleep 100
+;     ; MouseMove, StartX, StartY
+;     ; return
+; } 
 
-; Mouse Click
-MouseClickAndReturn(ClickX , ClickY)
-{
-	MouseGetPos, StartX, StartY
-	MouseClick, , ClickX, ClickY
-	MouseMove, StartX, StartY
-}
+; ; Mouse Click
+; MouseClickAndReturn(ClickX , ClickY)
+; {
+; 	MouseGetPos, StartX, StartY
+; 	MouseClick, , ClickX, ClickY
+; 	MouseMove, StartX, StartY
+; }

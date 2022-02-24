@@ -2,6 +2,7 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+#Include, C:\Users\WoongChoi\Documents\Github\Scripts\AHK\PowerApps\PowerAppsMain.ahk
 
 ; Cheatsheet
 ; #: Win
@@ -11,5 +12,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Index: 1. Arduino input: F1
 ^F1::
-MouseMove, 50, 220
+FunctionExample()
 return
