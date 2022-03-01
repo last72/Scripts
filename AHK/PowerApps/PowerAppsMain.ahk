@@ -13,7 +13,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Select All
 F1::
 Send, ^a
-FunctionExample()
 return
 
 ; Formular text
@@ -216,6 +215,7 @@ SelectPropertyValue()
 SelectPropertyDropdown()
 {
 	MouseClickAndReturn(50, 220)
+	Sleep, 50
 }
 
 ; Windows functions
