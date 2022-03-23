@@ -57,3 +57,12 @@ It opens PowerApps formula bar.
 #### Examples
 
 **ExpendFormulaMenu()**
+
+## Razer Mouse setup
+Naga Epic Chroma
+
+![image](https://user-images.githubusercontent.com/30095306/159597038-d1ba989f-d52e-454c-ac7f-c8a4d8502702.png)
+![image](https://user-images.githubusercontent.com/30095306/159597057-eeefbdb7-9f95-444b-b98e-fe50f8c0ef14.png)
+
+
+
