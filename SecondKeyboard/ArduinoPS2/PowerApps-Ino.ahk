@@ -314,6 +314,10 @@ F13 & x::
 SwitchToVSCode()
 Return
 
+F13 & c::
+SwitchToOneNote()
+Return
+
 
 F13 & 4::
 FormulaWithBracket("ShowColumns")
@@ -540,10 +544,16 @@ else
 SwitchToVSCode()
 {
 IfWinNotExist, ahk_exe Code.exe
-	Run, ahk_exe Code.exe
+	Run, "C:\Users\WoongChoi\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 GroupAdd, ahkvscode, ahk_exe Code.exe
 if WinActive("ahk_exe Code.exe")
 	GroupActivate, ahkvscode, r
 else
 	WinActivate ahk_exe Code.exe
+}
+
+SwitchToOneNote()
+{
+Sleep, 50
+Send, #8
 }

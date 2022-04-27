@@ -10,16 +10,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; +: Shift
 
 ; Index: 1. Arduino input: F1
-F1::
-switchToExplorer()
+F2::
+Run, "C:\Users\WoongChoi\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 return
 
-switchToExplorer(){
-IfWinNotExist, ahk_class CabinetWClass
-	Run, explorer.exe
-GroupAdd, ahkexplorers, ahk_class CabinetWClass
-if WinActive("ahk_exe explorer.exe")
-	GroupActivate, ahkexplorers, r
-else
-	WinActivate ahk_class CabinetWClass ;you have to use WinActivatebottom if you didn't create a window group.
-}
