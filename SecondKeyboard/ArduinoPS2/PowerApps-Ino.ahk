@@ -307,10 +307,13 @@ Send, {Left}
 Return
 
 F13 & z::
-Sleep, 50
-Send, Blank()
-Send, {Left}
+SwitchToExplorer()
 Return
+
+F13 & x::
+SwitchToVSCode()
+Return
+
 
 F13 & 4::
 FormulaWithBracket("ShowColumns")
@@ -523,26 +526,24 @@ GoToWebsite(Address)
     Send {Enter}
 }
 
-; PAProperty(PropertyName, PropertyX := 200, FormulaX:= 500, PropertyY := 220)
-; {
-;     ChangePropertyValue(PropertyName)
-;     ; MouseGetPos, StartX, StartY
-; 	; MouseClick, , PropertyX, PropertyY
-;     ; Sleep 50
-;     ; Send, ^a
-;     ; Send, %PropertyName%
-;     ; Sleep 50
-;     ; MouseClick, , FormulaX, PropertyY
-;     ; Send, ^a
-; 	; Sleep 100
-;     ; MouseMove, StartX, StartY
-;     ; return
-; } 
+SwitchToExplorer(){
+IfWinNotExist, ahk_class CabinetWClass
+	Run, explorer.exe
+GroupAdd, ahkexplorers, ahk_class CabinetWClass
+if WinActive("ahk_exe explorer.exe")
+	GroupActivate, ahkexplorers, r
+else
+	WinActivate ahk_class CabinetWClass ;you have to use WinActivatebottom if you didn't create a window group.
+}
 
-; ; Mouse Click
-; MouseClickAndReturn(ClickX , ClickY)
-; {
-; 	MouseGetPos, StartX, StartY
-; 	MouseClick, , ClickX, ClickY
-; 	MouseMove, StartX, StartY
-; }
+
+SwitchToVSCode()
+{
+IfWinNotExist, ahk_exe Code.exe
+	Run, ahk_exe Code.exe
+GroupAdd, ahkvscode, ahk_exe Code.exe
+if WinActive("ahk_exe Code.exe")
+	GroupActivate, ahkvscode, r
+else
+	WinActivate ahk_exe Code.exe
+}
