@@ -11,6 +11,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Index: 1. Arduino input: F1
 F2::
-Run, "C:\Users\WoongChoi\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+SplitPath,% A_ScriptDir,, outDir
+SplitPath,% outDir,, outDir2
+plainttext := outDir2 . "1"
+MsgBox %plainttext%
 return
+
+
+
 
