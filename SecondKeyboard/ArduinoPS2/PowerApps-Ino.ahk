@@ -3,6 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+
 #Include, C:\Users\WoongChoi\Documents\Github\Scripts\AHK\PowerApps\PowerAppsMain.ahk
 
 

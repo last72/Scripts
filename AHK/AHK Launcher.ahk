@@ -3,29 +3,21 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-^F8::
-Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\AHK\MSExamPrep.ahk"
-return
+SplitPath,% A_ScriptDir,, scriptDir
 
 
+; Launch Main Keyboard Script
 ^F9::
-Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\AHK\PowerApps\PowerAppsMain.ahk"
+Run %scriptDir%\AHK\PowerApps\PowerAppsMain.ahk
 return
 
-; No iCUE anymore. I removed the keyboard
-;^F10::
-;Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\iCue\iCUE-136Macro.ahk"
-;return
-
+; Launch Secondary Keyboard Script
 ^F11::
-Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\ArduinoPS2\PowerApps-Ino.ahk"
+Run %scriptDir%\SecondKeyboard\ArduinoPS2\PowerApps-Ino.ahk
 return
 
+;Launch Both Main and Secondary Keyboard Script
 ^F12::
-Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\AHK\PowerApps\PowerAppsMain.ahk"
-;Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\iCue\iCUE-136Macro.ahk"
-Run "C:\Users\WoongChoi\Documents\GitHub\Scripts\SecondKeyboard\ArduinoPS2\PowerApps-Ino.ahk"
+Run %scriptDir%\AHK\PowerApps\PowerAppsMain.ahk
+Run %scriptDir%\SecondKeyboard\ArduinoPS2\PowerApps-Ino.ahk
 return
-
-^+F12::
-ExitApp
