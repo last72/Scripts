@@ -54,15 +54,40 @@ F10::
 Send, ^v.X {+} ^v.Width
 return
 
-; Parent.Height
-F11::
-Send, Parent.Height
+
+; Enter Number
+F12 & 1::
+Send, {Numpad1}
 return
 
-; Parent.Width
-F12::
-Send, Parent.Width
+F12 & 2::
+Send, {Numpad2}
 return
+F12 & 3::
+Send, {Numpad3}
+return
+F12 & 4::
+Send, {Numpad4}
+return
+F12 & 5::
+Send, {Numpad5}
+return
+F12 & 6::
+Send, {Numpad6}
+return
+F12 & 7::
+Send, {Numpad7}
+return
+F12 & 8::
+Send, {Numpad8}
+return
+F12 & 9::
+Send, {Numpad9}
+return
+F12 & 0::
+Send, {Numpad0}
+return
+
 
 
 ; Number row
@@ -149,6 +174,8 @@ return
 	WinGetPos, WindowX, WindowY, WindowW, WindowH, A
 	MouseClickAndReturn(WindowW/2, WindowH - 80)
 return
+
+
 
 
 
