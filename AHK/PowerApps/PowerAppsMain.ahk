@@ -180,6 +180,13 @@ return
 
 
 ; F13 - F24
+; F13 is for 12E3 macro
+
+F13 & Q::
+FunctionExample()
+return
+
+; end of F13 - F24
 
 
 ; Expend PowerApps menu
@@ -235,13 +242,13 @@ MouseClickAndReturn(ClickX , ClickY)
 
 SelectPropertyValue()
 {
-	MouseClickAndReturn(500, 140)
-	MouseClickAndReturn(500, 220)
+	MouseClickAndReturn(500, 195)
+	MouseClickAndReturn(500, 195)
 }
 
 SelectPropertyDropdown()
 {
-	MouseClickAndReturn(50, 220)
+	MouseClickAndReturn(50, 195)
 	Sleep, 50
 }
 
