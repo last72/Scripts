@@ -183,8 +183,57 @@ return
 ; F13 is for 12E3 macro
 
 F13 & Q::
-FunctionExample()
+EdgeNewGroup()
 return
+
+; First Knob - Volumn control
+
+F13 & T::
+SoundSet, -1
+return
+
+F13 & Y::
+SoundSet, +1,, Mute
+return
+
+F13 & U::
+SoundSet, +1
+return
+
+
+; Second Knob - Scroll wheel
+
+F13 & G::
+Loop, 5
+{
+	Send, {WheelUp}
+}
+return
+
+F13 & H::
+return
+
+F13 & J::
+Loop, 5
+{
+	Send, {WheelDown}
+}
+return
+
+; Third Knob - Circur control
+
+F13 & B::
+Send, {Left}
+return
+
+F13 & N::
+Send, {Enter}
+return
+
+F13 & M::
+Send, {Right}
+return
+
 
 ; end of F13 - F24
 
@@ -262,4 +311,12 @@ OpenTaskbarItem(Index)
 FunctionExample()
 {
 	MsgBox "Functionfromotherscript"
+}
+
+EdgeNewGroup()
+{
+	Click, Right
+	Send, {Down}
+	Send, {Down}
+	Send, {Enter}
 }
