@@ -30,7 +30,7 @@ return
 ; Name Text
 F6::
 WinGetPos, WindowX, WindowY, WindowW, WindowH, A
-MouseClickAndReturn(WindowW - 300, 290)
+MouseClickAndReturn(WindowW - 300, 268)
 Send, ^a
 return
 
@@ -182,21 +182,58 @@ return
 ; F13 - F24
 ; F13 is for 12E3 macro
 
+; Create new group in edge. hover the mouse over first
 F13 & Q::
+Sleep, 50
 EdgeNewGroup()
 return
+
+; Save
+F13 & A::
+Sleep, 50
+Send, ^s
+return
+
+; Duplicate tab
+F13 & W::
+Sleep, 50
+Send, ^+k
+return
+
+; #l lock the machine
+F13 & R::
+Sleep, 50
+DllCall("LockWorkStation")
+return
+
+; Close window
+F13 & F::
+Sleep, 50
+Send, !{F4}
+return
+
+; Close Tab
+F13 & V::
+Sleep, 50
+Send, ^w
+return
+
+
 
 ; First Knob - Volumn control
 
 F13 & T::
+Sleep, 50
 SoundSet, -1
 return
 
 F13 & Y::
+Sleep, 50
 SoundSet, +1,, Mute
 return
 
 F13 & U::
+Sleep, 50
 SoundSet, +1
 return
 
@@ -204,6 +241,7 @@ return
 ; Second Knob - Scroll wheel
 
 F13 & G::
+Sleep, 50
 Loop, 5
 {
 	Send, {WheelUp}
@@ -214,24 +252,44 @@ F13 & H::
 return
 
 F13 & J::
+Sleep, 50
 Loop, 5
 {
 	Send, {WheelDown}
 }
 return
 
-; Third Knob - Circur control
+; ; Third Knob - Circur control
+
+; F13 & B::
+; Send, {Left}
+; return
+
+; F13 & N::
+; Send, {Enter}
+; return
+
+; F13 & M::
+; Send, {Right}
+; return
+
+; Third Knob - Tab control
 
 F13 & B::
-Send, {Left}
+Sleep, 50
+Send, ^+{Tab}
+; Send {F13} ;forced let go
 return
 
 F13 & N::
-Send, {Enter}
+Sleep, 50
+Send, ^w
 return
 
 F13 & M::
-Send, {Right}
+Sleep, 50
+Send, ^{Tab}
+; Send {F13} ;forced let go
 return
 
 
@@ -318,5 +376,8 @@ EdgeNewGroup()
 	Click, Right
 	Send, {Down}
 	Send, {Down}
+	Sleep, 50
+	Send, {Enter}
+	Sleep, 50
 	Send, {Enter}
 }
