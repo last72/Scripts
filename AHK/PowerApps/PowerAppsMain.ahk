@@ -188,16 +188,17 @@ Sleep, 50
 EdgeNewGroup()
 return
 
-; Save
-F13 & A::
-Sleep, 50
-Send, ^s
-return
 
 ; Duplicate tab
 F13 & W::
 Sleep, 50
 Send, ^+k
+return
+
+; Bump z layer to top
+F13 & E::
+Sleep, 50
+Send, ^+]
 return
 
 ; #l lock the machine
@@ -206,10 +207,34 @@ Sleep, 50
 DllCall("LockWorkStation")
 return
 
+; Save
+F13 & A::
+Sleep, 50
+Send, ^s
+return
+
+; Windows view
+F13 & S::
+Sleep, 50
+Send, #{Tab}
+return
+
 ; Close window
 F13 & F::
 Sleep, 50
 Send, !{F4}
+return
+
+; New tab
+F13 & Z::
+Sleep, 50
+Send, ^t
+return
+
+; Open recently closed Tab
+F13 & C::
+Sleep, 50
+Send, ^+t
 return
 
 ; Close Tab
@@ -220,21 +245,25 @@ return
 
 
 
-; First Knob - Volumn control
+; First Knob - Onenote horizontal scroll
 
 F13 & T::
 Sleep, 50
-SoundSet, -1
+ControlGetFocus, fcontrol, A
+Loop 2  ; <-- Increase this value to scroll faster.
+    SendMessage, 0x114, 0, 0, %fcontrol%, A  ; 0x114 is WM_HSCROLL and the 0 after it is SB_LINELEFT.
 return
 
 F13 & Y::
 Sleep, 50
-SoundSet, +1,, Mute
+; SoundSet, +1,, Mute
 return
 
 F13 & U::
 Sleep, 50
-SoundSet, +1
+ControlGetFocus, fcontrol, A
+Loop 2  ; <-- Increase this value to scroll faster.
+    SendMessage, 0x114, 1, 0, %fcontrol%, A  ; 0x114 is WM_HSCROLL and the 1 after it is SB_LINERIGHT.
 return
 
 
@@ -242,7 +271,7 @@ return
 
 F13 & G::
 Sleep, 50
-Loop, 5
+Loop, 20
 {
 	Send, {WheelUp}
 }
@@ -253,7 +282,7 @@ return
 
 F13 & J::
 Sleep, 50
-Loop, 5
+Loop, 20
 {
 	Send, {WheelDown}
 }
