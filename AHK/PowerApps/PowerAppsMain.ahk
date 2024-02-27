@@ -45,13 +45,24 @@ PAProperty("Width")
 return
 
 ; ^v.Y + ^v.Height
+; Sleep delay is in place to make sure pasting control name is success
 F9::
-Send, ^v.Y {+} ^v.Height
+Send, ^v
+Sleep, 10
+Send, .Y {+}{Space}
+Send, ^v
+Sleep, 100
+Send, .Height
 return
 
 ; ^v.X + ^v.Width
 F10::
-Send, ^v.X {+} ^v.Width
+Send, ^v
+Sleep, 10
+Send, .X {+}{Space}
+Send, ^v
+Sleep, 100
+Send, .Width
 return
 
 
