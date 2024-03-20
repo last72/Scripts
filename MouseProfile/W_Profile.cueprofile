@@ -4,11 +4,11 @@
 		<cereal_class_version>500</cereal_class_version>
 		<profile>
 			<cereal_class_version>504</cereal_class_version>
-			<name>Scimitar RGB ELITE HW1</name>
+			<name>W_Profile</name>
 			<id>{008b1b00-0001-0000-0000-000000000000}</id>
-			<hash>d5778ca6202f7658478196e1f94cd02d</hash>
+			<hash>c8585e9090b5f133b978ad993b670636</hash>
 			<iconUrl></iconUrl>
-			<iconColor>#00000000</iconColor>
+			<iconColor>#ff00ff00</iconColor>
 			<linkedProgramsPaths size="dynamic"/>
 			<backgroundImageUrl></backgroundImageUrl>
 			<blurBackgroundImage>false</blurBackgroundImage>
@@ -224,7 +224,7 @@
 													<cereal_class_version>300</cereal_class_version>
 													<base>
 														<cereal_class_version>400</cereal_class_version>
-														<id>{0d2e0009-0100-4cee-8b02-fa9b55db6648}</id>
+														<id>{3fba9409-07b9-439b-9439-a629b4b040cd}</id>
 														<name></name>
 														<keys size="dynamic"/>
 														<enabled>true</enabled>
@@ -481,8 +481,8 @@
 														<data>
 															<cereal_class_version>301</cereal_class_version>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -503,8 +503,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>69912</cookie>
-															<blobCookie>31</blobCookie>
+															<cookie>69973</cookie>
+															<blobCookie>92</blobCookie>
 															<dpiCookie>1866885487</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -525,8 +525,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -547,8 +547,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -569,8 +569,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -591,8 +591,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -613,8 +613,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -635,8 +635,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -657,8 +657,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -679,8 +679,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -701,8 +701,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>130</cookie>
-															<blobCookie>130</blobCookie>
+															<cookie>191</cookie>
+															<blobCookie>191</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -992,7 +992,7 @@
 																												<data>
 																													<cereal_class_version>200</cereal_class_version>
 																													<base>
-																														<id>{5ad3d640-9f03-48a0-9982-cda4971c9a47}</id>
+																														<id>{08356662-ae95-456c-99c0-a8450e27a84b}</id>
 																														<name>Rainbow</name>
 																														<keys size="dynamic"/>
 																														<enabled>true</enabled>
@@ -1077,7 +1077,7 @@
 																												<id>2147483654</id>
 																												<data>
 																													<base>
-																														<id>{4f9fcb9a-200a-4aee-a37a-da66733dae8e}</id>
+																														<id>{5aaa541d-9270-4fa6-92d2-fc27a09907df}</id>
 																														<name>Watercolor</name>
 																														<keys size="dynamic"/>
 																														<enabled>true</enabled>
@@ -1195,7 +1195,7 @@
 																					<cereal_class_version>205</cereal_class_version>
 																					<base>
 																						<cereal_class_version>202</cereal_class_version>
-																						<name>Keystroke 3</name>
+																						<name>Copy</name>
 																						<id>{50f43e30-24f3-4039-955b-dab001244f0c}</id>
 																						<repeatOptions>
 																							<cereal_class_version>300</cereal_class_version>
@@ -1245,7 +1245,7 @@
 																				<id>2147483657</id>
 																				<data>
 																					<base>
-																						<name>Keyboard 4</name>
+																						<name>Backspace</name>
 																						<id>{6b4e4c57-d198-468d-be92-014339729fa3}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1289,7 +1289,7 @@
 																				<id>2147483658</id>
 																				<data>
 																					<base>
-																						<name>Keystroke 2</name>
+																						<name>Paste</name>
 																						<id>{50391e73-6124-43fd-9980-854fcfdfd546}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1336,7 +1336,7 @@
 																				<id>2147483659</id>
 																				<data>
 																					<base>
-																						<name>Keyboard 3</name>
+																						<name>Refresh Page</name>
 																						<id>{aedb38f1-f722-43ee-bf08-c9b94123cbac}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1380,7 +1380,7 @@
 																				<id>2147483660</id>
 																				<data>
 																					<base>
-																						<name>Keyboard 2</name>
+																						<name>Previous Tab</name>
 																						<id>{f7dedea5-c3b8-4841-9b87-d56017e265f7}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1400,13 +1400,17 @@
 																						<actionSoundPath></actionSoundPath>
 																						<attachedActions size="dynamic"/>
 																					</base>
-																					<keyName>KeypadMinus</keyName>
-																					<keyStroke size="dynamic"/>
+																					<keyName></keyName>
+																					<keyStroke size="dynamic">
+																						<value0>LeftCtrl</value0>
+																						<value1>LeftShift</value1>
+																						<value2>Tab</value2>
+																					</keyStroke>
 																					<holdingKeyEnabled>false</holdingKeyEnabled>
 																					<holdingKeyType>OnPress</holdingKeyType>
 																					<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
 																					<sniperSwitchMode>WhilePressed</sniperSwitchMode>
-																					<remapGroup>0</remapGroup>
+																					<remapGroup>7</remapGroup>
 																				</data>
 																			</ptr_wrapper>
 																		</first>
@@ -1424,7 +1428,54 @@
 																				<id>2147483661</id>
 																				<data>
 																					<base>
-																						<name>Keyboard 5</name>
+																						<name>Next Tab</name>
+																						<id>{09cdc7ec-faa3-4622-a8a6-a9db4a56be31}</id>
+																						<repeatOptions>
+																							<repeatCount>1</repeatCount>
+																							<repeatMode>NoRepeat</repeatMode>
+																							<delay>0</delay>
+																							<delayMode>Constant</delayMode>
+																							<randomDelayFrom>0</randomDelayFrom>
+																							<randomDelayTo>0</randomDelayTo>
+																						</repeatOptions>
+																						<executionHints>
+																							<terminateOnSecondExec>false</terminateOnSecondExec>
+																							<restartOnSecondExec>false</restartOnSecondExec>
+																							<execHint>OnBoth</execHint>
+																							<retainOriginalKeyOutput>false</retainOriginalKeyOutput>
+																						</executionHints>
+																						<actionLighting>{00000000-0000-0000-0000-000000000000}</actionLighting>
+																						<actionSoundPath></actionSoundPath>
+																						<attachedActions size="dynamic"/>
+																					</base>
+																					<keyName></keyName>
+																					<keyStroke size="dynamic">
+																						<value0>LeftCtrl</value0>
+																						<value1>Tab</value1>
+																					</keyStroke>
+																					<holdingKeyEnabled>false</holdingKeyEnabled>
+																					<holdingKeyType>OnPress</holdingKeyType>
+																					<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
+																					<sniperSwitchMode>WhilePressed</sniperSwitchMode>
+																					<remapGroup>7</remapGroup>
+																				</data>
+																			</ptr_wrapper>
+																		</first>
+																		<second>
+																			<key>MouseG9</key>
+																			<layer>StandardLayer</layer>
+																			<event>Click</event>
+																			<distance>0</distance>
+																		</second>
+																	</value5>
+																	<value6>
+																		<first>
+																			<polymorphic_id>23</polymorphic_id>
+																			<ptr_wrapper>
+																				<id>2147483662</id>
+																				<data>
+																					<base>
+																						<name>PrintScreen</name>
 																						<id>{01278f07-d025-4a6c-9dfb-5aa2c722195d}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1460,15 +1511,15 @@
 																			<event>Click</event>
 																			<distance>0</distance>
 																		</second>
-																	</value5>
-																	<value6>
+																	</value6>
+																	<value7>
 																		<first>
 																			<polymorphic_id>23</polymorphic_id>
 																			<ptr_wrapper>
-																				<id>2147483662</id>
+																				<id>2147483663</id>
 																				<data>
 																					<base>
-																						<name>Keystroke 1</name>
+																						<name>Tab</name>
 																						<id>{dd756afe-5200-4203-94fc-2df28a13a7c6}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1488,16 +1539,13 @@
 																						<actionSoundPath></actionSoundPath>
 																						<attachedActions size="dynamic"/>
 																					</base>
-																					<keyName></keyName>
-																					<keyStroke size="dynamic">
-																						<value0>LeftAlt</value0>
-																						<value1>3</value1>
-																					</keyStroke>
+																					<keyName>Tab</keyName>
+																					<keyStroke size="dynamic"/>
 																					<holdingKeyEnabled>false</holdingKeyEnabled>
 																					<holdingKeyType>OnPress</holdingKeyType>
 																					<holdingKeyOnPressInterval>100</holdingKeyOnPressInterval>
 																					<sniperSwitchMode>WhilePressed</sniperSwitchMode>
-																					<remapGroup>7</remapGroup>
+																					<remapGroup>0</remapGroup>
 																				</data>
 																			</ptr_wrapper>
 																		</first>
@@ -1507,15 +1555,15 @@
 																			<event>Click</event>
 																			<distance>0</distance>
 																		</second>
-																	</value6>
-																	<value7>
+																	</value7>
+																	<value8>
 																		<first>
 																			<polymorphic_id>23</polymorphic_id>
 																			<ptr_wrapper>
-																				<id>2147483663</id>
+																				<id>2147483664</id>
 																				<data>
 																					<base>
-																						<name>Keyboard 1</name>
+																						<name>Enter</name>
 																						<id>{2dca2164-6c31-4ca6-bafc-e12b7319cf48}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1551,15 +1599,15 @@
 																			<event>Click</event>
 																			<distance>0</distance>
 																		</second>
-																	</value7>
-																	<value8>
+																	</value8>
+																	<value9>
 																		<first>
 																			<polymorphic_id>23</polymorphic_id>
 																			<ptr_wrapper>
-																				<id>2147483664</id>
+																				<id>2147483665</id>
 																				<data>
 																					<base>
-																						<name>Mouse 1</name>
+																						<name>Back Button</name>
 																						<id>{a3b3bd9e-7a85-41e2-b247-1cd4e03eca1d}</id>
 																						<repeatOptions>
 																							<repeatCount>1</repeatCount>
@@ -1595,12 +1643,12 @@
 																			<event>Click</event>
 																			<distance>0</distance>
 																		</second>
-																	</value8>
+																	</value9>
 																</actions>
 																<presetsInfo>
 																	<polymorphic_id>1073741824</polymorphic_id>
 																	<ptr_wrapper>
-																		<id>2147483665</id>
+																		<id>2147483666</id>
 																		<data>
 																			<activePresetId>{00000000-0000-0000-0000-000000000000}</activePresetId>
 																			<isActive>false</isActive>
@@ -1723,8 +1771,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1745,8 +1793,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1767,8 +1815,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1789,8 +1837,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1811,8 +1859,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1833,8 +1881,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1855,8 +1903,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1877,8 +1925,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1899,8 +1947,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1921,8 +1969,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -1943,8 +1991,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -2048,10 +2096,10 @@
 																		<polymorphic_id>2147483674</polymorphic_id>
 																		<polymorphic_name>BasicLightingLayer</polymorphic_name>
 																		<ptr_wrapper>
-																			<id>2147483666</id>
+																			<id>2147483667</id>
 																			<data>
 																				<base>
-																					<id>{2c0e3955-0a8d-4e8b-9838-c42bf0024dd7}</id>
+																					<id>{e4fdb7ff-b7d6-48d7-9173-4d7ac9cb3f40}</id>
 																					<name>Rainbow Wave</name>
 																					<keys size="dynamic"/>
 																					<enabled>true</enabled>
@@ -2325,10 +2373,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483667</id>
+																									<id>2147483668</id>
 																									<data>
 																										<base>
-																											<id>{5e1a3360-44f4-4d06-8ce0-880e703a0eda}</id>
+																											<id>{dac62331-5167-480e-b259-33ca5c2267e2}</id>
 																											<name>Default</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -2346,7 +2394,7 @@
 																											<polymorphic_id>2147483675</polymorphic_id>
 																											<polymorphic_name>BasicNoneLighting</polymorphic_name>
 																											<ptr_wrapper>
-																												<id>2147483668</id>
+																												<id>2147483669</id>
 																												<data>
 																													<cereal_class_version>300</cereal_class_version>
 																													<base>
@@ -2443,10 +2491,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483669</id>
+																									<id>2147483670</id>
 																									<data>
 																										<base>
-																											<id>{abd4f81b-39ba-4868-be57-6f4c03dba2a2}</id>
+																											<id>{230ad1e6-9ac4-4a0b-8fc5-e42d02d1f2fa}</id>
 																											<name>Default</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -2464,7 +2512,7 @@
 																											<polymorphic_id>2147483676</polymorphic_id>
 																											<polymorphic_name>StaticLighting</polymorphic_name>
 																											<ptr_wrapper>
-																												<id>2147483670</id>
+																												<id>2147483671</id>
 																												<data>
 																													<cereal_class_version>201</cereal_class_version>
 																													<base>
@@ -2533,10 +2581,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483671</id>
+																									<id>2147483672</id>
 																									<data>
 																										<base>
-																											<id>{eabc15ac-1cda-49f1-afe3-255fd105a989}</id>
+																											<id>{b4d06063-e7bc-4098-a490-0bfafe4a5d8c}</id>
 																											<name>Watercolor</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -2553,7 +2601,7 @@
 																										<lighting>
 																											<polymorphic_id>19</polymorphic_id>
 																											<ptr_wrapper>
-																												<id>2147483672</id>
+																												<id>2147483673</id>
 																												<data>
 																													<base>
 																														<name></name>
@@ -2617,10 +2665,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483673</id>
+																									<id>2147483674</id>
 																									<data>
 																										<base>
-																											<id>{c308de7b-7dfd-4f4d-8600-ad0d656c7098}</id>
+																											<id>{109c38ac-6a5e-4062-85e2-f42866b6496e}</id>
 																											<name>Rainbow Wave</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -2638,7 +2686,7 @@
 																											<polymorphic_id>2147483677</polymorphic_id>
 																											<polymorphic_name>RainbowWaveLighting</polymorphic_name>
 																											<ptr_wrapper>
-																												<id>2147483674</id>
+																												<id>2147483675</id>
 																												<data>
 																													<cereal_class_version>301</cereal_class_version>
 																													<base>
@@ -2907,12 +2955,12 @@
 														<polymorphic_id>2147483685</polymorphic_id>
 														<polymorphic_name>GestureAction</polymorphic_name>
 														<ptr_wrapper>
-															<id>2147483675</id>
+															<id>2147483676</id>
 															<data>
 																<cereal_class_version>301</cereal_class_version>
 																<base>
 																	<name></name>
-																	<id>{14a50807-cbbd-46ea-b848-70f1b20add31}</id>
+																	<id>{cc13feb5-a506-4f90-a418-878f5a62805a}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -2943,11 +2991,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483676</id>
+															<id>2147483677</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{e31819c4-3811-4a7f-9e4b-435e1855ef08}</id>
+																	<id>{39c429fb-cb26-4ebc-8b16-6b395d9553a9}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -2978,11 +3026,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483677</id>
+															<id>2147483678</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{238aa75e-9db6-48c2-a85d-9b71c9a57690}</id>
+																	<id>{55d78cb5-4ec0-404d-9fd8-8f0e885a4fd0}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3013,11 +3061,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483678</id>
+															<id>2147483679</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{55abb611-5e6b-41e0-b918-13dfc7b8c1ac}</id>
+																	<id>{db6bda98-cd8c-4d15-bf46-6ff7344a0e9d}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3048,11 +3096,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483679</id>
+															<id>2147483680</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{2eb59eb6-1673-4878-8162-2c5711c422bb}</id>
+																	<id>{6836456e-bfc0-4a81-ad7b-c709d46e69da}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3083,11 +3131,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483680</id>
+															<id>2147483681</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{32902fc6-ed0f-437e-9079-73e18b3331ab}</id>
+																	<id>{a28a6386-b443-47ba-9f54-4cf76de1cd73}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3118,11 +3166,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483681</id>
+															<id>2147483682</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{ccf84ffd-480b-4e9d-9312-4594ca678217}</id>
+																	<id>{b64cd311-9612-420a-9dd4-40ef96196a8e}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3153,11 +3201,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483682</id>
+															<id>2147483683</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{24016ee2-684c-4de5-8d4c-b093bd0d058e}</id>
+																	<id>{7e64d987-7168-4f1c-a0ec-bb09ddf21c0c}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3188,11 +3236,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483683</id>
+															<id>2147483684</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{b86e8ab5-1842-4e1f-b827-db9f3a01f927}</id>
+																	<id>{90b71ee2-e92e-4d84-b006-711c93bc788e}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3223,11 +3271,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483684</id>
+															<id>2147483685</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{b1af5dac-3c67-444c-b622-9751f912ca44}</id>
+																	<id>{e4797dac-7ed8-4cc3-a11e-d17c45304c65}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3258,11 +3306,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483685</id>
+															<id>2147483686</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{19e64c60-5296-4f47-996e-adc402a9951c}</id>
+																	<id>{77da581b-b6a1-4c22-82c2-1052c6548168}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3293,11 +3341,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483686</id>
+															<id>2147483687</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{483f1490-7c22-48c8-a7ae-0efecf85889d}</id>
+																	<id>{b248942c-d563-443d-8e6f-1426d6282755}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3328,11 +3376,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483687</id>
+															<id>2147483688</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{de394fba-1787-467c-b6d1-924a694d80f3}</id>
+																	<id>{4caec5ce-b87c-4f7a-bfdc-291955d4f12a}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3363,11 +3411,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483688</id>
+															<id>2147483689</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{b1d97c2e-48bb-42e5-8947-a871338e1e9a}</id>
+																	<id>{669c8ced-75e2-48f8-a292-28078fce0c08}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3398,11 +3446,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483689</id>
+															<id>2147483690</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{0961337f-a5d1-475c-825d-b129014f7708}</id>
+																	<id>{f7635123-1206-48de-9e27-7b4705a40f0b}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3433,11 +3481,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483690</id>
+															<id>2147483691</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{f125c7ad-d273-4533-96cc-f6b2be7b42af}</id>
+																	<id>{d0bb1f21-bfe2-4ff5-a199-24aa25293dc9}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3468,11 +3516,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483691</id>
+															<id>2147483692</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{b67529a8-973f-4674-9ba6-f83c5e4a04f0}</id>
+																	<id>{75eaec7d-e287-4817-9a24-1907efff6010}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3503,11 +3551,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483692</id>
+															<id>2147483693</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{c1fa2ed7-173e-4e64-94a5-c314ce04c8f1}</id>
+																	<id>{7fb687e8-f7a9-42a8-bee5-a6fa6a60eda3}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3538,11 +3586,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483693</id>
+															<id>2147483694</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{f8e6c319-2218-4ee6-b5e0-2674d60904e2}</id>
+																	<id>{33459588-57ba-4f28-8ada-5a374c00c89a}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3573,11 +3621,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483694</id>
+															<id>2147483695</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{b332155e-5da3-4793-a79c-bfa191ad6ccf}</id>
+																	<id>{6b28cdab-bc30-41a3-9a8d-7aabd0652a85}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3608,11 +3656,11 @@
 													<second>
 														<polymorphic_id>37</polymorphic_id>
 														<ptr_wrapper>
-															<id>2147483695</id>
+															<id>2147483696</id>
 															<data>
 																<base>
 																	<name></name>
-																	<id>{740f61a3-0614-4e99-9322-dfe8f514e59b}</id>
+																	<id>{792f2d00-8e47-4f71-b3dc-2d3d0f9babc1}</id>
 																	<repeatOptions>
 																		<repeatCount>1</repeatCount>
 																		<repeatMode>NoRepeat</repeatMode>
@@ -3803,10 +3851,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483696</id>
+																									<id>2147483697</id>
 																									<data>
 																										<base>
-																											<id>{3476d809-bc43-4149-813e-354dbfacc1be}</id>
+																											<id>{bd3f42e2-413a-42bb-b7bd-b5341f57a3bd}</id>
 																											<name>Static Color</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -3823,7 +3871,7 @@
 																										<lighting>
 																											<polymorphic_id>28</polymorphic_id>
 																											<ptr_wrapper>
-																												<id>2147483697</id>
+																												<id>2147483698</id>
 																												<data>
 																													<base>
 																														<base>
@@ -3889,10 +3937,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483698</id>
+																									<id>2147483699</id>
 																									<data>
 																										<base>
-																											<id>{37190caa-d983-44dd-8763-1c0e26717743}</id>
+																											<id>{74a7f24b-4b3f-4d2d-b673-1e75fa833d75}</id>
 																											<name>Static Color</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -3909,7 +3957,7 @@
 																										<lighting>
 																											<polymorphic_id>28</polymorphic_id>
 																											<ptr_wrapper>
-																												<id>2147483699</id>
+																												<id>2147483700</id>
 																												<data>
 																													<base>
 																														<base>
@@ -3975,10 +4023,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483700</id>
+																									<id>2147483701</id>
 																									<data>
 																										<base>
-																											<id>{8b2f1f35-b152-4da7-b693-5ff64a8c332c}</id>
+																											<id>{5d7a16fb-7038-491e-bcd4-bce2efdbb04d}</id>
 																											<name>Blink</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -3996,7 +4044,7 @@
 																											<polymorphic_id>2147483692</polymorphic_id>
 																											<polymorphic_name>BlinkLighting</polymorphic_name>
 																											<ptr_wrapper>
-																												<id>2147483701</id>
+																												<id>2147483702</id>
 																												<data>
 																													<cereal_class_version>300</cereal_class_version>
 																													<base>
@@ -4052,8 +4100,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4074,8 +4122,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4096,8 +4144,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4118,8 +4166,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4140,8 +4188,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4162,8 +4210,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4184,8 +4232,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4206,8 +4254,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4228,8 +4276,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4250,8 +4298,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4272,8 +4320,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4433,8 +4481,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4455,8 +4503,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4477,8 +4525,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4499,8 +4547,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4521,8 +4569,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4543,8 +4591,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4565,8 +4613,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4587,8 +4635,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4609,8 +4657,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4631,8 +4679,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4653,8 +4701,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -4839,10 +4887,10 @@
 																							<value0>
 																								<polymorphic_id>17</polymorphic_id>
 																								<ptr_wrapper>
-																									<id>2147483702</id>
+																									<id>2147483703</id>
 																									<data>
 																										<base>
-																											<id>{a44ab059-faaa-4418-a8df-08e4dc11e17c}</id>
+																											<id>{495d5c01-feca-4ccc-ba10-f9a9c80e85f3}</id>
 																											<name>Static Color</name>
 																											<keys size="dynamic"/>
 																											<enabled>true</enabled>
@@ -4859,7 +4907,7 @@
 																										<lighting>
 																											<polymorphic_id>28</polymorphic_id>
 																											<ptr_wrapper>
-																												<id>2147483703</id>
+																												<id>2147483704</id>
 																												<data>
 																													<base>
 																														<base>
@@ -5347,8 +5395,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -5369,8 +5417,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -5391,8 +5439,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -5413,8 +5461,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -5435,8 +5483,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>
@@ -5457,8 +5505,8 @@
 														<valid>1</valid>
 														<data>
 															<base/>
-															<cookie>0</cookie>
-															<blobCookie>0</blobCookie>
+															<cookie>1</cookie>
+															<blobCookie>1</blobCookie>
 															<dpiCookie>0</dpiCookie>
 														</data>
 													</ptr_wrapper>

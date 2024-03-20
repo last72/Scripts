@@ -24,7 +24,7 @@ Number row on the left are used for hot keys so when typing numbers, always used
 Current Setup:
 - Keyboard: Logitech G213
 - Mouse: Corsair SCIMITAR RGB ELITE
-- Macropad: Taobao something
+- Macropad: Taobao 12E3 macro pad
 - Monitor: 1920 * 1080 resolution. Windows scaling 100%
 
 ## Functions
