@@ -66,6 +66,8 @@ Send, .Width
 return
 
 
+
+
 ; Enter Number
 F12 & 1::
 Send, {Numpad1}
@@ -163,6 +165,22 @@ return
 
 
 ; Others
+^!c::
+Clipboard_temp := clipboardall
+Clipboard := ""
+Send ^c
+Clipwait
+Clipboard_2 := clipboardall
+Clipboard := clipboard_temp
+Return
+
+^!v::
+Clipboard_temp := clipboardall
+Clipboard := clipboard_2
+Send ^v
+Sleep 300
+Clipboard := clipboard_temp
+Return
 
 
 ; Number Pad
@@ -186,8 +204,10 @@ return
 	MouseClickAndReturn(WindowW/2, WindowH - 80)
 return
 
-
-
+; Script Suspend toggle
+^+F12::
+Suspend
+return
 
 
 ; F13 - F24
@@ -298,20 +318,6 @@ Loop, 20
 	Send, {WheelDown}
 }
 return
-
-; ; Third Knob - Circur control
-
-; F13 & B::
-; Send, {Left}
-; return
-
-; F13 & N::
-; Send, {Enter}
-; return
-
-; F13 & M::
-; Send, {Right}
-; return
 
 ; Third Knob - Tab control
 
