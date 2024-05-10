@@ -25,3 +25,34 @@ FunctionSample()
     Sleep, 100
     Send, {Enter}
 }
+
+; Mouse Click
+YoutubeVideoNotInterested()
+{
+    Click, Left
+    Sleep, 100
+    Send, {Tab 6}
+    Sleep, 100
+    Send, {Enter}
+}
+
+
+
+; Secondary Clipboard
+; Others
+^!c::
+Clipboard_temp := clipboardall
+Clipboard := ""
+Send ^c
+Clipwait
+Clipboard_2 := clipboardall
+Clipboard := clipboard_temp
+Return
+
+^!v::
+Clipboard_temp := clipboardall
+Clipboard := clipboard_2
+Send ^v
+Sleep 300
+Clipboard := clipboard_temp
+Return

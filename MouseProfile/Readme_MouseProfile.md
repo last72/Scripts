@@ -17,9 +17,9 @@ Save on "Hardware Key Assignements" and it will affect when you close iCUE softw
 
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
-| 1* | 2 | 3* |
+| 1* | 2* | 3* |
 | 4* | 5* | 6* |
-| 7 | 8 | 9* |
+| 7* | 8 | 9* |
 | 10* | 11* | 12* |
 
 
@@ -29,10 +29,13 @@ Save on "Hardware Key Assignements" and it will affect when you close iCUE softw
 ### Mapping
 
 - 1: Copy
+- 2: NumpadSub
 - 3: Backspace
 - 4: Paste
 - 5: Refresh Page
 - 6: Previous Tab
+- 7: Edge Tab Group
+- 8: Blank AHK
 - 9: Next Tab
 - 10: PrintScreen
 - 11: Tab
@@ -40,3 +43,5 @@ Save on "Hardware Key Assignements" and it will affect when you close iCUE softw
 
 - DPI Button: Back Button
 
+7 and 8 is using AHK.
+Send F14 + 7 and F14 + 8
