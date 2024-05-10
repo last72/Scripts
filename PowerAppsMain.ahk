@@ -9,6 +9,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; ^: Ctrl
 ; +: Shift
 
+; Script Suspend toggle
+^+F12::
+Suspend
+return
+
 ; Function Row
 ; Select All
 F1::
