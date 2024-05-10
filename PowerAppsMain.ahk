@@ -347,6 +347,11 @@ NumpadSub::
 ExpendFormulaMenu()
 return
 
+; Corsair Mouse
+F12 & c::
+EdgeNewGroup()
+return
+
 
 ^+F9::
 ExitApp
