@@ -30,7 +30,8 @@ return
 ; Name Text
 F6::
 WinGetPos, WindowX, WindowY, WindowW, WindowH, A
-MouseClickAndReturn(WindowW - 300, 268)
+MouseClickAndReturn(WindowW - 300, 255)
+; 255 or 315
 Send, ^a
 return
 
