@@ -11,11 +11,33 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Index: 1. Arduino input: F1
 F2::
-MsgBox, "Pressed"
+; Get input from the user
+    count := GetInput("Enter the number of times to click")
 
+    ; Validate input
+    if (count = "")
+    {
+        MsgBox, Invalid input. Please enter a valid integer.
+        return
+    }
+
+    ; Convert input to integer
+    count := count + 0
+
+    ; Click the mouse button the specified number of times
+    Loop, %count%
+    {
+        Click
+        Sleep, 100 ; Delay between clicks (in milliseconds)
+    }
 return
 
 
 F12 & c::
 MsgBox, "Pressed"
 return
+
+GetInput(prompt) {
+    InputBox, userInput, %prompt%, Enter an integer:, , 200, 120
+    return userInput
+}
