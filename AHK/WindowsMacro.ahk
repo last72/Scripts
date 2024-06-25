@@ -56,3 +56,27 @@ Send ^v
 Sleep 300
 Clipboard := clipboard_temp
 Return
+
+; clicks mouse left button number of times. Popup shows up and user enter interger. Used to create 100 rows in ms word.
+MouseClickLoop()
+{
+    ; Get input from the user
+    count := GetInput("Enter the number of times to click")
+
+    ; Validate input
+    if (count = "")
+    {
+        MsgBox, Invalid input. Please enter a valid integer.
+        return
+    }
+
+    ; Convert input to integer
+    count := count + 0
+
+    ; Click the mouse button the specified number of times
+    Loop, %count%
+    {
+        Click
+        Sleep, 100 ; Delay between clicks (in milliseconds)
+    }
+}
