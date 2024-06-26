@@ -210,11 +210,6 @@ return
 	MouseClickAndReturn(WindowW/2, WindowH - 80)
 return
 
-; Script Suspend toggle
-^+F12::
-Suspend
-return
-
 
 ; F13 - F24
 ; F13 is for 12E3 macro
