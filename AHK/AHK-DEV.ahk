@@ -11,7 +11,23 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; Index: 1. Arduino input: F1
 F2::
-; Get input from the user
+SendRaw %clipboard%
+
+return
+
+
+F12 & c::
+MsgBox, "Pressed"
+return
+
+GetInput(prompt) {
+    InputBox, userInput, %prompt%, Enter an integer:, , 200, 120
+    return userInput
+}
+
+MouseClickLoop()
+{
+    ; Get input from the user
     count := GetInput("Enter the number of times to click")
 
     ; Validate input
@@ -30,14 +46,4 @@ F2::
         Click
         Sleep, 100 ; Delay between clicks (in milliseconds)
     }
-return
-
-
-F12 & c::
-MsgBox, "Pressed"
-return
-
-GetInput(prompt) {
-    InputBox, userInput, %prompt%, Enter an integer:, , 200, 120
-    return userInput
 }

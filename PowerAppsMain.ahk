@@ -54,7 +54,7 @@ return
 ; Sleep delay is in place to make sure pasting control name is success
 F9::
 Send, ^v
-Sleep, 10
+Sleep, 100
 Send, .Y {+}{Space}
 Send, ^v
 Sleep, 100
@@ -64,7 +64,7 @@ return
 ; ^v.X + ^v.Width
 F10::
 Send, ^v
-Sleep, 10
+Sleep, 100
 Send, .X {+}{Space}
 Send, ^v
 Sleep, 100
