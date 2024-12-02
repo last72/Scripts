@@ -80,3 +80,10 @@ MouseClickLoop()
         Sleep, 100 ; Delay between clicks (in milliseconds)
     }
 }
+
+ClickAndNextTab()
+{
+    Click ; Simulates a left mouse click
+    Sleep, 100 ; Waits 100 milliseconds
+    Send, ^{Tab} ; Sends Ctrl + Tab
+}

@@ -9,14 +9,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; ^: Ctrl
 ; +: Shift
 
-; Index: 1. Arduino input: F1
+; TestKey
 F2::
 FunctionSample()
 return
 
-
-
-; Mouse Click
+; Function
 FunctionSample()
 {
     Send, {Enter}

@@ -9,41 +9,15 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; ^: Ctrl
 ; +: Shift
 
-; Index: 1. Arduino input: F1
+; TestKey
 F2::
-SendRaw %clipboard%
-
+ClickAndNextTab()
 return
 
-
-F12 & c::
-MsgBox, "Pressed"
-return
-
-GetInput(prompt) {
-    InputBox, userInput, %prompt%, Enter an integer:, , 200, 120
-    return userInput
-}
-
-MouseClickLoop()
+; Function
+ClickAndNextTab()
 {
-    ; Get input from the user
-    count := GetInput("Enter the number of times to click")
-
-    ; Validate input
-    if (count = "")
-    {
-        MsgBox, Invalid input. Please enter a valid integer.
-        return
-    }
-
-    ; Convert input to integer
-    count := count + 0
-
-    ; Click the mouse button the specified number of times
-    Loop, %count%
-    {
-        Click
-        Sleep, 100 ; Delay between clicks (in milliseconds)
-    }
+    Click ; Simulates a left mouse click
+    Sleep, 100 ; Waits 100 milliseconds
+    Send, ^{Tab} ; Sends Ctrl + Tab
 }
