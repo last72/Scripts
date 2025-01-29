@@ -10,31 +10,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; +: Shift
 
 
-F2:
+F1::
+MouseClick(1633, 300)
+return
 
-
-; TestKey
 F2::
-ClickAndNextTab()
+MouseClick(300, 400)
 return
 
 F3::
-Loop, 8
-{
-    ClickAndNextTab()
-    Sleep, 100
-}
+MouseClick(1800, 1030)
 return
-
-; Sweep through so it can load
-F4::
-Loop, 8
-{
-    Send, ^{Tab} ; Sends Ctrl + Tab
-    Sleep, 100
-}
-return
-
 
 ; Function
 ClickAndNextTab()
@@ -42,4 +28,16 @@ ClickAndNextTab()
     Click ; Simulates a left mouse click
     Sleep, 100 ; Waits 100 milliseconds
     Send, ^{Tab} ; Sends Ctrl + Tab
+}
+
+; Mouse Click
+MouseClick(ClickX , ClickY)
+{
+	MouseClick, , ClickX, ClickY
+}
+
+; Mouse Click
+MouseMove(MoveX , MoveY)
+{
+    MouseMove, MoveX, MoveX
 }

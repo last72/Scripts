@@ -95,3 +95,16 @@ MouseClickAndReturn(ClickX , ClickY)
 	MouseClick, , ClickX, ClickY
 	MouseMove, StartX, StartY
 }
+
+
+; Mouse Click
+MouseClick(ClickX , ClickY)
+{
+	MouseClick, , ClickX, ClickY
+}
+
+; Mouse Click
+MouseMove(MoveX , MoveY)
+{
+    MouseMove, MoveX, MoveX
+}
