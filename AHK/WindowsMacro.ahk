@@ -87,3 +87,11 @@ ClickAndNextTab()
     Sleep, 100 ; Waits 100 milliseconds
     Send, ^{Tab} ; Sends Ctrl + Tab
 }
+
+; Mouse Click
+MouseClickAndReturn(ClickX , ClickY)
+{
+	MouseGetPos, StartX, StartY
+	MouseClick, , ClickX, ClickY
+	MouseMove, StartX, StartY
+}
